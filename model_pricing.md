@@ -1,9 +1,6 @@
 # Model Pricing Guide
 
 > Comprehensive pricing breakdown for the Syllogistic Reasoning Benchmark
-> 
-> **Last Updated**: January 2025
-
 
 
 ## Table of Contents
