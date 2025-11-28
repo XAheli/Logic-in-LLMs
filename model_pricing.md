@@ -10,8 +10,7 @@
 3. [Google Gemini Models (Google AI Studio)](#google-gemini-models-google-ai-studio)
 4. [HuggingFace Models (via Fireworks.ai)](#huggingface-models-via-fireworksai)
 5. [Cost Summary](#cost-summary)
-6. [Budget Optimization Tips](#budget-optimization-tips)
-7. [Rate Limits](#rate-limits)
+6. [Rate Limits](#rate-limits)
 
 
 ## Overview
