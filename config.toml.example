@@ -1,0 +1,99 @@
+# =============================================================================
+# Syllogistic Reasoning Benchmark Configuration
+# =============================================================================
+# Copy this file to config.toml and fill in your API keys.
+# NEVER commit config.toml with real API keys!
+
+# =============================================================================
+# API Keys
+# =============================================================================
+# Set your API keys here or as environment variables:
+# - GOOGLE_API_KEY (for Gemini models)
+# - OPENROUTER_API_KEY (for OpenRouter models)
+# - HF_TOKEN (for HuggingFace models)
+
+[api_keys]
+google_api_key = "your-google-api-key-here"        # Google AI Studio API key for Gemini models
+openrouter_api_key = "your-openrouter-api-key-here"    # OpenRouter API key
+hf_token = "your-huggingface-token-here"              # HuggingFace token
+
+# =============================================================================
+# Experiment Settings
+# =============================================================================
+
+[experiment]
+# Temperature settings to test
+temperatures = [0.0, 0.5, 1.0]
+
+# Prompting strategies to use
+prompting_strategies = ["zero_shot", "one_shot", "few_shot", "zero_shot_cot"]
+
+# Dataset file path (relative to project root)
+dataset_path = "data/syllogisms_master_dataset.json"
+
+# Results directory (relative to project root)
+results_dir = "results"
+
+# =============================================================================
+# Iteration Limits
+# =============================================================================
+
+[iteration_limits]
+# Global limits for all models 
+max_iterations = 10
+threshold = 5
+
+# =============================================================================
+# API Settings
+# =============================================================================
+
+[api_settings]
+# Maximum tokens for model response
+max_tokens = 600
+
+# Top-p (nucleus sampling) - 1.0 means no filtering
+top_p = 1.0
+
+# Presence penalty - 0.0 means no penalty
+presence_penalty = 0.0
+
+# Frequency penalty - 0.0 means no penalty
+frequency_penalty = 0.0
+
+# Retry settings for API calls
+max_retries = 3
+retry_delay = 5  # seconds
+
+# Rate limiting (requests per minute, 0 = no limit)
+rate_limit_rpm = 0
+
+# Timeout for API calls (seconds)
+timeout = 60
+
+# =============================================================================
+# Logging Settings
+# =============================================================================
+
+[logging]
+# Log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+level = "INFO"
+
+# Log to file (in addition to console)
+log_to_file = true
+
+# Log file path (relative to project root)
+log_file = "logs/benchmark.log"
+
+# =============================================================================
+# Output Settings
+# =============================================================================
+
+[output]
+# Save raw API responses
+save_raw_responses = true
+
+# Save parsed results
+save_parsed_results = true
+
+# Output format for results: "json" or "csv"
+results_format = "json"
