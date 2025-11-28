@@ -66,7 +66,7 @@ google_api_key = "your-gemini-api-key"
 huggingface_api_key = "your-hf-api-key"  # Fireworks routing
 
 [api_settings]
-max_tokens = 600
+max_tokens = 12000
 top_p = 1.0
 ```
 
@@ -76,16 +76,16 @@ top_p = 1.0
 
 ```bash
 # Single model, all strategies, all temperatures
-python scripts/run_experiments.py --models "gemini-2.5-pro"
+python scripts/run_experiments.py --models "gemini-2.5-flash"
 
 # Multiple models with specific settings
 python scripts/run_experiments.py \
-    --models "gemini-2.5-pro,llama-3.3-70b-instruct" \
+    --models "gemini-2.5-flash,llama-3.3-70b-instruct" \
     --strategies "zero_shot,zero_shot_cot" \
     --temperatures "0.0,0.5,1.0"
 
 # Dry run (preview without execution)
-python scripts/run_experiments.py --models "gemini-2.5-pro" --dry-run
+python scripts/run_experiments.py --models "gemini-2.5-flash" --dry-run
 
 # Run all 24 models
 python scripts/run_experiments.py
@@ -111,8 +111,7 @@ For temperature > 0 (non-deterministic), we use an adaptive voting mechanism:
 
 ## Models
 
-### Google Gemini (3)
-- `gemini-2.5-pro`
+### Google Gemini (2)
 - `gemini-2.5-flash`
 - `gemini-2.5-flash-preview-09-25`
 

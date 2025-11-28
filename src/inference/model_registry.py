@@ -1,9 +1,12 @@
 """
 Model Registry for Syllogistic Reasoning Benchmark
 
-Defines 24 models across 2 providers:
-- Google AI Studio (Gemini): 3 models (google_studio_paid)
+Defines 23 models across 2 providers:
+- Google AI Studio (Gemini): 2 models (google_studio_paid)
 - HuggingFace Inference API via Fireworks: 21 models (hf_inf_paid)
+
+Note: gemini-2.5-pro was removed due to high cost (~$400 for full experiment).
+Using only gemini-2.5-flash and gemini-2.5-flash-preview-09-25.
 
 Each model includes:
 - provider: API provider identifier (GOOGLE or HUGGINGFACE)
@@ -94,18 +97,11 @@ class ModelConfig:
 MODEL_REGISTRY: Dict[str, ModelConfig] = {
     
     # =========================================================================
-    # GOOGLE AI STUDIO - Gemini Models (3 models)
+    # GOOGLE AI STUDIO - Gemini Models (2 models)
     # Direct API access via Google AI Studio
     # Billing: google_studio_paid
+    # Note: gemini-2.5-pro removed due to high cost (~$400 for full experiment)
     # =========================================================================
-    
-    "gemini-2.5-pro": ModelConfig(
-        provider=Provider.GOOGLE,
-        model_id="gemini-2.5-pro",
-        display_name="Gemini 2.5 Pro",
-        billing_type=BillingType.GOOGLE_STUDIO_PAID,
-        lm_arena=True,
-    ),
     
     "gemini-2.5-flash": ModelConfig(
         provider=Provider.GOOGLE,
@@ -387,10 +383,11 @@ def validate_registry():
     """Validate the model registry for consistency."""
     errors = []
     
-    # Expected counts: 24 models total
-    # 3 Gemini (google_studio_paid) + 21 HuggingFace (hf_inf_paid) = 24
-    expected_total = 24
-    expected_google = 3
+    # Expected counts: 23 models total
+    # 2 Gemini (google_studio_paid) + 21 HuggingFace (hf_inf_paid) = 23
+    # Note: gemini-2.5-pro removed due to high cost
+    expected_total = 23
+    expected_google = 2
     expected_huggingface = 21
     
     actual_total = len(MODEL_REGISTRY)

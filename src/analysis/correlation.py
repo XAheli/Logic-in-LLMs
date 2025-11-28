@@ -59,8 +59,7 @@ class CorrelationResult:
 # Only includes models from MODEL_REGISTRY that have LM Arena benchmarks
 # Models with lm_arena=False in registry have None here
 LM_ARENA_RANKINGS = {
-    # Google Gemini models (PAID)
-    "gemini-2.5-pro": 9,
+    # Google Gemini models (PAID) - gemini-2.5-pro removed due to cost
     "gemini-2.5-flash": 44,
     "gemini-2.5-flash-preview-09-25": 45,
     
@@ -305,7 +304,6 @@ if __name__ == "__main__":
     
     # Test data (simulated accuracies) - using actual model keys from registry
     test_accuracies = {
-        "gemini-2.5-pro": 0.85,
         "gemini-2.5-flash": 0.78,
         "glm-4.6": 0.82,
         "deepseek-v3.1": 0.80,

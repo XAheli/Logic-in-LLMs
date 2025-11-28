@@ -102,7 +102,7 @@ class IterationLimits:
 @dataclass
 class APISettings:
     """API call settings."""
-    max_tokens: int = 600  # Increased for CoT reasoning
+    max_tokens: int = 12000  # High for Gemini 2.5 Pro's internal "thinking" tokens
     max_retries: int = 3
     retry_delay: int = 5
     rate_limit_rpm: int = 0
