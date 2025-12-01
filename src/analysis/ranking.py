@@ -334,34 +334,34 @@ def compare_paid_vs_free(
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("RANKING ANALYSIS TEST")
+    print("RANKING ANALYSIS")
     print("=" * 60)
     
-    # Test with simulated data
-    test_accuracies = {
-        "gemini-2.0-flash": 0.85,
-        "llama-3.1-70b-instruct": 0.82,
-        "qwen-2.5-72b-instruct": 0.80,
-        "gemini-1.5-flash": 0.78,
-        "mistral-nemo-instruct": 0.72,
-        "llama-3.1-8b-instruct": 0.68,
-        "phi-3.5-mini-instruct": 0.65,
-        "falcon-7b-instruct": 0.55,
-    }
+    # Try to load real results from the results directory
+    results_dir = config.experiment.results_full_path
     
-    print("\n[Model Rankings]")
-    rankings = rank_models_by_accuracy(test_accuracies)
+    print(f"\nLooking for results in: {results_dir}")
     
-    for r in rankings:
-        print(f"  #{r.rank}: {r.model_key} ({r.accuracy:.2%}) - {r.provider}")
+    # Try to load accuracies from actual results
+    accuracies = load_accuracies_from_results(results_dir, temperature=0.0, strategy="zero_shot")
     
-    print("\n[Paid vs Free (simulated)]")
-    # Simulate paid/free split
-    paid_models = ["gemini-2.0-flash", "gemini-1.5-flash"]
-    free_models = [m for m in test_accuracies if m not in paid_models]
-    
-    paid_mean = np.mean([test_accuracies[m] for m in paid_models])
-    free_mean = np.mean([test_accuracies[m] for m in free_models])
-    
-    print(f"  Paid models mean accuracy: {paid_mean:.2%}")
-    print(f"  Free models mean accuracy: {free_mean:.2%}")
+    if not accuracies:
+        print("\n[No results found yet]")
+        print("  Run the benchmark first to generate results.")
+        print("  Results will be loaded from: results/raw_responses/")
+    else:
+        print(f"\n[Model Rankings - {len(accuracies)} models]")
+        rankings = rank_models_by_accuracy(accuracies)
+        
+        for r in rankings:
+            print(f"  #{r.rank}: {r.model_key} ({r.accuracy:.2%}) - {r.provider}")
+        
+        # Compare Google Studio vs HuggingFace Inference
+        print("\n[Google Studio vs HuggingFace Inference]")
+        comparison = compare_paid_vs_free(results_dir, temperature=0.0, strategy="zero_shot")
+        
+        gs = comparison["google_studio_paid"]
+        hf = comparison["hf_inf_paid"]
+        
+        print(f"  Google Studio ({gs['count']} models): {gs['mean_accuracy']:.2%} avg")
+        print(f"  HuggingFace ({hf['count']} models): {hf['mean_accuracy']:.2%} avg")

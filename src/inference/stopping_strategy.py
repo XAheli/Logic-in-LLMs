@@ -10,7 +10,7 @@ Strategy:
 
 For Temperature > 0:
     - Continue querying until threshold reached OR max iterations
-    - Early stop if valid_count >= threshold OR invalid_count >= threshold
+    - Early stop if correct_count >= threshold OR incorrect_count >= threshold
     - Return majority vote with confidence score
 
 Iteration Limits:
@@ -30,8 +30,8 @@ import time
 
 class VoteResult(Enum):
     """Possible vote outcomes."""
-    VALID = "valid"
-    INVALID = "invalid"
+    CORRECT = "correct"
+    INCORRECT = "incorrect"
     ERROR = "error"
     UNCLEAR = "unclear"
 
@@ -48,11 +48,11 @@ class IterationResult:
 @dataclass
 class StoppingResult:
     """Final result after stopping strategy completes."""
-    final_answer: str  # "valid" or "invalid"
+    final_answer: str  # "correct" or "incorrect"
     confidence: float  # Proportion of votes for the answer (0.0 to 1.0)
     total_iterations: int
-    valid_count: int
-    invalid_count: int
+    correct_count: int
+    incorrect_count: int
     error_count: int
     stopped_early: bool  # True if threshold reached before max_iterations
     all_responses: List[IterationResult] = field(default_factory=list)
@@ -60,7 +60,7 @@ class StoppingResult:
     @property
     def unclear_count(self) -> int:
         """Count of unclear/unparseable responses."""
-        return self.total_iterations - self.valid_count - self.invalid_count - self.error_count
+        return self.total_iterations - self.correct_count - self.incorrect_count - self.error_count
     
     def to_dict(self) -> Dict[str, Any]:
         """Convert to dictionary for JSON serialization."""
@@ -68,8 +68,8 @@ class StoppingResult:
             "final_answer": self.final_answer,
             "confidence": self.confidence,
             "total_iterations": self.total_iterations,
-            "valid_count": self.valid_count,
-            "invalid_count": self.invalid_count,
+            "correct_count": self.correct_count,
+            "incorrect_count": self.incorrect_count,
             "error_count": self.error_count,
             "unclear_count": self.unclear_count,
             "stopped_early": self.stopped_early,
@@ -93,8 +93,8 @@ def parse_response(response: str) -> VoteResult:
     Parse a model response to determine the vote.
     
     Parsing logic:
-    - If "invalid" appears in response → INVALID
-    - Else if "valid" appears → VALID
+    - If "incorrect" appears in response → INCORRECT
+    - Else if "correct" appears → CORRECT
     - Else → UNCLEAR
     
     Args:
@@ -108,11 +108,11 @@ def parse_response(response: str) -> VoteResult:
     
     clean_response = response.lower().strip()
     
-    # Check for "invalid" first (since "invalid" contains "valid")
-    if "invalid" in clean_response:
-        return VoteResult.INVALID
-    elif "valid" in clean_response:
-        return VoteResult.VALID
+    # Check for "incorrect" first (since "incorrect" contains "correct")
+    if "incorrect" in clean_response:
+        return VoteResult.INCORRECT
+    elif "correct" in clean_response:
+        return VoteResult.CORRECT
     else:
         return VoteResult.UNCLEAR
 
@@ -130,7 +130,7 @@ class AdaptiveStoppingStrategy:
         
     For temperature > 0.0:
         - Query repeatedly until threshold or max_iterations
-        - Early stop when valid_count >= threshold OR invalid_count >= threshold
+        - Early stop when correct_count >= threshold OR incorrect_count >= threshold
         - Return majority vote with confidence
     """
     
@@ -224,18 +224,18 @@ class AdaptiveStoppingStrategy:
         )
         
         # Determine final answer
-        if vote == VoteResult.VALID:
-            final_answer = "valid"
-            valid_count, invalid_count, error_count = 1, 0, 0
-        elif vote == VoteResult.INVALID:
-            final_answer = "invalid"
-            valid_count, invalid_count, error_count = 0, 1, 0
+        if vote == VoteResult.CORRECT:
+            final_answer = "correct"
+            correct_count, incorrect_count, error_count = 1, 0, 0
+        elif vote == VoteResult.INCORRECT:
+            final_answer = "incorrect"
+            correct_count, incorrect_count, error_count = 0, 1, 0
         elif vote == VoteResult.ERROR:
             final_answer = "error"
-            valid_count, invalid_count, error_count = 0, 0, 1
+            correct_count, incorrect_count, error_count = 0, 0, 1
         else:  # UNCLEAR
             final_answer = "unclear"
-            valid_count, invalid_count, error_count = 0, 0, 0
+            correct_count, incorrect_count, error_count = 0, 0, 0
         
         if self.verbose:
             print(f"  [T=0.0] Result: {final_answer}")
@@ -244,8 +244,8 @@ class AdaptiveStoppingStrategy:
             final_answer=final_answer,
             confidence=1.0,  # Single query = 100% confidence in what we got
             total_iterations=1,
-            valid_count=valid_count,
-            invalid_count=invalid_count,
+            correct_count=correct_count,
+            incorrect_count=incorrect_count,
             error_count=error_count,
             stopped_early=False,  # N/A for deterministic
             all_responses=[iteration_result]
@@ -259,21 +259,21 @@ class AdaptiveStoppingStrategy:
         """Run adaptive stopping strategy for temperature > 0.
         
         Early Stopping Logic:
-        - If the FIRST 5 iterations are ALL the same (all valid OR all invalid),
+        - If the FIRST 5 iterations are ALL the same (all correct OR all incorrect),
           stop early at iteration 5.
         - Otherwise, continue to max_iterations (10).
         
         Final Answer Logic (when max iterations reached):
-        - If valid_count > invalid_count → "valid"
-        - If invalid_count > valid_count → "invalid"  
-        - If valid_count == invalid_count → "invalid" (conservative default)
+        - If correct_count > incorrect_count → "correct"
+        - If incorrect_count > correct_count → "incorrect"  
+        - If correct_count == incorrect_count → "incorrect" (conservative default)
         """
         if self.verbose:
             print(f"  [T={temperature}] Running adaptive strategy "
                   f"(max={self.max_iterations}, threshold={self.threshold})...")
         
-        valid_count = 0
-        invalid_count = 0
+        correct_count = 0
+        incorrect_count = 0
         error_count = 0
         all_responses: List[IterationResult] = []
         stopped_early = False
@@ -299,35 +299,35 @@ class AdaptiveStoppingStrategy:
             all_responses.append(iteration_result)
             
             # Update counts
-            if vote == VoteResult.VALID:
-                valid_count += 1
-            elif vote == VoteResult.INVALID:
-                invalid_count += 1
+            if vote == VoteResult.CORRECT:
+                correct_count += 1
+            elif vote == VoteResult.INCORRECT:
+                incorrect_count += 1
             elif vote == VoteResult.ERROR:
                 error_count += 1
             # UNCLEAR responses don't count toward either
             
             if self.verbose:
                 print(f"    Iteration {i+1}: {vote.value} "
-                      f"(valid={valid_count}, invalid={invalid_count})")
+                      f"(correct={correct_count}, incorrect={incorrect_count})")
             
             # Check early stopping condition: FIRST 5 iterations must ALL be the same
             # Only check at exactly iteration 5 (index 4)
             if i + 1 == self.threshold:  # After 5th iteration
-                # Check if first 5 are all valid or all invalid
+                # Check if first 5 are all correct or all incorrect
                 first_5_votes = [r.parsed_vote for r in all_responses[:self.threshold]]
-                all_valid = all(v == VoteResult.VALID for v in first_5_votes)
-                all_invalid = all(v == VoteResult.INVALID for v in first_5_votes)
+                all_correct = all(v == VoteResult.CORRECT for v in first_5_votes)
+                all_incorrect = all(v == VoteResult.INCORRECT for v in first_5_votes)
                 
-                if all_valid:
+                if all_correct:
                     stopped_early = True
                     if self.verbose:
-                        print(f"  [EARLY STOP] First {self.threshold} iterations ALL valid")
+                        print(f"  [EARLY STOP] First {self.threshold} iterations ALL correct")
                     break
-                elif all_invalid:
+                elif all_incorrect:
                     stopped_early = True
                     if self.verbose:
-                        print(f"  [EARLY STOP] First {self.threshold} iterations ALL invalid")
+                        print(f"  [EARLY STOP] First {self.threshold} iterations ALL incorrect")
                     break
                 else:
                     if self.verbose:
@@ -335,21 +335,21 @@ class AdaptiveStoppingStrategy:
         
         # Calculate final result
         total_iterations = len(all_responses)
-        total_valid_invalid = valid_count + invalid_count
+        total_correct_incorrect = correct_count + incorrect_count
         
-        if total_valid_invalid == 0:
-            # No valid votes at all
+        if total_correct_incorrect == 0:
+            # No usable votes at all
             final_answer = "error" if error_count > 0 else "unclear"
             confidence = 0.0
-        elif valid_count > invalid_count:
-            final_answer = "valid"
-            confidence = valid_count / total_valid_invalid
-        elif invalid_count > valid_count:
-            final_answer = "invalid"
-            confidence = invalid_count / total_valid_invalid
+        elif correct_count > incorrect_count:
+            final_answer = "correct"
+            confidence = correct_count / total_correct_incorrect
+        elif incorrect_count > correct_count:
+            final_answer = "incorrect"
+            confidence = incorrect_count / total_correct_incorrect
         else:
-            # Tie - default to invalid (more conservative)
-            final_answer = "invalid"
+            # Tie - default to incorrect (more conservative)
+            final_answer = "incorrect"
             confidence = 0.5
         
         if self.verbose:
@@ -360,8 +360,8 @@ class AdaptiveStoppingStrategy:
             final_answer=final_answer,
             confidence=confidence,
             total_iterations=total_iterations,
-            valid_count=valid_count,
-            invalid_count=invalid_count,
+            correct_count=correct_count,
+            incorrect_count=incorrect_count,
             error_count=error_count,
             stopped_early=stopped_early,
             all_responses=all_responses
@@ -432,28 +432,28 @@ if __name__ == "__main__":
     print("ADAPTIVE STOPPING STRATEGY TEST")
     print("=" * 70)
     
-    # Mock query function that returns "valid" or "invalid" randomly
-    def mock_query_mostly_valid(temperature: float) -> str:
-        """Mock that returns valid 70% of the time."""
+    # Mock query function that returns "correct" or "incorrect" randomly
+    def mock_query_mostly_correct(temperature: float) -> str:
+        """Mock that returns correct 70% of the time."""
         if temperature == 0.0:
-            return "valid"  # Deterministic
-        return "valid" if random.random() < 0.7 else "invalid"
+            return "correct"  # Deterministic
+        return "correct" if random.random() < 0.7 else "incorrect"
     
-    def mock_query_mostly_invalid(temperature: float) -> str:
-        """Mock that returns invalid 80% of the time."""
+    def mock_query_mostly_incorrect(temperature: float) -> str:
+        """Mock that returns incorrect 80% of the time."""
         if temperature == 0.0:
-            return "invalid"
-        return "invalid" if random.random() < 0.8 else "valid"
+            return "incorrect"
+        return "incorrect" if random.random() < 0.8 else "correct"
     
     def mock_query_with_noise(temperature: float) -> str:
         """Mock with some unclear responses."""
         if temperature == 0.0:
-            return "valid"
+            return "correct"
         r = random.random()
         if r < 0.6:
-            return "The syllogism is valid."
+            return "The syllogism is correct."
         elif r < 0.9:
-            return "This is invalid reasoning."
+            return "This is incorrect reasoning."
         else:
             return "I'm not sure about this one."
     
@@ -461,14 +461,14 @@ if __name__ == "__main__":
     print("\n[TEST 1] Temperature = 0.0 (deterministic)")
     print("-" * 50)
     strategy = AdaptiveStoppingStrategy.with_global_limits(verbose=True)
-    result = strategy.run(mock_query_mostly_valid, temperature=0.0)
+    result = strategy.run(mock_query_mostly_correct, temperature=0.0)
     print(f"Final: {result.final_answer}, Confidence: {result.confidence:.2%}")
     
     # Test 2: Global limits with T=0.5
     print("\n[TEST 2] Global limits, Temperature = 0.5")
     print("-" * 50)
     strategy = AdaptiveStoppingStrategy.with_global_limits(verbose=True)
-    result = strategy.run(mock_query_mostly_valid, temperature=0.5)
+    result = strategy.run(mock_query_mostly_correct, temperature=0.5)
     print(f"Final: {result.final_answer}, Confidence: {result.confidence:.2%}")
     print(f"Stopped early: {result.stopped_early}, Iterations: {result.total_iterations}")
     
@@ -476,7 +476,7 @@ if __name__ == "__main__":
     print("\n[TEST 3] Global limits, Temperature = 1.0")
     print("-" * 50)
     strategy = AdaptiveStoppingStrategy.with_global_limits(verbose=True)
-    result = strategy.run(mock_query_mostly_invalid, temperature=1.0)
+    result = strategy.run(mock_query_mostly_incorrect, temperature=1.0)
     print(f"Final: {result.final_answer}, Confidence: {result.confidence:.2%}")
     print(f"Stopped early: {result.stopped_early}, Iterations: {result.total_iterations}")
     
@@ -486,14 +486,14 @@ if __name__ == "__main__":
     strategy = AdaptiveStoppingStrategy(max_iterations=15, threshold=8, verbose=True)
     result = strategy.run(mock_query_with_noise, temperature=0.5)
     print(f"Final: {result.final_answer}, Confidence: {result.confidence:.2%}")
-    print(f"Valid: {result.valid_count}, Invalid: {result.invalid_count}, "
+    print(f"Correct: {result.correct_count}, Incorrect: {result.incorrect_count}, "
           f"Unclear: {result.unclear_count}, Errors: {result.error_count}")
     
     # Test 5: Convenience function
     print("\n[TEST 5] Convenience function")
     print("-" * 50)
     answer, conf = get_adaptive_vote(
-        mock_query_mostly_valid, 
+        mock_query_mostly_correct, 
         temperature=0.5, 
         verbose=True
     )

@@ -1,41 +1,41 @@
-ID,Ground_Truth,Statement_1,Statement_2,Conclusion
-SYL_001,invalid,All calculators are machines.,All computers are calculators.,Some machines are not computers.
-SYL_002,invalid,No fruits are fungi.,All mushrooms are fungi.,Some mushrooms are fruits.
-SYL_003,invalid,All African countries are warm.,Spain is warm.,Spain is an African country.
-SYL_004,valid,No harmful substance is natural.,All poisons are natural.,No poisons are harmful.
-SYL_005,invalid,All flying birds have feathers.,No people have feathers.,Some people are flying birds.
-SYL_006,valid,All vehicles have wheels.,A boat is a vehicle.,A boat has wheels.
-SYL_007,invalid,All things with an engine need oil.,Cars need oil.,Cars have engines.
-SYL_008,valid,All things that are smoked are bad for your health.,Cigarettes are smoked.,Cigarettes are bad for your health.
-SYL_009,valid,No video recorders are metal things.,Some electric appliances are metal things.,Some electric appliances are not video recorders.
-SYL_010,valid,No astronauts are athletic.,Some healthy people are athletic.,Some healthy people are not astronauts.
-SYL_011,valid,No skyscrapers are wooden things.,Some buildings are wooden things.,Some buildings are not skyscrapers.
-SYL_012,valid,No cigarettes are inexpensive.,Some addictive things are inexpensive.,Some addictive things are not cigarettes.
-SYL_013,valid,No police dogs are vicious.,Some highly trained dogs are vicious.,Some highly trained dogs are not police dogs.
-SYL_014,valid,No liquors are sweet things.,Some drinks are sweet things.,Some drinks are not liquors.
-SYL_015,valid,No trout are colourful things.,Some fish are colourful things.,Some fish are not trout.
-SYL_016,valid,No millionaires are scientists.,Some rich people are scientists.,Some rich people are not millionaires.
-SYL_017,valid,No pieces of furniture are attractive things.,Some tables are attractive things.,Some tables are not pieces of furniture.
-SYL_018,valid,No musical instruments are shiny.,Some violins are shiny.,Some violins are not musical instruments.
-SYL_019,valid,No well-educated people are impartial.,Some judges are impartial.,Some judges are not well-educated people.
-SYL_020,valid,No plants are living things.,Some grasses are living things.,Some grasses are not plants.
-SYL_021,valid,No religious people are married.,Some priests are married.,Some priests are not religious people.
-SYL_022,valid,No good swimmers are vegetarians.,Some deep sea divers are vegetarians.,Some deep sea divers are not good swimmers.
-SYL_023,valid,No tools are heavy.,Some screwdrivers are heavy.,Some screwdrivers are not tools.
-SYL_024,valid,No nutritional things are expensive.,Some vitamin tablets are expensive.,Some vitamin tablets are not nutritional things.
-SYL_025,invalid,No electric appliances are metal things.,Some video recorders are metal things.,Some electric appliances are not video recorders.
-SYL_026,invalid,No healthy people are athletic.,Some astronauts are athletic.,Some healthy people are not astronauts.
-SYL_027,invalid,No buildings are wooden things.,Some skyscrapers are wooden things.,Some buildings are not skyscrapers.
-SYL_028,invalid,No addictive things are inexpensive.,Some cigarettes are inexpensive.,Some addictive things are not cigarettes.
-SYL_029,invalid,No highly trained dogs are vicious.,Some police dogs are vicious.,Some highly trained dogs are not police dogs.
-SYL_030,invalid,No drinks are sweet things.,Some liquors are sweet things.,Some drinks are not liquors.
-SYL_031,invalid,No fish are colourful things.,Some trout are colourful things.,Some fish are not trout.
-SYL_032,invalid,No rich people are scientists.,Some millionaires are scientists.,Some rich people are not millionaires.
-SYL_033,invalid,No tables are attractive things.,Some pieces of furniture are attractive things.,Some tables are not pieces of furniture.
-SYL_034,invalid,No violins are shiny.,Some musical instruments are shiny.,Some violins are not musical instruments.
-SYL_035,invalid,Some judges are impartial.,Some well-educated people are impartial.,Some judges are not well educated people.
-SYL_036,invalid,No grasses are living things.,Some plants are living things.,Some grasses are not plants.
-SYL_037,invalid,No priests are married.,Some religious people are married.,Some priests are not religious people.
-SYL_038,invalid,No deep sea divers are vegetarians.,Some good swimmers are vegetarians.,Some deep sea divers are not good swimmers.
-SYL_039,invalid,No screwdrivers are heavy.,Some tools are heavy.,Some screwdrivers are not tools.
-SYL_040,invalid,No vitamin tablets are expensive.,Some nutritional things are expensive.,Some vitamin tablets are not nutritional things.
+ID,Ground_Truth_Syntax,Ground_Truth_NLU,Statement_1,Statement_2,Conclusion
+SYL_001,invalid,believable,All calculators are machines.,All computers are calculators.,"Therefore, some machines are not computers."
+SYL_002,invalid,unbelievable,No fruits are fungi.,All mushrooms are fungi.,"Therefore, some mushrooms are fruits."
+SYL_003,invalid,unbelievable,All African countries are warm.,Spain is warm.,"Therefore, Spain is an African country."
+SYL_004,valid,unbelievable,No harmful substance is natural.,All poisons are natural.,"Therefore, no poisons are harmful."
+SYL_005,invalid,unbelievable,All flying birds have feathers.,No people have feathers.,"Therefore, some people are flying birds."
+SYL_006,valid,unbelievable,All vehicles have wheels.,A boat is a vehicle.,"Therefore, a boat has wheels."
+SYL_007,invalid,believable,All things with an engine need oil.,Cars need oil.,"Therefore, cars have engines."
+SYL_008,valid,believable,All things that are smoked are bad for your health.,Cigarettes are smoked.,"Therefore, cigarettes are bad for your health."
+SYL_009,valid,believable,No video recorders are metal things.,Some electric appliances are metal things.,"Therefore, some electric appliances are not video recorders."
+SYL_010,valid,believable,No astronauts are athletic.,Some healthy people are athletic.,"Therefore, some healthy people are not astronauts."
+SYL_011,valid,believable,No skyscrapers are wooden things.,Some buildings are wooden things.,"Therefore, some buildings are not skyscrapers."
+SYL_012,valid,believable,No cigarettes are inexpensive.,Some addictive things are inexpensive.,"Therefore, some addictive things are not cigarettes."
+SYL_013,valid,believable,No police dogs are vicious.,Some highly trained dogs are vicious.,"Therefore, some highly trained dogs are not police dogs."
+SYL_014,valid,believable,No liquors are sweet things.,Some drinks are sweet things.,"Therefore, some drinks are not liquors."
+SYL_015,valid,believable,No trout are colourful things.,Some fish are colourful things.,"Therefore, some fish are not trout."
+SYL_016,valid,believable,No millionaires are scientists.,Some rich people are scientists.,"Therefore, some rich people are not millionaires."
+SYL_017,valid,unbelievable,No pieces of furniture are attractive things.,Some tables are attractive things.,"Therefore, some tables are not pieces of furniture."
+SYL_018,valid,unbelievable,No musical instruments are shiny.,Some violins are shiny.,"Therefore, some violins are not musical instruments."
+SYL_019,valid,unbelievable,No well-educated people are impartial.,Some judges are impartial.,"Therefore, some judges are not well-educated people."
+SYL_020,valid,unbelievable,No plants are living things.,Some grasses are living things.,"Therefore, some grasses are not plants."
+SYL_021,valid,unbelievable,No religious people are married.,Some priests are married.,"Therefore, some priests are not religious people."
+SYL_022,valid,unbelievable,No good swimmers are vegetarians.,Some deep sea divers are vegetarians.,"Therefore, some deep sea divers are not good swimmers."
+SYL_023,valid,unbelievable,No tools are heavy.,Some screwdrivers are heavy.,"Therefore, some screwdrivers are not tools."
+SYL_024,valid,unbelievable,No nutritional things are expensive.,Some vitamin tablets are expensive.,"Therefore, some vitamin tablets are not nutritional things."
+SYL_025,invalid,believable,No electric appliances are metal things.,Some video recorders are metal things.,"Therefore, some electric appliances are not video recorders."
+SYL_026,invalid,believable,No healthy people are athletic.,Some astronauts are athletic.,"Therefore, some healthy people are not astronauts."
+SYL_027,invalid,believable,No buildings are wooden things.,Some skyscrapers are wooden things.,"Therefore, some buildings are not skyscrapers."
+SYL_028,invalid,believable,No addictive things are inexpensive.,Some cigarettes are inexpensive.,"Therefore, some addictive things are not cigarettes."
+SYL_029,invalid,believable,No highly trained dogs are vicious.,Some police dogs are vicious.,"Therefore, some highly trained dogs are not police dogs."
+SYL_030,invalid,believable,No drinks are sweet things.,Some liquors are sweet things.,"Therefore, some drinks are not liquors."
+SYL_031,invalid,believable,No fish are colourful things.,Some trout are colourful things.,"Therefore, some fish are not trout."
+SYL_032,invalid,believable,No rich people are scientists.,Some millionaires are scientists.,"Therefore, some rich people are not millionaires."
+SYL_033,invalid,unbelievable,No tables are attractive things.,Some pieces of furniture are attractive things.,"Therefore, some tables are not pieces of furniture."
+SYL_034,invalid,unbelievable,No violins are shiny.,Some musical instruments are shiny.,"Therefore, some violins are not musical instruments."
+SYL_035,invalid,unbelievable,Some judges are impartial.,Some well-educated people are impartial.,"Therefore, some judges are not well educated people."
+SYL_036,invalid,unbelievable,No grasses are living things.,Some plants are living things.,"Therefore, some grasses are not plants."
+SYL_037,invalid,unbelievable,No priests are married.,Some religious people are married.,"Therefore, some priests are not religious people."
+SYL_038,invalid,unbelievable,No deep sea divers are vegetarians.,Some good swimmers are vegetarians.,"Therefore, some deep sea divers are not good swimmers."
+SYL_039,invalid,unbelievable,No screwdrivers are heavy.,Some tools are heavy.,"Therefore, some screwdrivers are not tools."
+SYL_040,invalid,unbelievable,No vitamin tablets are expensive.,Some nutritional things are expensive.,"Therefore, some vitamin tablets are not nutritional things."

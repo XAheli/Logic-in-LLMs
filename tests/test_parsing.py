@@ -1,7 +1,7 @@
 """
 Unit Tests for Response Parsing
 
-Tests for extracting valid/invalid predictions from raw LLM responses.
+Tests for extracting correct/incorrect predictions from raw LLM responses.
 """
 
 import pytest
@@ -31,43 +31,43 @@ from src.evaluation.parse_responses import (
 class TestParseResponse:
     """Tests for parse_response function."""
     
-    def test_simple_valid(self):
-        """Test parsing 'valid' from simple response."""
-        result = parse_response("valid")
-        assert result.answer == ParsedAnswer.VALID
+    def test_simple_correct(self):
+        """Test parsing 'correct' from simple response."""
+        result = parse_response("correct")
+        assert result.answer == ParsedAnswer.CORRECT
         
-        result = parse_response("Valid")
-        assert result.answer == ParsedAnswer.VALID
+        result = parse_response("Correct")
+        assert result.answer == ParsedAnswer.CORRECT
         
-        result = parse_response("VALID")
-        assert result.answer == ParsedAnswer.VALID
+        result = parse_response("CORRECT")
+        assert result.answer == ParsedAnswer.CORRECT
     
-    def test_simple_invalid(self):
-        """Test parsing 'invalid' from simple response."""
-        result = parse_response("invalid")
-        assert result.answer == ParsedAnswer.INVALID
+    def test_simple_incorrect(self):
+        """Test parsing 'incorrect' from simple response."""
+        result = parse_response("incorrect")
+        assert result.answer == ParsedAnswer.INCORRECT
         
-        result = parse_response("Invalid")
-        assert result.answer == ParsedAnswer.INVALID
+        result = parse_response("Incorrect")
+        assert result.answer == ParsedAnswer.INCORRECT
         
-        result = parse_response("INVALID")
-        assert result.answer == ParsedAnswer.INVALID
+        result = parse_response("INCORRECT")
+        assert result.answer == ParsedAnswer.INCORRECT
     
     def test_answer_with_context(self):
         """Test extracting answer from longer response."""
-        result = parse_response("After analyzing the syllogism, I conclude that it is valid.")
-        assert result.answer == ParsedAnswer.VALID
+        result = parse_response("After analyzing the syllogism, I conclude that it is correct.")
+        assert result.answer == ParsedAnswer.CORRECT
         
-        result = parse_response("The argument is invalid because the conclusion doesn't follow.")
-        assert result.answer == ParsedAnswer.INVALID
+        result = parse_response("The argument is incorrect because the conclusion doesn't follow.")
+        assert result.answer == ParsedAnswer.INCORRECT
     
-    def test_invalid_takes_precedence(self):
-        """Test that 'invalid' is detected even when 'valid' is substring."""
-        result = parse_response("invalid")
-        assert result.answer == ParsedAnswer.INVALID
+    def test_incorrect_takes_precedence(self):
+        """Test that 'incorrect' is detected even when 'correct' is substring."""
+        result = parse_response("incorrect")
+        assert result.answer == ParsedAnswer.INCORRECT
         
-        result = parse_response("This argument is invalid")
-        assert result.answer == ParsedAnswer.INVALID
+        result = parse_response("This argument is incorrect")
+        assert result.answer == ParsedAnswer.INCORRECT
     
     def test_empty_response(self):
         """Test parsing empty response."""
@@ -96,8 +96,8 @@ class TestParseResponse:
 class TestParseCotResponse:
     """Tests for parse_cot_response function."""
     
-    def test_cot_valid(self):
-        """Test parsing CoT response ending in valid."""
+    def test_cot_correct(self):
+        """Test parsing CoT response ending in correct."""
         cot_response = """
         Let's think step by step.
         
@@ -107,14 +107,14 @@ class TestParseCotResponse:
         From these premises, we can conclude that all A are C.
         The conclusion follows logically from the premises.
         
-        Therefore, the argument is valid.
+        Therefore, the argument is correct.
         """
         result = parse_cot_response(cot_response)
-        assert result.answer == ParsedAnswer.VALID
+        assert result.answer == ParsedAnswer.CORRECT
         assert result.reasoning is not None
     
-    def test_cot_invalid(self):
-        """Test parsing CoT response ending in invalid."""
+    def test_cot_incorrect(self):
+        """Test parsing CoT response ending in incorrect."""
         cot_response = """
         Let's analyze this carefully.
         
@@ -123,10 +123,10 @@ class TestParseCotResponse:
         
         However, this doesn't guarantee that any A are C.
         
-        The argument is invalid.
+        The argument is incorrect.
         """
         result = parse_cot_response(cot_response)
-        assert result.answer == ParsedAnswer.INVALID
+        assert result.answer == ParsedAnswer.INCORRECT
         assert result.reasoning is not None
     
     def test_cot_with_final_answer(self):
@@ -136,10 +136,10 @@ class TestParseCotResponse:
         
         [analysis here]
         
-        Final answer: valid
+        Final answer: correct
         """
         result = parse_cot_response(cot_response)
-        assert result.answer == ParsedAnswer.VALID
+        assert result.answer == ParsedAnswer.CORRECT
 
 
 # =============================================================================
@@ -149,15 +149,15 @@ class TestParseCotResponse:
 class TestExtractAnswerString:
     """Tests for extract_answer_string function."""
     
-    def test_extract_valid(self):
-        """Test extracting 'valid' string."""
-        assert extract_answer_string("valid") == "valid"
-        assert extract_answer_string("The answer is valid") == "valid"
+    def test_extract_correct(self):
+        """Test extracting 'correct' string."""
+        assert extract_answer_string("correct") == "correct"
+        assert extract_answer_string("The answer is correct") == "correct"
     
-    def test_extract_invalid(self):
-        """Test extracting 'invalid' string."""
-        assert extract_answer_string("invalid") == "invalid"
-        assert extract_answer_string("The answer is invalid") == "invalid"
+    def test_extract_incorrect(self):
+        """Test extracting 'incorrect' string."""
+        assert extract_answer_string("incorrect") == "incorrect"
+        assert extract_answer_string("The answer is incorrect") == "incorrect"
     
     def test_extract_unclear(self):
         """Test extracting 'unclear' for ambiguous responses."""
@@ -171,32 +171,32 @@ class TestExtractAnswerString:
 class TestParseResult:
     """Tests for ParseResult dataclass."""
     
-    def test_is_valid_property(self):
-        """Test is_valid property."""
+    def test_is_correct_property(self):
+        """Test is_correct property."""
         result = ParseResult(
-            answer=ParsedAnswer.VALID,
-            raw_response="valid"
+            answer=ParsedAnswer.CORRECT,
+            raw_response="correct"
         )
-        assert result.is_valid is True
-        assert result.is_invalid is False
+        assert result.is_correct is True
+        assert result.is_incorrect is False
     
-    def test_is_invalid_property(self):
-        """Test is_invalid property."""
+    def test_is_incorrect_property(self):
+        """Test is_incorrect property."""
         result = ParseResult(
-            answer=ParsedAnswer.INVALID,
-            raw_response="invalid"
+            answer=ParsedAnswer.INCORRECT,
+            raw_response="incorrect"
         )
-        assert result.is_valid is False
-        assert result.is_invalid is True
+        assert result.is_correct is False
+        assert result.is_incorrect is True
     
     def test_is_clear_property(self):
         """Test is_clear property."""
-        valid_result = ParseResult(answer=ParsedAnswer.VALID, raw_response="valid")
-        invalid_result = ParseResult(answer=ParsedAnswer.INVALID, raw_response="invalid")
+        correct_result = ParseResult(answer=ParsedAnswer.CORRECT, raw_response="correct")
+        incorrect_result = ParseResult(answer=ParsedAnswer.INCORRECT, raw_response="incorrect")
         unclear_result = ParseResult(answer=ParsedAnswer.UNCLEAR, raw_response="maybe")
         
-        assert valid_result.is_clear is True
-        assert invalid_result.is_clear is True
+        assert correct_result.is_clear is True
+        assert incorrect_result.is_clear is True
         assert unclear_result.is_clear is False
 
 
@@ -207,26 +207,45 @@ class TestParseResult:
 class TestValidateAgainstGroundTruth:
     """Tests for validate_against_ground_truth function."""
     
-    def test_correct_valid(self):
-        """Test validation when correctly predicting valid."""
-        parsed = parse_response("valid")
-        result = validate_against_ground_truth(parsed, "valid")
+    def test_correct_maps_to_valid(self):
+        """Test validation: LLM says 'correct' and ground truth is 'valid' (syntax)."""
+        parsed = parse_response("correct")
+        result = validate_against_ground_truth(parsed, "valid", "syntax")
         
         assert result["is_correct"] is True
-        assert result["predicted"] == "valid"
+        assert result["predicted"] == "correct"
+        assert result["mapped_prediction"] == "valid"
         assert result["ground_truth"] == "valid"
     
-    def test_correct_invalid(self):
-        """Test validation when correctly predicting invalid."""
-        parsed = parse_response("invalid")
-        result = validate_against_ground_truth(parsed, "invalid")
+    def test_incorrect_maps_to_invalid(self):
+        """Test validation: LLM says 'incorrect' and ground truth is 'invalid' (syntax)."""
+        parsed = parse_response("incorrect")
+        result = validate_against_ground_truth(parsed, "invalid", "syntax")
         
         assert result["is_correct"] is True
+        assert result["mapped_prediction"] == "invalid"
     
-    def test_incorrect_prediction(self):
+    def test_correct_maps_to_believable(self):
+        """Test validation: LLM says 'correct' and ground truth is 'believable' (NLU)."""
+        parsed = parse_response("correct")
+        result = validate_against_ground_truth(parsed, "believable", "NLU")
+        
+        assert result["is_correct"] is True
+        assert result["mapped_prediction"] == "believable"
+    
+    def test_incorrect_maps_to_unbelievable(self):
+        """Test validation: LLM says 'incorrect' and ground truth is 'unbelievable' (NLU)."""
+        parsed = parse_response("incorrect")
+        result = validate_against_ground_truth(parsed, "unbelievable", "NLU")
+        
+        assert result["is_correct"] is True
+        assert result["mapped_prediction"] == "unbelievable"
+    
+    def test_wrong_prediction(self):
         """Test validation when prediction is wrong."""
-        parsed = parse_response("valid")
-        result = validate_against_ground_truth(parsed, "invalid")
+        parsed = parse_response("correct")
+        # LLM says "correct" (maps to "valid"), but ground truth is "invalid"
+        result = validate_against_ground_truth(parsed, "invalid", "syntax")
         
         assert result["is_correct"] is False
 
@@ -241,18 +260,18 @@ class TestParseBatchResponses:
     def test_batch_parsing(self):
         """Test batch parsing."""
         responses = [
-            "valid",
-            "invalid",
-            "The answer is valid",
+            "correct",
+            "incorrect",
+            "The answer is correct",
             "I don't know"
         ]
         
         results = parse_batch_responses(responses)
         
         assert len(results) == 4
-        assert results[0].answer == ParsedAnswer.VALID
-        assert results[1].answer == ParsedAnswer.INVALID
-        assert results[2].answer == ParsedAnswer.VALID
+        assert results[0].answer == ParsedAnswer.CORRECT
+        assert results[1].answer == ParsedAnswer.INCORRECT
+        assert results[2].answer == ParsedAnswer.CORRECT
         assert results[3].answer == ParsedAnswer.UNCLEAR
     
     def test_empty_batch(self):
@@ -271,17 +290,17 @@ class TestCalculateParsingStats:
     def test_stats_calculation(self):
         """Test statistics calculation."""
         results = [
-            ParseResult(answer=ParsedAnswer.VALID, raw_response="valid"),
-            ParseResult(answer=ParsedAnswer.VALID, raw_response="valid"),
-            ParseResult(answer=ParsedAnswer.INVALID, raw_response="invalid"),
+            ParseResult(answer=ParsedAnswer.CORRECT, raw_response="correct"),
+            ParseResult(answer=ParsedAnswer.CORRECT, raw_response="correct"),
+            ParseResult(answer=ParsedAnswer.INCORRECT, raw_response="incorrect"),
             ParseResult(answer=ParsedAnswer.UNCLEAR, raw_response="maybe"),
         ]
         
         stats = calculate_parsing_stats(results)
         
         assert stats["total"] == 4
-        assert stats["valid"] == 2
-        assert stats["invalid"] == 1
+        assert stats["correct"] == 2
+        assert stats["incorrect"] == 1
         assert stats["unclear"] == 1
         assert stats["clear_rate"] == 0.75  # 3/4
     
@@ -310,15 +329,15 @@ class TestEdgeCases:
         
         After careful consideration...
         
-        The syllogism is valid.
+        The syllogism is correct.
         """
         result = parse_response(text)
-        assert result.answer == ParsedAnswer.VALID
+        assert result.answer == ParsedAnswer.CORRECT
     
     def test_mixed_case(self):
         """Test mixed case responses."""
-        assert parse_response("VaLiD").answer == ParsedAnswer.VALID
-        assert parse_response("InVaLiD").answer == ParsedAnswer.INVALID
+        assert parse_response("CoRrEcT").answer == ParsedAnswer.CORRECT
+        assert parse_response("InCoRrEcT").answer == ParsedAnswer.INCORRECT
 
 
 if __name__ == "__main__":

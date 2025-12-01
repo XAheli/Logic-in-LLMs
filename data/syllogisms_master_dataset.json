@@ -11,1361 +11,1641 @@
   "syllogisms": [
     {
       "id": "SYL_001",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_001_N",
           "variant_type": "normal",
           "statement_1": "All calculators are machines.",
           "statement_2": "All computers are calculators.",
-          "conclusion": "Some machines are not computers."
+          "conclusion": "Therefore, some machines are not computers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_001_O",
           "variant_type": "order_switched",
           "statement_1": "All computers are calculators.",
           "statement_2": "All calculators are machines.",
-          "conclusion": "Some machines are not computers."
+          "conclusion": "Therefore, some machines are not computers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_001_X",
           "variant_type": "nonsense",
           "statement_1": "All blargs are zimons.",
           "statement_2": "All glorps are blargs.",
-          "conclusion": "Some zimons are not glorps."
+          "conclusion": "Therefore, some zimons are not glorps.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_001_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "All glorps are blargs.",
           "statement_2": "All blargs are zimons.",
-          "conclusion": "Some zimons are not glorps."
+          "conclusion": "Therefore, some zimons are not glorps.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_002",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_002_N",
           "variant_type": "normal",
           "statement_1": "No fruits are fungi.",
           "statement_2": "All mushrooms are fungi.",
-          "conclusion": "Some mushrooms are fruits."
+          "conclusion": "Therefore, some mushrooms are fruits.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_002_O",
           "variant_type": "order_switched",
           "statement_1": "All mushrooms are fungi.",
           "statement_2": "No fruits are fungi.",
-          "conclusion": "Some mushrooms are fruits."
+          "conclusion": "Therefore, some mushrooms are fruits.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_002_X",
           "variant_type": "nonsense",
           "statement_1": "No wuggles are flibberts.",
           "statement_2": "All zorphs are flibberts.",
-          "conclusion": "Some zorphs are wuggles."
+          "conclusion": "Therefore, some zorphs are wuggles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_002_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "All zorphs are flibberts.",
           "statement_2": "No wuggles are flibberts.",
-          "conclusion": "Some zorphs are wuggles."
+          "conclusion": "Therefore, some zorphs are wuggles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_003",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_003_N",
           "variant_type": "normal",
           "statement_1": "All African countries are warm.",
           "statement_2": "Spain is warm.",
-          "conclusion": "Spain is an African country."
+          "conclusion": "Therefore, Spain is an African country.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_003_O",
           "variant_type": "order_switched",
           "statement_1": "Spain is warm.",
           "statement_2": "All African countries are warm.",
-          "conclusion": "Spain is an African country."
+          "conclusion": "Therefore, Spain is an African country.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_003_X",
           "variant_type": "nonsense",
           "statement_1": "All blirnic places are crundle.",
           "statement_2": "Fizzle is crundle.",
-          "conclusion": "Fizzle is a blirnic place."
+          "conclusion": "Therefore, Fizzle is a blirnic place.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_003_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Fizzle is crundle.",
           "statement_2": "All blirnic places are crundle.",
-          "conclusion": "Fizzle is a blirnic place."
+          "conclusion": "Therefore, Fizzle is a blirnic place.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_004",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_004_N",
           "variant_type": "normal",
           "statement_1": "No harmful substance is natural.",
           "statement_2": "All poisons are natural.",
-          "conclusion": "No poisons are harmful."
+          "conclusion": "Therefore, no poisons are harmful.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_004_O",
           "variant_type": "order_switched",
           "statement_1": "All poisons are natural.",
           "statement_2": "No harmful substance is natural.",
-          "conclusion": "No poisons are harmful."
+          "conclusion": "Therefore, no poisons are harmful.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_004_X",
           "variant_type": "nonsense",
           "statement_1": "No grumbly substance is spackle.",
           "statement_2": "All twidgets are spackle.",
-          "conclusion": "No twidgets are grumbly."
+          "conclusion": "Therefore, no twidgets are grumbly.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_004_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "All twidgets are spackle.",
           "statement_2": "No grumbly substance is spackle.",
-          "conclusion": "No twidgets are grumbly."
+          "conclusion": "Therefore, no twidgets are grumbly.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_005",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_005_N",
           "variant_type": "normal",
           "statement_1": "All flying birds have feathers.",
           "statement_2": "No people have feathers.",
-          "conclusion": "Some people are flying birds."
+          "conclusion": "Therefore, some people are flying birds.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_005_O",
           "variant_type": "order_switched",
           "statement_1": "No people have feathers.",
           "statement_2": "All flying birds have feathers.",
-          "conclusion": "Some people are flying birds."
+          "conclusion": "Therefore, some people are flying birds.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_005_X",
           "variant_type": "nonsense",
           "statement_1": "All zooping grinks have plimbles.",
           "statement_2": "No snorfs have plimbles.",
-          "conclusion": "Some snorfs are zooping grinks."
+          "conclusion": "Therefore, some snorfs are zooping grinks.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_005_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "No snorfs have plimbles.",
           "statement_2": "All zooping grinks have plimbles.",
-          "conclusion": "Some snorfs are zooping grinks."
+          "conclusion": "Therefore, some snorfs are zooping grinks.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_006",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_006_N",
           "variant_type": "normal",
           "statement_1": "All vehicles have wheels.",
           "statement_2": "A boat is a vehicle.",
-          "conclusion": "A boat has wheels."
+          "conclusion": "Therefore, a boat has wheels.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_006_O",
           "variant_type": "order_switched",
           "statement_1": "A boat is a vehicle.",
           "statement_2": "All vehicles have wheels.",
-          "conclusion": "A boat has wheels."
+          "conclusion": "Therefore, a boat has wheels.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_006_X",
           "variant_type": "nonsense",
           "statement_1": "All dralocks have quibbles.",
           "statement_2": "A florp is a dralock.",
-          "conclusion": "A florp has quibbles."
+          "conclusion": "Therefore, a florp has quibbles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_006_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "A florp is a dralock.",
           "statement_2": "All dralocks have quibbles.",
-          "conclusion": "A florp has quibbles."
+          "conclusion": "Therefore, a florp has quibbles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_007",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_007_N",
           "variant_type": "normal",
           "statement_1": "All things with an engine need oil.",
           "statement_2": "Cars need oil.",
-          "conclusion": "Cars have engines."
+          "conclusion": "Therefore, cars have engines.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_007_O",
           "variant_type": "order_switched",
           "statement_1": "Cars need oil.",
           "statement_2": "All things with an engine need oil.",
-          "conclusion": "Cars have engines."
+          "conclusion": "Therefore, cars have engines.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_007_X",
           "variant_type": "nonsense",
           "statement_1": "All things with an glibbet need framble.",
           "statement_2": "Snazzles need framble.",
-          "conclusion": "Snazzles have glibbets."
+          "conclusion": "Therefore, snazzles have glibbets.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_007_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Snazzles need framble.",
           "statement_2": "All things with an glibbet need framble.",
-          "conclusion": "Snazzles have glibbets."
+          "conclusion": "Therefore, snazzles have glibbets.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_008",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_008_N",
           "variant_type": "normal",
           "statement_1": "All things that are smoked are bad for your health.",
           "statement_2": "Cigarettes are smoked.",
-          "conclusion": "Cigarettes are bad for your health."
+          "conclusion": "Therefore, cigarettes are bad for your health.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_008_O",
           "variant_type": "order_switched",
           "statement_1": "Cigarettes are smoked.",
           "statement_2": "All things that are smoked are bad for your health.",
-          "conclusion": "Cigarettes are bad for your health."
+          "conclusion": "Therefore, cigarettes are bad for your health.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_008_X",
           "variant_type": "nonsense",
           "statement_1": "All things that are blimmed are grooby for your zingle.",
           "statement_2": "Pliffers are blimmed.",
-          "conclusion": "Pliffers are grooby for your zingle."
+          "conclusion": "Therefore, pliffers are grooby for your zingle.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_008_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Pliffers are blimmed.",
           "statement_2": "All things that are blimmed are grooby for your zingle.",
-          "conclusion": "Pliffers are grooby for your zingle."
+          "conclusion": "Therefore, pliffers are grooby for your zingle.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_009",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_009_N",
           "variant_type": "normal",
           "statement_1": "No video recorders are metal things.",
           "statement_2": "Some electric appliances are metal things.",
-          "conclusion": "Some electric appliances are not video recorders."
+          "conclusion": "Therefore, some electric appliances are not video recorders.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_009_O",
           "variant_type": "order_switched",
           "statement_1": "Some electric appliances are metal things.",
           "statement_2": "No video recorders are metal things.",
-          "conclusion": "Some electric appliances are not video recorders."
+          "conclusion": "Therefore, some electric appliances are not video recorders.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_009_X",
           "variant_type": "nonsense",
           "statement_1": "No trizzles are spondly things.",
           "statement_2": "Some brambles are spondly things.",
-          "conclusion": "Some brambles are not trizzles."
+          "conclusion": "Therefore, some brambles are not trizzles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_009_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some brambles are spondly things.",
           "statement_2": "No trizzles are spondly things.",
-          "conclusion": "Some brambles are not trizzles."
+          "conclusion": "Therefore, some brambles are not trizzles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_010",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_010_N",
           "variant_type": "normal",
           "statement_1": "No astronauts are athletic.",
           "statement_2": "Some healthy people are athletic.",
-          "conclusion": "Some healthy people are not astronauts."
+          "conclusion": "Therefore, some healthy people are not astronauts.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_010_O",
           "variant_type": "order_switched",
           "statement_1": "Some healthy people are athletic.",
           "statement_2": "No astronauts are athletic.",
-          "conclusion": "Some healthy people are not astronauts."
+          "conclusion": "Therefore, some healthy people are not astronauts.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_010_X",
           "variant_type": "nonsense",
           "statement_1": "No flonkers are gripple.",
           "statement_2": "Some wobbles are gripple.",
-          "conclusion": "Some wobbles are not flonkers."
+          "conclusion": "Therefore, some wobbles are not flonkers.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_010_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some wobbles are gripple.",
           "statement_2": "No flonkers are gripple.",
-          "conclusion": "Some wobbles are not flonkers."
+          "conclusion": "Therefore, some wobbles are not flonkers.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_011",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_011_N",
           "variant_type": "normal",
           "statement_1": "No skyscrapers are wooden things.",
           "statement_2": "Some buildings are wooden things.",
-          "conclusion": "Some buildings are not skyscrapers."
+          "conclusion": "Therefore, some buildings are not skyscrapers.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_011_O",
           "variant_type": "order_switched",
           "statement_1": "Some buildings are wooden things.",
           "statement_2": "No skyscrapers are wooden things.",
-          "conclusion": "Some buildings are not skyscrapers."
+          "conclusion": "Therefore, some buildings are not skyscrapers.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_011_X",
           "variant_type": "nonsense",
           "statement_1": "No plonkies are gribbled things.",
           "statement_2": "Some thwacks are gribbled things.",
-          "conclusion": "Some thwacks are not plonkies."
+          "conclusion": "Therefore, some thwacks are not plonkies.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_011_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some thwacks are gribbled things.",
           "statement_2": "No plonkies are gribbled things.",
-          "conclusion": "Some thwacks are not plonkies."
+          "conclusion": "Therefore, some thwacks are not plonkies.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_012",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_012_N",
           "variant_type": "normal",
           "statement_1": "No cigarettes are inexpensive.",
           "statement_2": "Some addictive things are inexpensive.",
-          "conclusion": "Some addictive things are not cigarettes."
+          "conclusion": "Therefore, some addictive things are not cigarettes.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_012_O",
           "variant_type": "order_switched",
           "statement_1": "Some addictive things are inexpensive.",
           "statement_2": "No cigarettes are inexpensive.",
-          "conclusion": "Some addictive things are not cigarettes."
+          "conclusion": "Therefore, some addictive things are not cigarettes.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_012_X",
           "variant_type": "nonsense",
           "statement_1": "No bloffles are snurly.",
           "statement_2": "Some gribbles are snurly.",
-          "conclusion": "Some gribbles are not bloffles."
+          "conclusion": "Therefore, some gribbles are not bloffles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_012_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some gribbles are snurly.",
           "statement_2": "No bloffles are snurly.",
-          "conclusion": "Some gribbles are not bloffles."
+          "conclusion": "Therefore, some gribbles are not bloffles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_013",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_013_N",
           "variant_type": "normal",
           "statement_1": "No police dogs are vicious.",
           "statement_2": "Some highly trained dogs are vicious.",
-          "conclusion": "Some highly trained dogs are not police dogs."
+          "conclusion": "Therefore, some highly trained dogs are not police dogs.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_013_O",
           "variant_type": "order_switched",
           "statement_1": "Some highly trained dogs are vicious.",
           "statement_2": "No police dogs are vicious.",
-          "conclusion": "Some highly trained dogs are not police dogs."
+          "conclusion": "Therefore, some highly trained dogs are not police dogs.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_013_X",
           "variant_type": "nonsense",
           "statement_1": "No quiblets are frobny.",
           "statement_2": "Some zankle things are frobny.",
-          "conclusion": "Some zankle things are not quiblets."
+          "conclusion": "Therefore, some zankle things are not quiblets.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_013_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some zankle things are frobny.",
           "statement_2": "No quiblets are frobny.",
-          "conclusion": "Some zankle things are not quiblets."
+          "conclusion": "Therefore, some zankle things are not quiblets.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_014",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_014_N",
           "variant_type": "normal",
           "statement_1": "No liquors are sweet things.",
           "statement_2": "Some drinks are sweet things.",
-          "conclusion": "Some drinks are not liquors."
+          "conclusion": "Therefore, some drinks are not liquors.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_014_O",
           "variant_type": "order_switched",
           "statement_1": "Some drinks are sweet things.",
           "statement_2": "No liquors are sweet things.",
-          "conclusion": "Some drinks are not liquors."
+          "conclusion": "Therefore, some drinks are not liquors.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_014_X",
           "variant_type": "nonsense",
           "statement_1": "No sprandles are clompy things.",
           "statement_2": "Some glurbles are clompy things.",
-          "conclusion": "Some glurbles are not sprandles."
+          "conclusion": "Therefore, some glurbles are not sprandles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_014_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some glurbles are clompy things.",
           "statement_2": "No sprandles are clompy things.",
-          "conclusion": "Some glurbles are not sprandles."
+          "conclusion": "Therefore, some glurbles are not sprandles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_015",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_015_N",
           "variant_type": "normal",
           "statement_1": "No trout are colourful things.",
           "statement_2": "Some fish are colourful things.",
-          "conclusion": "Some fish are not trout."
+          "conclusion": "Therefore, some fish are not trout.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_015_O",
           "variant_type": "order_switched",
           "statement_1": "Some fish are colourful things.",
           "statement_2": "No trout are colourful things.",
-          "conclusion": "Some fish are not trout."
+          "conclusion": "Therefore, some fish are not trout.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_015_X",
           "variant_type": "nonsense",
           "statement_1": "No brindles are splendid things.",
           "statement_2": "Some flunks are splendid things.",
-          "conclusion": "Some flunks are not brindles."
+          "conclusion": "Therefore, some flunks are not brindles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_015_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some flunks are splendid things.",
           "statement_2": "No brindles are splendid things.",
-          "conclusion": "Some flunks are not brindles."
+          "conclusion": "Therefore, some flunks are not brindles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_016",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_016_N",
           "variant_type": "normal",
           "statement_1": "No millionaires are scientists.",
           "statement_2": "Some rich people are scientists.",
-          "conclusion": "Some rich people are not millionaires."
+          "conclusion": "Therefore, some rich people are not millionaires.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_016_O",
           "variant_type": "order_switched",
           "statement_1": "Some rich people are scientists.",
           "statement_2": "No millionaires are scientists.",
-          "conclusion": "Some rich people are not millionaires."
+          "conclusion": "Therefore, some rich people are not millionaires.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_016_X",
           "variant_type": "nonsense",
           "statement_1": "No twonkles are blemmish.",
           "statement_2": "Some plombers are blemmish.",
-          "conclusion": "Some plombers are not twonkles."
+          "conclusion": "Therefore, some plombers are not twonkles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_016_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some plombers are blemmish.",
           "statement_2": "No twonkles are blemmish.",
-          "conclusion": "Some plombers are not twonkles."
+          "conclusion": "Therefore, some plombers are not twonkles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_017",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_017_N",
           "variant_type": "normal",
           "statement_1": "No pieces of furniture are attractive things.",
           "statement_2": "Some tables are attractive things.",
-          "conclusion": "Some tables are not pieces of furniture."
+          "conclusion": "Therefore, some tables are not pieces of furniture.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_017_O",
           "variant_type": "order_switched",
           "statement_1": "Some tables are attractive things.",
           "statement_2": "No pieces of furniture are attractive things.",
-          "conclusion": "Some tables are not pieces of furniture."
+          "conclusion": "Therefore, some tables are not pieces of furniture.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_017_X",
           "variant_type": "nonsense",
           "statement_1": "No pieces of blemble are snorky things.",
           "statement_2": "Some flables are snorky things.",
-          "conclusion": "Some flables are not pieces of blemble."
+          "conclusion": "Therefore, some flables are not pieces of blemble.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_017_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some flables are snorky things.",
           "statement_2": "No pieces of blemble are snorky things.",
-          "conclusion": "Some flables are not pieces of blemble."
+          "conclusion": "Therefore, some flables are not pieces of blemble.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_018",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_018_N",
           "variant_type": "normal",
           "statement_1": "No musical instruments are shiny.",
           "statement_2": "Some violins are shiny.",
-          "conclusion": "Some violins are not musical instruments."
+          "conclusion": "Therefore, some violins are not musical instruments.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_018_O",
           "variant_type": "order_switched",
           "statement_1": "Some violins are shiny.",
           "statement_2": "No musical instruments are shiny.",
-          "conclusion": "Some violins are not musical instruments."
+          "conclusion": "Therefore, some violins are not musical instruments.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_018_X",
           "variant_type": "nonsense",
           "statement_1": "No plinkles are glimble.",
           "statement_2": "Some wuzzlers are glimble.",
-          "conclusion": "Some wuzzlers are not plinkles."
+          "conclusion": "Therefore, some wuzzlers are not plinkles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_018_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some wuzzlers are glimble.",
           "statement_2": "No plinkles are glimble.",
-          "conclusion": "Some wuzzlers are not plinkles."
+          "conclusion": "Therefore, some wuzzlers are not plinkles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_019",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_019_N",
           "variant_type": "normal",
           "statement_1": "No well-educated people are impartial.",
           "statement_2": "Some judges are impartial.",
-          "conclusion": "Some judges are not well-educated people."
+          "conclusion": "Therefore, some judges are not well-educated people.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_019_O",
           "variant_type": "order_switched",
           "statement_1": "Some judges are impartial.",
           "statement_2": "No well-educated people are impartial.",
-          "conclusion": "Some judges are not well-educated people."
+          "conclusion": "Therefore, some judges are not well-educated people.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_019_X",
           "variant_type": "nonsense",
           "statement_1": "No snobbly things are flimbert.",
           "statement_2": "Some groblets are flimbert.",
-          "conclusion": "Some groblets are not snobbly things."
+          "conclusion": "Therefore, some groblets are not snobbly things.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_019_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some groblets are flimbert.",
           "statement_2": "No snobbly things are flimbert.",
-          "conclusion": "Some groblets are not snobbly things."
+          "conclusion": "Therefore, some groblets are not snobbly things.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_020",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_020_N",
           "variant_type": "normal",
           "statement_1": "No plants are living things.",
           "statement_2": "Some grasses are living things.",
-          "conclusion": "Some grasses are not plants."
+          "conclusion": "Therefore, some grasses are not plants.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_020_O",
           "variant_type": "order_switched",
           "statement_1": "Some grasses are living things.",
           "statement_2": "No plants are living things.",
-          "conclusion": "Some grasses are not plants."
+          "conclusion": "Therefore, some grasses are not plants.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_020_X",
           "variant_type": "nonsense",
           "statement_1": "No druffs are bliving things.",
           "statement_2": "Some spindles are bliving things.",
-          "conclusion": "Some spindles are not druffs."
+          "conclusion": "Therefore, some spindles are not druffs.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_020_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some spindles are bliving things.",
           "statement_2": "No druffs are bliving things.",
-          "conclusion": "Some spindles are not druffs."
+          "conclusion": "Therefore, some spindles are not druffs.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_021",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_021_N",
           "variant_type": "normal",
           "statement_1": "No religious people are married.",
           "statement_2": "Some priests are married.",
-          "conclusion": "Some priests are not religious people."
+          "conclusion": "Therefore, some priests are not religious people.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_021_O",
           "variant_type": "order_switched",
           "statement_1": "Some priests are married.",
           "statement_2": "No religious people are married.",
-          "conclusion": "Some priests are not religious people."
+          "conclusion": "Therefore, some priests are not religious people.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_021_X",
           "variant_type": "nonsense",
           "statement_1": "No krimble things are snorbled.",
           "statement_2": "Some thrumpets are snorbled.",
-          "conclusion": "Some thrumpets are not krimble things."
+          "conclusion": "Therefore, some thrumpets are not krimble things.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_021_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some thrumpets are snorbled.",
           "statement_2": "No krimble things are snorbled.",
-          "conclusion": "Some thrumpets are not krimble things."
+          "conclusion": "Therefore, some thrumpets are not krimble things.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_022",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_022_N",
           "variant_type": "normal",
           "statement_1": "No good swimmers are vegetarians.",
           "statement_2": "Some deep sea divers are vegetarians.",
-          "conclusion": "Some deep sea divers are not good swimmers."
+          "conclusion": "Therefore, some deep sea divers are not good swimmers.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_022_O",
           "variant_type": "order_switched",
           "statement_1": "Some deep sea divers are vegetarians.",
           "statement_2": "No good swimmers are vegetarians.",
-          "conclusion": "Some deep sea divers are not good swimmers."
+          "conclusion": "Therefore, some deep sea divers are not good swimmers.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_022_X",
           "variant_type": "nonsense",
           "statement_1": "No plimby things are fruggle.",
           "statement_2": "Some blonkers are fruggle.",
-          "conclusion": "Some blonkers are not plimby things."
+          "conclusion": "Therefore, some blonkers are not plimby things.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_022_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some blonkers are fruggle.",
           "statement_2": "No plimby things are fruggle.",
-          "conclusion": "Some blonkers are not plimby things."
+          "conclusion": "Therefore, some blonkers are not plimby things.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_023",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_023_N",
           "variant_type": "normal",
           "statement_1": "No tools are heavy.",
           "statement_2": "Some screwdrivers are heavy.",
-          "conclusion": "Some screwdrivers are not tools."
+          "conclusion": "Therefore, some screwdrivers are not tools.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_023_O",
           "variant_type": "order_switched",
           "statement_1": "Some screwdrivers are heavy.",
           "statement_2": "No tools are heavy.",
-          "conclusion": "Some screwdrivers are not tools."
+          "conclusion": "Therefore, some screwdrivers are not tools.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_023_X",
           "variant_type": "nonsense",
           "statement_1": "No fribbles are glumpy.",
           "statement_2": "Some twizzles are glumpy.",
-          "conclusion": "Some twizzles are not fribbles."
+          "conclusion": "Therefore, some twizzles are not fribbles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_023_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some twizzles are glumpy.",
           "statement_2": "No fribbles are glumpy.",
-          "conclusion": "Some twizzles are not fribbles."
+          "conclusion": "Therefore, some twizzles are not fribbles.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_024",
-      "ground_truth": "valid",
       "variants": {
         "N": {
           "variant_id": "SYL_024_N",
           "variant_type": "normal",
           "statement_1": "No nutritional things are expensive.",
           "statement_2": "Some vitamin tablets are expensive.",
-          "conclusion": "Some vitamin tablets are not nutritional things."
+          "conclusion": "Therefore, some vitamin tablets are not nutritional things.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_024_O",
           "variant_type": "order_switched",
           "statement_1": "Some vitamin tablets are expensive.",
           "statement_2": "No nutritional things are expensive.",
-          "conclusion": "Some vitamin tablets are not nutritional things."
+          "conclusion": "Therefore, some vitamin tablets are not nutritional things.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_024_X",
           "variant_type": "nonsense",
           "statement_1": "No blorthful things are spendly.",
           "statement_2": "Some zipplets are spendly.",
-          "conclusion": "Some zipplets are not blorthful things."
+          "conclusion": "Therefore, some zipplets are not blorthful things.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_024_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some zipplets are spendly.",
           "statement_2": "No blorthful things are spendly.",
-          "conclusion": "Some zipplets are not blorthful things."
+          "conclusion": "Therefore, some zipplets are not blorthful things.",
+          "ground_truth_syntax": "valid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_025",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_025_N",
           "variant_type": "normal",
           "statement_1": "No electric appliances are metal things.",
           "statement_2": "Some video recorders are metal things.",
-          "conclusion": "Some electric appliances are not video recorders."
+          "conclusion": "Therefore, some electric appliances are not video recorders.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_025_O",
           "variant_type": "order_switched",
           "statement_1": "Some video recorders are metal things.",
           "statement_2": "No electric appliances are metal things.",
-          "conclusion": "Some electric appliances are not video recorders."
+          "conclusion": "Therefore, some electric appliances are not video recorders.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_025_X",
           "variant_type": "nonsense",
           "statement_1": "No sparkle things are crunchy things.",
           "statement_2": "Some whizzlers are crunchy things.",
-          "conclusion": "Some sparkle things are not whizzlers."
+          "conclusion": "Therefore, some sparkle things are not whizzlers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_025_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some whizzlers are crunchy things.",
           "statement_2": "No sparkle things are crunchy things.",
-          "conclusion": "Some sparkle things are not whizzlers."
+          "conclusion": "Therefore, some sparkle things are not whizzlers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_026",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_026_N",
           "variant_type": "normal",
           "statement_1": "No healthy people are athletic.",
           "statement_2": "Some astronauts are athletic.",
-          "conclusion": "Some healthy people are not astronauts."
+          "conclusion": "Therefore, some healthy people are not astronauts.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_026_O",
           "variant_type": "order_switched",
           "statement_1": "Some astronauts are athletic.",
           "statement_2": "No healthy people are athletic.",
-          "conclusion": "Some healthy people are not astronauts."
+          "conclusion": "Therefore, some healthy people are not astronauts.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_026_X",
           "variant_type": "nonsense",
           "statement_1": "No flumpy things are grible.",
           "statement_2": "Some plonkers are grible.",
-          "conclusion": "Some flumpy things are not plonkers."
+          "conclusion": "Therefore, some flumpy things are not plonkers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_026_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some plonkers are grible.",
           "statement_2": "No flumpy things are grible.",
-          "conclusion": "Some flumpy things are not plonkers."
+          "conclusion": "Therefore, some flumpy things are not plonkers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_027",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_027_N",
           "variant_type": "normal",
           "statement_1": "No buildings are wooden things.",
           "statement_2": "Some skyscrapers are wooden things.",
-          "conclusion": "Some buildings are not skyscrapers."
+          "conclusion": "Therefore, some buildings are not skyscrapers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_027_O",
           "variant_type": "order_switched",
           "statement_1": "Some skyscrapers are wooden things.",
           "statement_2": "No buildings are wooden things.",
-          "conclusion": "Some buildings are not skyscrapers."
+          "conclusion": "Therefore, some buildings are not skyscrapers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_027_X",
           "variant_type": "nonsense",
           "statement_1": "No thribbles are clompen things.",
           "statement_2": "Some blorpers are clompen things.",
-          "conclusion": "Some thribbles are not blorpers."
+          "conclusion": "Therefore, some thribbles are not blorpers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_027_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some blorpers are clompen things.",
           "statement_2": "No thribbles are clompen things.",
-          "conclusion": "Some thribbles are not blorpers."
+          "conclusion": "Therefore, some thribbles are not blorpers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_028",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_028_N",
           "variant_type": "normal",
           "statement_1": "No addictive things are inexpensive.",
           "statement_2": "Some cigarettes are inexpensive.",
-          "conclusion": "Some addictive things are not cigarettes."
+          "conclusion": "Therefore, some addictive things are not cigarettes.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_028_O",
           "variant_type": "order_switched",
           "statement_1": "Some cigarettes are inexpensive.",
           "statement_2": "No addictive things are inexpensive.",
-          "conclusion": "Some addictive things are not cigarettes."
+          "conclusion": "Therefore, some addictive things are not cigarettes.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_028_X",
           "variant_type": "nonsense",
           "statement_1": "No snibble things are cheaply.",
           "statement_2": "Some puffles are cheaply.",
-          "conclusion": "Some snibble things are not puffles."
+          "conclusion": "Therefore, some snibble things are not puffles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_028_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some puffles are cheaply.",
           "statement_2": "No snibble things are cheaply.",
-          "conclusion": "Some snibble things are not puffles."
+          "conclusion": "Therefore, some snibble things are not puffles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_029",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_029_N",
           "variant_type": "normal",
           "statement_1": "No highly trained dogs are vicious.",
           "statement_2": "Some police dogs are vicious.",
-          "conclusion": "Some highly trained dogs are not police dogs."
+          "conclusion": "Therefore, some highly trained dogs are not police dogs.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_029_O",
           "variant_type": "order_switched",
           "statement_1": "Some police dogs are vicious.",
           "statement_2": "No highly trained dogs are vicious.",
-          "conclusion": "Some highly trained dogs are not police dogs."
+          "conclusion": "Therefore, some highly trained dogs are not police dogs.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_029_X",
           "variant_type": "nonsense",
           "statement_1": "No skrobble things are grumply.",
           "statement_2": "Some floffers are grumply.",
-          "conclusion": "Some skrobble things are not floffers."
+          "conclusion": "Therefore, some skrobble things are not floffers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_029_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some floffers are grumply.",
           "statement_2": "No skrobble things are grumply.",
-          "conclusion": "Some skrobble things are not floffers."
+          "conclusion": "Therefore, some skrobble things are not floffers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_030",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_030_N",
           "variant_type": "normal",
           "statement_1": "No drinks are sweet things.",
           "statement_2": "Some liquors are sweet things.",
-          "conclusion": "Some drinks are not liquors."
+          "conclusion": "Therefore, some drinks are not liquors.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_030_O",
           "variant_type": "order_switched",
           "statement_1": "Some liquors are sweet things.",
           "statement_2": "No drinks are sweet things.",
-          "conclusion": "Some drinks are not liquors."
+          "conclusion": "Therefore, some drinks are not liquors.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_030_X",
           "variant_type": "nonsense",
           "statement_1": "No slurples are suggle things.",
           "statement_2": "Some brimbles are suggle things.",
-          "conclusion": "Some slurples are not brimbles."
+          "conclusion": "Therefore, some slurples are not brimbles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_030_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some brimbles are suggle things.",
           "statement_2": "No slurples are suggle things.",
-          "conclusion": "Some slurples are not brimbles."
+          "conclusion": "Therefore, some slurples are not brimbles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_031",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_031_N",
           "variant_type": "normal",
           "statement_1": "No fish are colourful things.",
           "statement_2": "Some trout are colourful things.",
-          "conclusion": "Some fish are not trout."
+          "conclusion": "Therefore, some fish are not trout.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_031_O",
           "variant_type": "order_switched",
           "statement_1": "Some trout are colourful things.",
           "statement_2": "No fish are colourful things.",
-          "conclusion": "Some fish are not trout."
+          "conclusion": "Therefore, some fish are not trout.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_031_X",
           "variant_type": "nonsense",
           "statement_1": "No swimbles are brightle things.",
           "statement_2": "Some speckles are brightle things.",
-          "conclusion": "Some swimbles are not speckles."
+          "conclusion": "Therefore, some swimbles are not speckles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_031_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some speckles are brightle things.",
           "statement_2": "No swimbles are brightle things.",
-          "conclusion": "Some swimbles are not speckles."
+          "conclusion": "Therefore, some swimbles are not speckles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_032",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_032_N",
           "variant_type": "normal",
           "statement_1": "No rich people are scientists.",
           "statement_2": "Some millionaires are scientists.",
-          "conclusion": "Some rich people are not millionaires."
+          "conclusion": "Therefore, some rich people are not millionaires.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "O": {
           "variant_id": "SYL_032_O",
           "variant_type": "order_switched",
           "statement_1": "Some millionaires are scientists.",
           "statement_2": "No rich people are scientists.",
-          "conclusion": "Some rich people are not millionaires."
+          "conclusion": "Therefore, some rich people are not millionaires.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "believable"
         },
         "X": {
           "variant_id": "SYL_032_X",
           "variant_type": "nonsense",
           "statement_1": "No wealthble are studdles.",
           "statement_2": "Some richlets are studdles.",
-          "conclusion": "Some wealthble are not richlets."
+          "conclusion": "Therefore, some wealthble are not richlets.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_032_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some richlets are studdles.",
           "statement_2": "No wealthble are studdles.",
-          "conclusion": "Some wealthble are not richlets."
+          "conclusion": "Therefore, some wealthble are not richlets.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_033",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_033_N",
           "variant_type": "normal",
           "statement_1": "No tables are attractive things.",
           "statement_2": "Some pieces of furniture are attractive things.",
-          "conclusion": "Some tables are not pieces of furniture."
+          "conclusion": "Therefore, some tables are not pieces of furniture.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_033_O",
           "variant_type": "order_switched",
           "statement_1": "Some pieces of furniture are attractive things.",
           "statement_2": "No tables are attractive things.",
-          "conclusion": "Some tables are not pieces of furniture."
+          "conclusion": "Therefore, some tables are not pieces of furniture.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_033_X",
           "variant_type": "nonsense",
           "statement_1": "No flatbles are prettles.",
           "statement_2": "Some pieces of furnbles are prettles.",
-          "conclusion": "Some flatbles are not pieces of furnbles."
+          "conclusion": "Therefore, some flatbles are not pieces of furnbles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_033_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some pieces of furnbles are prettles.",
           "statement_2": "No flatbles are prettles.",
-          "conclusion": "Some flatbles are not pieces of furnbles."
+          "conclusion": "Therefore, some flatbles are not pieces of furnbles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_034",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_034_N",
           "variant_type": "normal",
           "statement_1": "No violins are shiny.",
           "statement_2": "Some musical instruments are shiny.",
-          "conclusion": "Some violins are not musical instruments."
+          "conclusion": "Therefore, some violins are not musical instruments.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_034_O",
           "variant_type": "order_switched",
           "statement_1": "Some musical instruments are shiny.",
           "statement_2": "No violins are shiny.",
-          "conclusion": "Some violins are not musical instruments."
+          "conclusion": "Therefore, some violins are not musical instruments.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_034_X",
           "variant_type": "nonsense",
           "statement_1": "No stringles are sparkle.",
           "statement_2": "Some soundles are sparkle.",
-          "conclusion": "Some stringles are not soundles."
+          "conclusion": "Therefore, some stringles are not soundles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_034_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some soundles are sparkle.",
           "statement_2": "No stringles are sparkle.",
-          "conclusion": "Some stringles are not soundles."
+          "conclusion": "Therefore, some stringles are not soundles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_035",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_035_N",
           "variant_type": "normal",
           "statement_1": "Some judges are impartial.",
           "statement_2": "Some well-educated people are impartial.",
-          "conclusion": "Some judges are not well educated people."
+          "conclusion": "Therefore, some judges are not well educated people.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_035_O",
           "variant_type": "order_switched",
           "statement_1": "Some well-educated people are impartial.",
           "statement_2": "Some judges are impartial.",
-          "conclusion": "Some judges are not well educated people."
+          "conclusion": "Therefore, some judges are not well educated people.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_035_X",
           "variant_type": "nonsense",
           "statement_1": "Some decidles are fairble.",
           "statement_2": "Some smartles are fairble.",
-          "conclusion": "Some decidles are not smartles."
+          "conclusion": "Therefore, some decidles are not smartles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_035_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some smartles are fairble.",
           "statement_2": "Some decidles are fairble.",
-          "conclusion": "Some decidles are not smartles."
+          "conclusion": "Therefore, some decidles are not smartles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_036",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_036_N",
           "variant_type": "normal",
           "statement_1": "No grasses are living things.",
           "statement_2": "Some plants are living things.",
-          "conclusion": "Some grasses are not plants."
+          "conclusion": "Therefore, some grasses are not plants.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_036_O",
           "variant_type": "order_switched",
           "statement_1": "Some plants are living things.",
           "statement_2": "No grasses are living things.",
-          "conclusion": "Some grasses are not plants."
+          "conclusion": "Therefore, some grasses are not plants.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_036_X",
           "variant_type": "nonsense",
           "statement_1": "No greenles are alivbles.",
           "statement_2": "Some growbles are alivbles.",
-          "conclusion": "Some greenles are not growbles."
+          "conclusion": "Therefore, some greenles are not growbles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_036_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some growbles are alivbles.",
           "statement_2": "No greenles are alivbles.",
-          "conclusion": "Some greenles are not growbles."
+          "conclusion": "Therefore, some greenles are not growbles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_037",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_037_N",
           "variant_type": "normal",
           "statement_1": "No priests are married.",
           "statement_2": "Some religious people are married.",
-          "conclusion": "Some priests are not religious people."
+          "conclusion": "Therefore, some priests are not religious people.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_037_O",
           "variant_type": "order_switched",
           "statement_1": "Some religious people are married.",
           "statement_2": "No priests are married.",
-          "conclusion": "Some priests are not religious people."
+          "conclusion": "Therefore, some priests are not religious people.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_037_X",
           "variant_type": "nonsense",
           "statement_1": "No holybles are weddle.",
           "statement_2": "Some faithles are weddle.",
-          "conclusion": "Some holybles are not faithles."
+          "conclusion": "Therefore, some holybles are not faithles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_037_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some faithles are weddle.",
           "statement_2": "No holybles are weddle.",
-          "conclusion": "Some holybles are not faithles."
+          "conclusion": "Therefore, some holybles are not faithles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_038",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_038_N",
           "variant_type": "normal",
           "statement_1": "No deep sea divers are vegetarians.",
           "statement_2": "Some good swimmers are vegetarians.",
-          "conclusion": "Some deep sea divers are not good swimmers."
+          "conclusion": "Therefore, some deep sea divers are not good swimmers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_038_O",
           "variant_type": "order_switched",
           "statement_1": "Some good swimmers are vegetarians.",
           "statement_2": "No deep sea divers are vegetarians.",
-          "conclusion": "Some deep sea divers are not good swimmers."
+          "conclusion": "Therefore, some deep sea divers are not good swimmers.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_038_X",
           "variant_type": "nonsense",
           "statement_1": "No deeples are plantles.",
           "statement_2": "Some swimbles are plantles.",
-          "conclusion": "Some deeples are not swimbles."
+          "conclusion": "Therefore, some deeples are not swimbles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_038_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some swimbles are plantles.",
           "statement_2": "No deeples are plantles.",
-          "conclusion": "Some deeples are not swimbles."
+          "conclusion": "Therefore, some deeples are not swimbles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_039",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_039_N",
           "variant_type": "normal",
           "statement_1": "No screwdrivers are heavy.",
           "statement_2": "Some tools are heavy.",
-          "conclusion": "Some screwdrivers are not tools."
+          "conclusion": "Therefore, some screwdrivers are not tools.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_039_O",
           "variant_type": "order_switched",
           "statement_1": "Some tools are heavy.",
           "statement_2": "No screwdrivers are heavy.",
-          "conclusion": "Some screwdrivers are not tools."
+          "conclusion": "Therefore, some screwdrivers are not tools.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_039_X",
           "variant_type": "nonsense",
           "statement_1": "No turnles are weightble.",
           "statement_2": "Some fixbles are weightble.",
-          "conclusion": "Some turnles are not fixbles."
+          "conclusion": "Therefore, some turnles are not fixbles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_039_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some fixbles are weightble.",
           "statement_2": "No turnles are weightble.",
-          "conclusion": "Some turnles are not fixbles."
+          "conclusion": "Therefore, some turnles are not fixbles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     },
     {
       "id": "SYL_040",
-      "ground_truth": "invalid",
       "variants": {
         "N": {
           "variant_id": "SYL_040_N",
           "variant_type": "normal",
           "statement_1": "No vitamin tablets are expensive.",
           "statement_2": "Some nutritional things are expensive.",
-          "conclusion": "Some vitamin tablets are not nutritional things."
+          "conclusion": "Therefore, some vitamin tablets are not nutritional things.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "O": {
           "variant_id": "SYL_040_O",
           "variant_type": "order_switched",
           "statement_1": "Some nutritional things are expensive.",
           "statement_2": "No vitamin tablets are expensive.",
-          "conclusion": "Some vitamin tablets are not nutritional things."
+          "conclusion": "Therefore, some vitamin tablets are not nutritional things.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "X": {
           "variant_id": "SYL_040_X",
           "variant_type": "nonsense",
           "statement_1": "No vitables are costble.",
           "statement_2": "Some healthles are costble.",
-          "conclusion": "Some vitables are not healthles."
+          "conclusion": "Therefore, some vitables are not healthles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         },
         "OX": {
           "variant_id": "SYL_040_OX",
           "variant_type": "nonsense_order_switched",
           "statement_1": "Some healthles are costble.",
           "statement_2": "No vitables are costble.",
-          "conclusion": "Some vitables are not healthles."
+          "conclusion": "Therefore, some vitables are not healthles.",
+          "ground_truth_syntax": "invalid",
+          "ground_truth_NLU": "unbelievable"
         }
       }
     }

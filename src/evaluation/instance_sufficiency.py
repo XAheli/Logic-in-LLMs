@@ -78,8 +78,19 @@ class ModelSufficiencyAnalysis:
 # =============================================================================
 
 def prediction_to_numeric(pred: str) -> int:
-    """Convert prediction to numeric (valid=1, invalid=0)."""
-    return 1 if pred.lower() == "valid" else 0
+    """
+    Convert prediction to numeric.
+    
+    LLM outputs: correct=1, incorrect=0
+    Ground truth syntax: valid=1, invalid=0
+    Ground truth NLU: believable=1, unbelievable=0
+    """
+    pred_lower = pred.lower()
+    # Handle all positive cases
+    if pred_lower in ["correct", "valid", "believable"]:
+        return 1
+    # Handle all negative cases
+    return 0
 
 
 def calculate_split_half_reliability(

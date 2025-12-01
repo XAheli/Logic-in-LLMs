@@ -1,18 +1,23 @@
 """
 Model Registry for Syllogistic Reasoning Benchmark
 
-Defines 23 models across 2 providers:
-- Google AI Studio (Gemini): 2 models (google_studio_paid)
-- HuggingFace Inference API via Fireworks: 21 models (hf_inf_paid)
+Defines 22 models across 2 providers:
+- Google AI Studio (Gemini): 3 models (google_studio_paid)
+- HuggingFace Inference API: 19 models (hf_inf_paid) with :cheapest routing
 
-Note: gemini-2.5-pro was removed due to high cost (~$400 for full experiment).
-Using only gemini-2.5-flash and gemini-2.5-flash-preview-09-25.
+Gemini models:
+- gemini-2.5-pro: Most capable, best for complex reasoning
+- gemini-2.5-flash: Fast and efficient
+- gemini-2.5-flash-lite: Lightweight, fastest
+
+HuggingFace models use the :cheapest suffix for automatic provider routing.
+This routes requests to the cheapest available inference provider.
 
 Each model includes:
 - provider: API provider identifier (GOOGLE or HUGGINGFACE)
 - model_id: Official model identifier for API calls
 - display_name: Human-readable name for reports
-- billing_type: "google_studio_paid" for Gemini, "hf_inf_paid" for HuggingFace/Fireworks
+- billing_type: "google_studio_paid" for Gemini, "hf_inf_paid" for HuggingFace
 - lm_arena: Whether model is on LM Arena leaderboard for correlation analysis
 
 Iteration Limits (GLOBAL for all models):
@@ -21,7 +26,7 @@ Iteration Limits (GLOBAL for all models):
 
 All models are now paid via their respective providers:
 - Gemini: Direct Google AI Studio API
-- Others: HuggingFace Inference API routed through Fireworks
+- Others: HuggingFace Inference API with :cheapest routing
 """
 
 from dataclasses import dataclass
@@ -75,7 +80,7 @@ class ModelConfig:
     
     @property
     def is_hf_inference(self) -> bool:
-        """Check if model uses HuggingFace Inference API (via Fireworks)."""
+        """Check if model uses HuggingFace Inference API."""
         return self.billing_type == BillingType.HF_INF_PAID
     
     @property
@@ -83,25 +88,33 @@ class ModelConfig:
         """
         Model ID to send to the API client.
         
-        Returns the raw model_id for all providers.
-        The provider routing (e.g., Fireworks) is handled at the client level,
-        not in the model name.
+        For HuggingFace models, appends :cheapest for automatic provider routing.
+        For Google models, returns the raw model_id.
         """
+        if self.is_hf_inference:
+            return f"{self.model_id}:cheapest"
         return self.model_id
 
 
 # =============================================================================
-# MODEL REGISTRY - 24 MODELS TOTAL
+# MODEL REGISTRY - 23 MODELS TOTAL
 # =============================================================================
 
 MODEL_REGISTRY: Dict[str, ModelConfig] = {
     
     # =========================================================================
-    # GOOGLE AI STUDIO - Gemini Models (2 models)
+    # GOOGLE AI STUDIO - Gemini Models (3 models)
     # Direct API access via Google AI Studio
     # Billing: google_studio_paid
-    # Note: gemini-2.5-pro removed due to high cost (~$400 for full experiment)
     # =========================================================================
+    
+    "gemini-2.5-pro": ModelConfig(
+        provider=Provider.GOOGLE,
+        model_id="gemini-2.5-pro",
+        display_name="Gemini 2.5 Pro",
+        billing_type=BillingType.GOOGLE_STUDIO_PAID,
+        lm_arena=True,
+    ),
     
     "gemini-2.5-flash": ModelConfig(
         provider=Provider.GOOGLE,
@@ -111,20 +124,21 @@ MODEL_REGISTRY: Dict[str, ModelConfig] = {
         lm_arena=True,
     ),
     
-    "gemini-2.5-flash-preview-09-25": ModelConfig(
+    "gemini-2.5-flash-lite": ModelConfig(
         provider=Provider.GOOGLE,
-        model_id="gemini-2.5-flash-preview-09-25",
-        display_name="Gemini 2.5 Flash Preview 09-25",
+        model_id="gemini-2.5-flash-lite",
+        display_name="Gemini 2.5 Flash Lite",
         billing_type=BillingType.GOOGLE_STUDIO_PAID,
         lm_arena=True,
     ),
     
     # =========================================================================
-    # HUGGINGFACE INFERENCE API via Fireworks (21 models)
-    # Routed through HuggingFace -> Fireworks
+    # HUGGINGFACE INFERENCE API (20 models)
+    # Uses :cheapest routing for automatic provider selection
     # Billing: hf_inf_paid
     # =========================================================================
     
+    # --- OpenAI OSS Model (1 model) ---
     "gpt-oss-20b": ModelConfig(
         provider=Provider.HUGGINGFACE,
         model_id="openai/gpt-oss-20b",
@@ -133,7 +147,7 @@ MODEL_REGISTRY: Dict[str, ModelConfig] = {
         lm_arena=True,
     ),
     
-    # --- Meta Llama Models (6 models) ---
+    # --- Meta Llama Models (5 models) ---
     "llama-3.3-70b-instruct": ModelConfig(
         provider=Provider.HUGGINGFACE,
         model_id="meta-llama/Llama-3.3-70B-Instruct",
@@ -158,14 +172,6 @@ MODEL_REGISTRY: Dict[str, ModelConfig] = {
         lm_arena=True,
     ),
     
-    "llama-3.1-70b-instruct": ModelConfig(
-        provider=Provider.HUGGINGFACE,
-        model_id="meta-llama/Llama-3.1-70B-Instruct",
-        display_name="Llama 3.1 70B Instruct",
-        billing_type=BillingType.HF_INF_PAID,
-        lm_arena=True,
-    ),
-    
     "llama-3.1-8b-instruct": ModelConfig(
         provider=Provider.HUGGINGFACE,
         model_id="meta-llama/Llama-3.1-8B-Instruct",
@@ -174,19 +180,27 @@ MODEL_REGISTRY: Dict[str, ModelConfig] = {
         lm_arena=True,
     ),
     
-    "codellama-34b-instruct": ModelConfig(
-        provider=Provider.HUGGINGFACE,
-        model_id="meta-llama/CodeLlama-34b-Instruct-hf",
-        display_name="CodeLlama 34B Instruct",
-        billing_type=BillingType.HF_INF_PAID,
-        lm_arena=True,
-    ),
-    
-    # --- Qwen Models (3 models) ---
+    # --- Qwen Models (5 models) ---
     "qwen3-next-80b-a3b-instruct": ModelConfig(
         provider=Provider.HUGGINGFACE,
         model_id="Qwen/Qwen3-Next-80B-A3B-Instruct",
         display_name="Qwen3 Next 80B A3B Instruct",
+        billing_type=BillingType.HF_INF_PAID,
+        lm_arena=True,
+    ),
+    
+    "qwen3-next-80b-a3b-thinking": ModelConfig(
+        provider=Provider.HUGGINGFACE,
+        model_id="Qwen/Qwen3-Next-80B-A3B-Thinking",
+        display_name="Qwen3 Next 80B A3B Thinking",
+        billing_type=BillingType.HF_INF_PAID,
+        lm_arena=True,
+    ),
+    
+    "qwen3-32b": ModelConfig(
+        provider=Provider.HUGGINGFACE,
+        model_id="Qwen/Qwen3-32B",
+        display_name="Qwen3 32B",
         billing_type=BillingType.HF_INF_PAID,
         lm_arena=True,
     ),
@@ -207,32 +221,16 @@ MODEL_REGISTRY: Dict[str, ModelConfig] = {
         lm_arena=True,
     ),
     
-    # --- Mistral Models (3 models) ---
-    "mistral-7b-v0.3": ModelConfig(
+    # --- Mistral Models (1 model) ---
+    "mixtral-8x22b-instruct": ModelConfig(
         provider=Provider.HUGGINGFACE,
-        model_id="mistralai/Mistral-7B-v0.3",
-        display_name="Mistral 7B v0.3",
-        billing_type=BillingType.HF_INF_PAID,
-        lm_arena=False,  # Not on LM Arena
-    ),
-    
-    "mistral-7b-instruct-v0.3": ModelConfig(
-        provider=Provider.HUGGINGFACE,
-        model_id="mistralai/Mistral-7B-Instruct-v0.3",
-        display_name="Mistral 7B Instruct v0.3",
-        billing_type=BillingType.HF_INF_PAID,
-        lm_arena=False,  # Not on LM Arena
-    ),
-    
-    "mixtral-8x7b-instruct": ModelConfig(
-        provider=Provider.HUGGINGFACE,
-        model_id="mistralai/Mixtral-8x7B-Instruct-v0.1",
-        display_name="Mixtral 8x7B Instruct v0.1",
+        model_id="mistralai/Mixtral-8x22B-Instruct-v0.1",
+        display_name="Mixtral 8x22B Instruct v0.1",
         billing_type=BillingType.HF_INF_PAID,
         lm_arena=True,
     ),
     
-    # --- DeepSeek Models (2 models) ---
+    # --- DeepSeek Models (3 models) ---
     "deepseek-r1": ModelConfig(
         provider=Provider.HUGGINGFACE,
         model_id="deepseek-ai/DeepSeek-R1",
@@ -249,6 +247,14 @@ MODEL_REGISTRY: Dict[str, ModelConfig] = {
         lm_arena=True,
     ),
     
+    "deepseek-r1-0528": ModelConfig(
+        provider=Provider.HUGGINGFACE,
+        model_id="deepseek-ai/DeepSeek-R1-0528",
+        display_name="DeepSeek R1 0528",
+        billing_type=BillingType.HF_INF_PAID,
+        lm_arena=True,
+    ),
+    
     # --- Google Gemma Models (1 model) ---
     "gemma-3-27b-it": ModelConfig(
         provider=Provider.HUGGINGFACE,
@@ -259,20 +265,20 @@ MODEL_REGISTRY: Dict[str, ModelConfig] = {
     ),
     
     # --- Moonshot AI Kimi Models (2 models) ---
-    "kimi-k2-instruct": ModelConfig(
-        provider=Provider.HUGGINGFACE,
-        model_id="moonshotai/Kimi-K2-Instruct",
-        display_name="Kimi K2 Instruct",
-        billing_type=BillingType.HF_INF_PAID,
-        lm_arena=False,  # Not on LM Arena
-    ),
-    
     "kimi-k2-thinking": ModelConfig(
         provider=Provider.HUGGINGFACE,
         model_id="moonshotai/Kimi-K2-Thinking",
         display_name="Kimi K2 Thinking",
         billing_type=BillingType.HF_INF_PAID,
-        lm_arena=False,  # Not on LM Arena
+        lm_arena=False,
+    ),
+    
+    "kimi-k2-instruct": ModelConfig(
+        provider=Provider.HUGGINGFACE,
+        model_id="moonshotai/Kimi-K2-Instruct",
+        display_name="Kimi K2 Instruct",
+        billing_type=BillingType.HF_INF_PAID,
+        lm_arena=False,
     ),
     
     # --- GLM Models (2 models) ---
@@ -288,15 +294,6 @@ MODEL_REGISTRY: Dict[str, ModelConfig] = {
         provider=Provider.HUGGINGFACE,
         model_id="zai-org/GLM-4.6",
         display_name="GLM 4.6",
-        billing_type=BillingType.HF_INF_PAID,
-        lm_arena=True,
-    ),
-    
-    # --- Yi Models (1 model) ---
-    "yi-34b-chat": ModelConfig(
-        provider=Provider.HUGGINGFACE,
-        model_id="01-ai/Yi-34B-Chat",
-        display_name="Yi 34B Chat",
         billing_type=BillingType.HF_INF_PAID,
         lm_arena=True,
     ),
@@ -330,7 +327,7 @@ def get_google_studio_models() -> Dict[str, ModelConfig]:
 
 
 def get_hf_inference_models() -> Dict[str, ModelConfig]:
-    """Get all models using HuggingFace Inference API (via Fireworks)."""
+    """Get all models using HuggingFace Inference API."""
     return get_models_by_billing_type(BillingType.HF_INF_PAID)
 
 
@@ -362,17 +359,15 @@ def get_model_summary() -> Dict[str, int]:
 
 def print_model_table():
     """Print a formatted table of all models."""
-    print("\n" + "=" * 100)
-    print(f"{'Key':<35} {'Provider':<12} {'Billing Type':<20} {'LM Arena':<10} {'Limits':<10}")
-    print("=" * 100)
+    print("\n" + "=" * 110)
+    print(f"{'Key':<35} {'Model ID (API)':<50} {'LM Arena':<10}")
+    print("=" * 110)
     
     for key, model in MODEL_REGISTRY.items():
-        limits = f"{model.max_iterations}/{model.threshold}"
-        billing = model.billing_type.value
-        print(f"{key:<35} {model.provider.value:<12} {billing:<20} "
-              f"{'Yes' if model.lm_arena else 'No':<10} {limits:<10}")
+        api_id = model.api_model_id[:48] + ".." if len(model.api_model_id) > 50 else model.api_model_id
+        print(f"{key:<35} {api_id:<50} {'Yes' if model.lm_arena else 'No':<10}")
     
-    print("=" * 100)
+    print("=" * 110)
 
 
 # =============================================================================
@@ -383,12 +378,11 @@ def validate_registry():
     """Validate the model registry for consistency."""
     errors = []
     
-    # Expected counts: 23 models total
-    # 2 Gemini (google_studio_paid) + 21 HuggingFace (hf_inf_paid) = 23
-    # Note: gemini-2.5-pro removed due to high cost
-    expected_total = 23
-    expected_google = 2
-    expected_huggingface = 21
+    # Expected counts: 22 models total
+    # 3 Gemini (google_studio_paid) + 19 HuggingFace (hf_inf_paid) = 22
+    expected_total = 22
+    expected_google = 3
+    expected_huggingface = 19
     
     actual_total = len(MODEL_REGISTRY)
     if actual_total != expected_total:
@@ -409,6 +403,9 @@ def validate_registry():
     for key, model in hf_models.items():
         if model.billing_type != BillingType.HF_INF_PAID:
             errors.append(f"{key}: HuggingFace model should have billing_type=HF_INF_PAID")
+        # Check that api_model_id has :cheapest suffix
+        if not model.api_model_id.endswith(":cheapest"):
+            errors.append(f"{key}: HuggingFace model api_model_id should end with :cheapest")
     
     # Check iteration limits are global (same for all)
     for key, model in MODEL_REGISTRY.items():
@@ -433,7 +430,7 @@ if __name__ == "__main__":
     print("Model Summary:")
     print(f"  Total models: {summary['total']}")
     print(f"  Google AI Studio (Gemini): {summary['google_studio']} (google_studio_paid)")
-    print(f"  HuggingFace Inference (Fireworks): {summary['hf_inference']} (hf_inf_paid)")
+    print(f"  HuggingFace Inference: {summary['hf_inference']} (hf_inf_paid with :cheapest routing)")
     print(f"  On LM Arena: {summary['lm_arena']}")
     print()
     print(f"Global Iteration Limits:")

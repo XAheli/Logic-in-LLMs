@@ -103,19 +103,19 @@ class TestHuggingFaceClient:
     
     @patch('src.inference.api_clients.InferenceClient')
     def test_init(self, mock_inference_client):
-        """Test client initialization with Fireworks provider."""
+        """Test client initialization."""
         client = HuggingFaceClient(api_key="test_key")
         mock_inference_client.assert_called_once()
-        # Check that provider="fireworks-ai" is passed
+        # Check that api_key is passed (no provider param - uses :cheapest routing)
         call_kwargs = mock_inference_client.call_args[1]
-        assert call_kwargs['provider'] == "fireworks-ai"
         assert call_kwargs['api_key'] == "test_key"
     
     @patch('src.inference.api_clients.InferenceClient')
     def test_query_success(self, mock_inference_client, mock_hf_response):
-        """Test successful query."""
+        """Test successful query using chat.completions.create()."""
         mock_client = Mock()
-        mock_client.chat_completion.return_value = mock_hf_response
+        # Mock the nested chat.completions.create() method
+        mock_client.chat.completions.create.return_value = mock_hf_response
         mock_inference_client.return_value = mock_client
         
         client = HuggingFaceClient(api_key="test_key")

@@ -58,49 +58,47 @@ class CorrelationResult:
 # Lower rank = better performance
 # Only includes models from MODEL_REGISTRY that have LM Arena benchmarks
 # Models with lm_arena=False in registry have None here
+# Updated for 22-model registry (3 Gemini + 19 HuggingFace)
 LM_ARENA_RANKINGS = {
-    # Google Gemini models (PAID) - gemini-2.5-pro removed due to cost
+    # Google Gemini models (3 models)
+    "gemini-2.5-pro": 9,  
     "gemini-2.5-flash": 44,
-    "gemini-2.5-flash-preview-09-25": 45,
+    "gemini-2.5-flash-lite": 70, 
     
-    # GPT-OSS (HuggingFace)
+    # OpenAI OSS (HuggingFace)
     "gpt-oss-20b": 128,
     
-    # Meta Llama models (HuggingFace)
+    # Meta Llama models (4 models)
     "llama-3.3-70b-instruct": 134,
     "llama-3.2-3b-instruct": 231,
     "llama-3.2-1b-instruct": 260,
-    "llama-3.1-70b-instruct": 155,
     "llama-3.1-8b-instruct": 205,
-    "codellama-34b-instruct": 246,
     
-    # Qwen models (HuggingFace)
+    # Qwen models (5 models)
     "qwen3-next-80b-a3b-instruct": 50,
+    "qwen3-next-80b-a3b-thinking": 77,  # Thinking variant
+    "qwen3-32b": 97,
     "qwen3-235b-a22b-thinking": 54,
     "qwq-32b": 116,
     
-    # Mistral models (HuggingFace) - only Mixtral on LM Arena
-    "mistral-7b-v0.3": None,  # Not on LM Arena
-    "mistral-7b-instruct-v0.3": None,  # Not on LM Arena
-    "mixtral-8x7b-instruct": 212,
+    # Mistral models (1 model)
+    "mixtral-8x22b-instruct": 196,
     
-    # DeepSeek models (HuggingFace)
+    # DeepSeek models (3 models)
     "deepseek-r1": 55,
     "deepseek-v3.1": 33,
+    "deepseek-r1-0528": 32,
     
-    # Google Gemma models (HuggingFace)
+    # Google Gemma models (1 model)
     "gemma-3-27b-it": 79,
     
-    # Moonshot Kimi models (HuggingFace) - Not on LM Arena
-    "kimi-k2-instruct": None,
-    "kimi-k2-thinking": None,
+    # Moonshot Kimi models (2 models) - Not on LM Arena
+    "kimi-k2-thinking": 17,
+    "kimi-k2-instruct": 30,
     
-    # GLM models (HuggingFace)
+    # GLM models (2 models)
     "glm-4.5": 40,
     "glm-4.6": 22,
-    
-    # Yi models (HuggingFace)
-    "yi-34b-chat": 220,
 }
 
 
@@ -299,37 +297,42 @@ def create_ranking_comparison_table(
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("CORRELATION ANALYSIS TEST")
+    print("CORRELATION ANALYSIS")
     print("=" * 60)
     
-    # Test data (simulated accuracies) - using actual model keys from registry
-    test_accuracies = {
-        "gemini-2.5-flash": 0.78,
-        "glm-4.6": 0.82,
-        "deepseek-v3.1": 0.80,
-        "qwen3-next-80b-a3b-instruct": 0.77,
-        "llama-3.1-70b-instruct": 0.72,
-        "llama-3.1-8b-instruct": 0.65,
-        "mixtral-8x7b-instruct": 0.60,
-    }
+    # Try to load real results from the results directory
+    results_dir = config.experiment.results_full_path
     
-    print("\n[Test Accuracies]")
-    for m, acc in sorted(test_accuracies.items(), key=lambda x: -x[1]):
-        arena = LM_ARENA_RANKINGS.get(m, "N/A")
-        print(f"  {m}: {acc:.2%} (Arena rank: {arena})")
+    print(f"\nLooking for results in: {results_dir}")
+    print(f"\n[LM Arena Rankings for {len(get_models_with_arena_rankings())} models]")
+    for model in sorted(get_models_with_arena_rankings(), key=lambda m: LM_ARENA_RANKINGS[m]):
+        print(f"  #{LM_ARENA_RANKINGS[model]:>3}: {model}")
     
-    result = calculate_correlation(test_accuracies)
+    # Try to load accuracies from actual results
+    accuracies = load_model_accuracies(results_dir, temperature=0.0, strategy="zero_shot")
     
-    if result:
-        print(f"\n[Correlation Results]")
-        print(f"  Spearman ρ: {result.spearman_rho:.3f} (p={result.spearman_p_value:.4f})")
-        print(f"  Kendall τ: {result.kendall_tau:.3f} (p={result.kendall_p_value:.4f})")
-        print(f"  Pearson r: {result.pearson_r:.3f} (p={result.pearson_p_value:.4f})")
-        print(f"  N models: {result.n_models}")
-        print(f"  Significant (α=0.05): {result.is_significant()}")
-        
-        print("\n[Ranking Comparison]")
-        df = create_ranking_comparison_table(test_accuracies)
-        print(df.to_string(index=False))
+    if not accuracies:
+        print("\n[No results found yet]")
+        print("  Run the benchmark first to generate results.")
+        print("  Results will be loaded from: results/raw_responses/")
     else:
-        print("\n[Error] Insufficient data for correlation analysis")
+        print(f"\n[Loaded Accuracies for {len(accuracies)} models]")
+        for m, acc in sorted(accuracies.items(), key=lambda x: -x[1]):
+            arena = LM_ARENA_RANKINGS.get(m, "N/A")
+            print(f"  {m}: {acc:.2%} (Arena rank: {arena})")
+        
+        result = calculate_correlation(accuracies)
+        
+        if result:
+            print(f"\n[Correlation Results]")
+            print(f"  Spearman ρ: {result.spearman_rho:.3f} (p={result.spearman_p_value:.4f})")
+            print(f"  Kendall τ: {result.kendall_tau:.3f} (p={result.kendall_p_value:.4f})")
+            print(f"  Pearson r: {result.pearson_r:.3f} (p={result.pearson_p_value:.4f})")
+            print(f"  N models: {result.n_models}")
+            print(f"  Significant (α=0.05): {result.is_significant()}")
+            
+            print("\n[Ranking Comparison]")
+            df = create_ranking_comparison_table(accuracies)
+            print(df.to_string(index=False))
+        else:
+            print("\n[Insufficient data] Need at least 3 models with LM Arena rankings")

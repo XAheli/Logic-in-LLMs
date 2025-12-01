@@ -3,19 +3,20 @@ API Clients for Syllogistic Reasoning Benchmark
 
 Provides unified interface for querying LLMs across 2 providers:
 - Google AI Studio (Gemini models) - google_studio_paid
-- HuggingFace Inference API via Fireworks (21 models) - hf_inf_paid
+- HuggingFace Inference API (20 models) - hf_inf_paid with :cheapest routing
 
 Each client handles:
 - API authentication
 - Request formatting
 - Error handling with retries
 - Rate limiting (if configured)
+- Token counting (via tiktoken)
 """
 
 import time
 from abc import ABC, abstractmethod
 from typing import Dict, List, Optional, Any
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 # Third-party imports (will be imported conditionally)
 try:
@@ -32,6 +33,13 @@ except ImportError:
     HF_AVAILABLE = False
     InferenceClient = None
 
+try:
+    import tiktoken
+    TIKTOKEN_AVAILABLE = True
+except ImportError:
+    TIKTOKEN_AVAILABLE = False
+    tiktoken = None
+
 # Local imports
 from src.config import config, get_api_key
 from src.inference.model_registry import (
@@ -40,6 +48,67 @@ from src.inference.model_registry import (
     Provider,
     get_model
 )
+
+
+# =============================================================================
+# TOKEN COUNTER
+# =============================================================================
+
+class TokenCounter:
+    """
+    Token counter using tiktoken (GPT-4 tokenizer).
+    
+    Note: This is an approximation since different models use different tokenizers.
+    GPT-4's cl100k_base is a reasonable baseline for most modern LLMs.
+    """
+    
+    _instance = None
+    _encoder = None
+    
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+            cls._instance._init_encoder()
+        return cls._instance
+    
+    def _init_encoder(self):
+        if TIKTOKEN_AVAILABLE:
+            try:
+                self._encoder = tiktoken.get_encoding("cl100k_base")
+            except Exception:
+                self._encoder = None
+        else:
+            self._encoder = None
+    
+    def count(self, text: str) -> int:
+        """Count tokens in text."""
+        if self._encoder is None:
+            # Fallback: rough estimate (~4 chars per token)
+            return len(text) // 4
+        return len(self._encoder.encode(text))
+    
+    @property
+    def is_available(self) -> bool:
+        return self._encoder is not None
+
+
+@dataclass
+class TokenUsage:
+    """Track token usage for an API call or session."""
+    input_tokens: int = 0
+    output_tokens: int = 0
+    
+    @property
+    def total_tokens(self) -> int:
+        return self.input_tokens + self.output_tokens
+    
+    def add(self, other: 'TokenUsage'):
+        """Add another TokenUsage to this one."""
+        self.input_tokens += other.input_tokens
+        self.output_tokens += other.output_tokens
+    
+    def __str__(self) -> str:
+        return f"TokenUsage(input={self.input_tokens:,}, output={self.output_tokens:,}, total={self.total_tokens:,})"
 
 
 # =============================================================================
@@ -55,6 +124,7 @@ class APIResponse:
     raw_response: Optional[Any] = None
     error: Optional[str] = None
     latency_ms: float = 0.0
+    token_usage: Optional[TokenUsage] = None
 
 
 class BaseAPIClient(ABC):
@@ -69,6 +139,29 @@ class BaseAPIClient(ABC):
         self.top_p = config.api_settings.top_p
         self.presence_penalty = config.api_settings.presence_penalty
         self.frequency_penalty = config.api_settings.frequency_penalty
+        
+        # Token counter for tracking usage
+        self.token_counter = TokenCounter()
+        
+        # Cumulative token usage for this client
+        self.cumulative_usage = TokenUsage()
+    
+    def _track_tokens(self, prompt: str, response: str) -> TokenUsage:
+        """Count and track token usage for a request/response pair."""
+        usage = TokenUsage(
+            input_tokens=self.token_counter.count(prompt),
+            output_tokens=self.token_counter.count(response)
+        )
+        self.cumulative_usage.add(usage)
+        return usage
+    
+    def get_usage_summary(self) -> str:
+        """Get a formatted summary of token usage."""
+        return str(self.cumulative_usage)
+    
+    def reset_usage(self):
+        """Reset cumulative token usage counter."""
+        self.cumulative_usage = TokenUsage()
     
     @abstractmethod
     def query(
@@ -162,11 +255,15 @@ class GeminiClient(BaseAPIClient):
             )
             
             latency = (time.time() - start_time) * 1000
+            response_text = response.text.strip()
+            
+            # Track token usage
+            usage = self._track_tokens(prompt, response_text)
             
             if self.verbose:
-                print(f"    [Gemini] {model_id} responded in {latency:.0f}ms")
+                print(f"    [Gemini] {model_id} responded in {latency:.0f}ms | {usage}")
             
-            return response.text.strip()
+            return response_text
             
         except Exception as e:
             if self.verbose:
@@ -188,10 +285,16 @@ class HuggingFaceClient(BaseAPIClient):
     - Proactive rate limiting (configurable delay between requests)
     - Exponential backoff with jitter on 429 errors
     - Automatic retry with increasing wait times
+    - HF_TOKEN is automatically set as env var by config module
+      to ensure all downstream HF libraries have access
+    
+    Note: The token is passed both explicitly to InferenceClient AND
+    set as HF_TOKEN environment variable (in config.py) to prevent
+    rate limiting issues with any HuggingFace library calls.
     """
     
-    # Rate limiting settings for free tier
-    MIN_REQUEST_INTERVAL = 1.0  # Minimum seconds between requests
+    # Rate limiting settings - spread requests to avoid rate limits
+    MIN_REQUEST_INTERVAL = 1.5  # Minimum seconds between requests
     MAX_RETRIES_429 = 10  # Max retries specifically for rate limit errors
     BASE_BACKOFF = 5.0  # Base wait time for 429 errors (seconds)
     MAX_BACKOFF = 120.0  # Maximum wait time (2 minutes)
@@ -212,16 +315,15 @@ class HuggingFaceClient(BaseAPIClient):
         if not self.api_key:
             raise ValueError("HuggingFace token not configured")
         
-        # Create inference client with Fireworks as the provider
-        # This routes all requests through Fireworks using the Fireworks API key
-        # configured in HuggingFace Settings -> Inference Providers
+        # Create inference client
+        # Model IDs use :cheapest suffix for automatic provider routing
+        # to the cheapest available inference provider
         self.client = InferenceClient(
-            provider="fireworks-ai",
             api_key=self.api_key
         )
         
         if self.verbose:
-            print("[HuggingFaceClient] Initialized with Fireworks provider routing")
+            print("[HuggingFaceClient] Initialized with :cheapest routing")
     
     def _wait_for_rate_limit(self):
         """Proactively wait to respect rate limits."""
@@ -272,6 +374,10 @@ class HuggingFaceClient(BaseAPIClient):
     ) -> str:
         """Query HuggingFace model with rate limiting and 429 handling."""
         
+        # Fireworks/HuggingFace has a limit: max_tokens > 5000 requires streaming
+        # Cap max_tokens at 4096 for non-streaming requests
+        effective_max_tokens = min(self.max_tokens, 4096)
+        
         for attempt in range(self.MAX_RETRIES_429):
             # Proactive rate limiting
             self._wait_for_rate_limit()
@@ -279,25 +385,27 @@ class HuggingFaceClient(BaseAPIClient):
             start_time = time.time()
             
             try:
-                # Use chat completion for instruction-tuned models
-                response = self.client.chat_completion(
+                # Use chat.completions.create() for Fireworks provider
+                # This is the correct method per HuggingFace + Fireworks documentation
+                response = self.client.chat.completions.create(
                     model=model_id,
                     messages=[
                         {"role": "user", "content": prompt}
                     ],
                     temperature=temperature if temperature > 0 else 0.01,
-                    max_tokens=self.max_tokens,
-                    top_p=self.top_p,
-                    frequency_penalty=self.frequency_penalty,
-                    presence_penalty=self.presence_penalty,
+                    max_tokens=effective_max_tokens,
                 )
                 
                 latency = (time.time() - start_time) * 1000
+                response_text = response.choices[0].message.content.strip()
+                
+                # Track token usage
+                usage = self._track_tokens(prompt, response_text)
                 
                 if self.verbose:
-                    print(f"    [HuggingFace] {model_id} responded in {latency:.0f}ms")
+                    print(f"    [HuggingFace] {model_id} responded in {latency:.0f}ms | {usage}")
                 
-                return response.choices[0].message.content.strip()
+                return response_text
                 
             except Exception as e:
                 error_str = str(e).lower()
@@ -321,47 +429,10 @@ class HuggingFaceClient(BaseAPIClient):
                     time.sleep(wait_time)
                     continue  # Retry
                 
-                # For other errors, try text_generation fallback
+                # For other errors, raise immediately
                 if self.verbose:
-                    print(f"    [HuggingFace] Chat failed ({e}), trying text_generation...")
-                
-                try:
-                    self._wait_for_rate_limit()
-                    
-                    response = self.client.text_generation(
-                        prompt,
-                        model=model_id,
-                        temperature=temperature if temperature > 0 else 0.01,
-                        max_new_tokens=self.max_tokens,
-                        top_p=self.top_p,
-                        repetition_penalty=1.0,  # Equivalent to no frequency/presence penalty
-                        return_full_text=False,
-                    )
-                    
-                    latency = (time.time() - start_time) * 1000
-                    
-                    if self.verbose:
-                        print(f"    [HuggingFace] {model_id} responded in {latency:.0f}ms")
-                    
-                    return response.strip()
-                    
-                except Exception as e2:
-                    error_str2 = str(e2).lower()
-                    
-                    # Rate limit on fallback too
-                    if '429' in str(e2) or 'rate limit' in error_str2:
-                        reset_time = self._extract_reset_time(e2)
-                        wait_time = self._calculate_backoff(attempt, reset_time)
-                        
-                        if self.verbose:
-                            print(f"    [429 Rate Limit] Attempt {attempt + 1}/{self.MAX_RETRIES_429}, waiting {wait_time:.1f}s...")
-                        
-                        time.sleep(wait_time)
-                        continue  # Retry from the top
-                    
-                    if self.verbose:
-                        print(f"    [HuggingFace ERROR] {model_id}: {e2}")
-                    raise e2
+                    print(f"    [HuggingFace ERROR] {model_id}: {e}")
+                raise
         
         # If we exhausted all retries
         raise RuntimeError(f"Max retries ({self.MAX_RETRIES_429}) exceeded for HuggingFace API - persistent rate limiting")
@@ -426,7 +497,7 @@ class UniversalClient:
             print(f"  [Query] {model_key} (T={temperature})")
         
         # Query with the model's API identifier
-        # Uses api_model_id which adds :fireworks-ai suffix for HuggingFace models
+        # Uses api_model_id which adds :cheapest suffix for HuggingFace models
         return client.query_with_retry(
             prompt=prompt,
             temperature=temperature,
@@ -483,6 +554,41 @@ class UniversalClient:
             results[provider] = self.test_connection(model_key)
         
         return results
+    
+    def get_cumulative_usage(self) -> TokenUsage:
+        """Get cumulative token usage across all clients."""
+        total = TokenUsage()
+        for client in self._clients.values():
+            total.add(client.cumulative_usage)
+        return total
+    
+    def get_usage_by_provider(self) -> Dict[str, TokenUsage]:
+        """Get token usage breakdown by provider."""
+        return {
+            provider.value: client.cumulative_usage
+            for provider, client in self._clients.items()
+        }
+    
+    def reset_usage(self):
+        """Reset token usage counters for all clients."""
+        for client in self._clients.values():
+            client.reset_usage()
+    
+    def print_usage_summary(self):
+        """Print a formatted summary of token usage."""
+        total = self.get_cumulative_usage()
+        by_provider = self.get_usage_by_provider()
+        
+        print("\n" + "=" * 50)
+        print("TOKEN USAGE SUMMARY")
+        print("=" * 50)
+        
+        for provider, usage in by_provider.items():
+            print(f"  {provider}: {usage}")
+        
+        print("-" * 50)
+        print(f"  TOTAL: {total}")
+        print("=" * 50)
 
 
 # =============================================================================

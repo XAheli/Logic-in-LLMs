@@ -49,13 +49,20 @@ class ExperimentResult:
     model_key: str
     temperature: float
     prompting_strategy: str
-    ground_truth: str
+    # Dual ground truths
+    ground_truth_syntax: str  # valid/invalid
+    ground_truth_NLU: str  # believable/unbelievable
+    # Model prediction (correct/incorrect)
     predicted: str
     confidence: float
-    is_correct: bool
+    # Correctness against each ground truth
+    # correct→valid, incorrect→invalid for syntax comparison
+    # correct→believable, incorrect→unbelievable for NLU comparison  
+    is_correct_syntax: bool
+    is_correct_NLU: bool
     total_iterations: int
-    valid_count: int
-    invalid_count: int
+    correct_count: int
+    incorrect_count: int
     stopped_early: bool
     timestamp: str
     raw_responses: List[Dict] = field(default_factory=list)
@@ -114,12 +121,12 @@ class BatchProcessor:
     def _get_syllogism_instances(self) -> List[Dict]:
         """
         Flatten dataset into list of individual instances.
-        Each instance has: syllogism_id, variant, statement_1, statement_2, conclusion, ground_truth
+        Each instance has: syllogism_id, variant, statement_1, statement_2, conclusion,
+        ground_truth_syntax (valid/invalid), ground_truth_NLU (believable/unbelievable)
         """
         instances = []
         for syllogism in self.dataset['syllogisms']:
             base_id = syllogism['id']
-            ground_truth = syllogism['ground_truth']
             
             for variant_key, variant_data in syllogism['variants'].items():
                 instances.append({
@@ -129,7 +136,8 @@ class BatchProcessor:
                     'statement_1': variant_data['statement_1'],
                     'statement_2': variant_data['statement_2'],
                     'conclusion': variant_data['conclusion'],
-                    'ground_truth': ground_truth
+                    'ground_truth_syntax': variant_data['ground_truth_syntax'],
+                    'ground_truth_NLU': variant_data['ground_truth_NLU']
                 })
         
         return instances
@@ -184,6 +192,11 @@ class BatchProcessor:
     ) -> ExperimentResult:
         """
         Run a single experiment: one syllogism instance with one model configuration.
+        
+        The LLM predicts "correct" or "incorrect".
+        We compare this against:
+        - ground_truth_syntax: correct↔valid, incorrect↔invalid
+        - ground_truth_NLU: correct↔believable, incorrect↔unbelievable
         """
         # Get model config (for validation/logging purposes)
         model_config = get_model(model_key)
@@ -203,8 +216,19 @@ class BatchProcessor:
         # Run with stopping strategy
         result = stopping.run(query_fn, temperature)
         
-        # Determine correctness
-        is_correct = result.final_answer == instance['ground_truth']
+        # Map LLM prediction to ground truth comparisons
+        # LLM says "correct" or "incorrect"
+        # Syntax: correct↔valid, incorrect↔invalid
+        # NLU: correct↔believable, incorrect↔unbelievable
+        predicted = result.final_answer  # "correct" or "incorrect"
+        
+        # Map prediction to syntax comparison
+        predicted_syntax = "valid" if predicted == "correct" else "invalid"
+        is_correct_syntax = predicted_syntax == instance['ground_truth_syntax']
+        
+        # Map prediction to NLU comparison
+        predicted_NLU = "believable" if predicted == "correct" else "unbelievable"
+        is_correct_NLU = predicted_NLU == instance['ground_truth_NLU']
         
         return ExperimentResult(
             syllogism_id=instance['syllogism_id'],
@@ -212,13 +236,15 @@ class BatchProcessor:
             model_key=model_key,
             temperature=temperature,
             prompting_strategy=strategy,
-            ground_truth=instance['ground_truth'],
-            predicted=result.final_answer,
+            ground_truth_syntax=instance['ground_truth_syntax'],
+            ground_truth_NLU=instance['ground_truth_NLU'],
+            predicted=predicted,
             confidence=result.confidence,
-            is_correct=is_correct,
+            is_correct_syntax=is_correct_syntax,
+            is_correct_NLU=is_correct_NLU,
             total_iterations=result.total_iterations,
-            valid_count=result.valid_count,
-            invalid_count=result.invalid_count,
+            correct_count=result.correct_count,
+            incorrect_count=result.incorrect_count,
             stopped_early=result.stopped_early,
             timestamp=datetime.now().isoformat(),
             raw_responses=[

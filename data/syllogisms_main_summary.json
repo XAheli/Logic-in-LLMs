@@ -3,280 +3,320 @@
     "id": "SYL_001",
     "statement_1": "All calculators are machines.",
     "statement_2": "All computers are calculators.",
-    "conclusion": "Some machines are not computers.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some machines are not computers.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_002",
     "statement_1": "No fruits are fungi.",
     "statement_2": "All mushrooms are fungi.",
-    "conclusion": "Some mushrooms are fruits.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some mushrooms are fruits.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_003",
     "statement_1": "All African countries are warm.",
     "statement_2": "Spain is warm.",
-    "conclusion": "Spain is an African country.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, Spain is an African country.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_004",
     "statement_1": "No harmful substance is natural.",
     "statement_2": "All poisons are natural.",
-    "conclusion": "No poisons are harmful.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, no poisons are harmful.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_005",
     "statement_1": "All flying birds have feathers.",
     "statement_2": "No people have feathers.",
-    "conclusion": "Some people are flying birds.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some people are flying birds.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_006",
     "statement_1": "All vehicles have wheels.",
     "statement_2": "A boat is a vehicle.",
-    "conclusion": "A boat has wheels.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, a boat has wheels.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_007",
     "statement_1": "All things with an engine need oil.",
     "statement_2": "Cars need oil.",
-    "conclusion": "Cars have engines.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, cars have engines.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_008",
     "statement_1": "All things that are smoked are bad for your health.",
     "statement_2": "Cigarettes are smoked.",
-    "conclusion": "Cigarettes are bad for your health.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, cigarettes are bad for your health.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_009",
     "statement_1": "No video recorders are metal things.",
     "statement_2": "Some electric appliances are metal things.",
-    "conclusion": "Some electric appliances are not video recorders.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some electric appliances are not video recorders.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_010",
     "statement_1": "No astronauts are athletic.",
     "statement_2": "Some healthy people are athletic.",
-    "conclusion": "Some healthy people are not astronauts.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some healthy people are not astronauts.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_011",
     "statement_1": "No skyscrapers are wooden things.",
     "statement_2": "Some buildings are wooden things.",
-    "conclusion": "Some buildings are not skyscrapers.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some buildings are not skyscrapers.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_012",
     "statement_1": "No cigarettes are inexpensive.",
     "statement_2": "Some addictive things are inexpensive.",
-    "conclusion": "Some addictive things are not cigarettes.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some addictive things are not cigarettes.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_013",
     "statement_1": "No police dogs are vicious.",
     "statement_2": "Some highly trained dogs are vicious.",
-    "conclusion": "Some highly trained dogs are not police dogs.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some highly trained dogs are not police dogs.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_014",
     "statement_1": "No liquors are sweet things.",
     "statement_2": "Some drinks are sweet things.",
-    "conclusion": "Some drinks are not liquors.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some drinks are not liquors.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_015",
     "statement_1": "No trout are colourful things.",
     "statement_2": "Some fish are colourful things.",
-    "conclusion": "Some fish are not trout.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some fish are not trout.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_016",
     "statement_1": "No millionaires are scientists.",
     "statement_2": "Some rich people are scientists.",
-    "conclusion": "Some rich people are not millionaires.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some rich people are not millionaires.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_017",
     "statement_1": "No pieces of furniture are attractive things.",
     "statement_2": "Some tables are attractive things.",
-    "conclusion": "Some tables are not pieces of furniture.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some tables are not pieces of furniture.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_018",
     "statement_1": "No musical instruments are shiny.",
     "statement_2": "Some violins are shiny.",
-    "conclusion": "Some violins are not musical instruments.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some violins are not musical instruments.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_019",
     "statement_1": "No well-educated people are impartial.",
     "statement_2": "Some judges are impartial.",
-    "conclusion": "Some judges are not well-educated people.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some judges are not well-educated people.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_020",
     "statement_1": "No plants are living things.",
     "statement_2": "Some grasses are living things.",
-    "conclusion": "Some grasses are not plants.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some grasses are not plants.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_021",
     "statement_1": "No religious people are married.",
     "statement_2": "Some priests are married.",
-    "conclusion": "Some priests are not religious people.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some priests are not religious people.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_022",
     "statement_1": "No good swimmers are vegetarians.",
     "statement_2": "Some deep sea divers are vegetarians.",
-    "conclusion": "Some deep sea divers are not good swimmers.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some deep sea divers are not good swimmers.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_023",
     "statement_1": "No tools are heavy.",
     "statement_2": "Some screwdrivers are heavy.",
-    "conclusion": "Some screwdrivers are not tools.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some screwdrivers are not tools.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_024",
     "statement_1": "No nutritional things are expensive.",
     "statement_2": "Some vitamin tablets are expensive.",
-    "conclusion": "Some vitamin tablets are not nutritional things.",
-    "ground_truth": "valid"
+    "conclusion": "Therefore, some vitamin tablets are not nutritional things.",
+    "ground_truth_syntax": "valid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_025",
     "statement_1": "No electric appliances are metal things.",
     "statement_2": "Some video recorders are metal things.",
-    "conclusion": "Some electric appliances are not video recorders.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some electric appliances are not video recorders.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_026",
     "statement_1": "No healthy people are athletic.",
     "statement_2": "Some astronauts are athletic.",
-    "conclusion": "Some healthy people are not astronauts.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some healthy people are not astronauts.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_027",
     "statement_1": "No buildings are wooden things.",
     "statement_2": "Some skyscrapers are wooden things.",
-    "conclusion": "Some buildings are not skyscrapers.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some buildings are not skyscrapers.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_028",
     "statement_1": "No addictive things are inexpensive.",
     "statement_2": "Some cigarettes are inexpensive.",
-    "conclusion": "Some addictive things are not cigarettes.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some addictive things are not cigarettes.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_029",
     "statement_1": "No highly trained dogs are vicious.",
     "statement_2": "Some police dogs are vicious.",
-    "conclusion": "Some highly trained dogs are not police dogs.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some highly trained dogs are not police dogs.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_030",
     "statement_1": "No drinks are sweet things.",
     "statement_2": "Some liquors are sweet things.",
-    "conclusion": "Some drinks are not liquors.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some drinks are not liquors.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_031",
     "statement_1": "No fish are colourful things.",
     "statement_2": "Some trout are colourful things.",
-    "conclusion": "Some fish are not trout.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some fish are not trout.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_032",
     "statement_1": "No rich people are scientists.",
     "statement_2": "Some millionaires are scientists.",
-    "conclusion": "Some rich people are not millionaires.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some rich people are not millionaires.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "believable"
   },
   {
     "id": "SYL_033",
     "statement_1": "No tables are attractive things.",
     "statement_2": "Some pieces of furniture are attractive things.",
-    "conclusion": "Some tables are not pieces of furniture.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some tables are not pieces of furniture.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_034",
     "statement_1": "No violins are shiny.",
     "statement_2": "Some musical instruments are shiny.",
-    "conclusion": "Some violins are not musical instruments.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some violins are not musical instruments.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_035",
     "statement_1": "Some judges are impartial.",
     "statement_2": "Some well-educated people are impartial.",
-    "conclusion": "Some judges are not well educated people.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some judges are not well educated people.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_036",
     "statement_1": "No grasses are living things.",
     "statement_2": "Some plants are living things.",
-    "conclusion": "Some grasses are not plants.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some grasses are not plants.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_037",
     "statement_1": "No priests are married.",
     "statement_2": "Some religious people are married.",
-    "conclusion": "Some priests are not religious people.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some priests are not religious people.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_038",
     "statement_1": "No deep sea divers are vegetarians.",
     "statement_2": "Some good swimmers are vegetarians.",
-    "conclusion": "Some deep sea divers are not good swimmers.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some deep sea divers are not good swimmers.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_039",
     "statement_1": "No screwdrivers are heavy.",
     "statement_2": "Some tools are heavy.",
-    "conclusion": "Some screwdrivers are not tools.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some screwdrivers are not tools.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "unbelievable"
   },
   {
     "id": "SYL_040",
     "statement_1": "No vitamin tablets are expensive.",
     "statement_2": "Some nutritional things are expensive.",
-    "conclusion": "Some vitamin tablets are not nutritional things.",
-    "ground_truth": "invalid"
+    "conclusion": "Therefore, some vitamin tablets are not nutritional things.",
+    "ground_truth_syntax": "invalid",
+    "ground_truth_NLU": "unbelievable"
   }
 ]

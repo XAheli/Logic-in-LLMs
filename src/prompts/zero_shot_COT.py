@@ -12,13 +12,11 @@ from typing import Dict
 # SYSTEM PROMPT
 # =============================================================================
 
-SYSTEM_PROMPT = """You are a logic expert specializing in syllogistic reasoning. 
-Your task is to determine whether a given syllogism is logically valid or invalid.
+SYSTEM_PROMPT = """You are an expert in syllogistic reasoning. 
+Your task is to determine whether the conclusion of a given syllogism follows from the premises.
 
-A syllogism is VALID if and only if the conclusion follows necessarily from the premises,
-regardless of whether the premises or conclusion are true in the real world.
-
-A syllogism is INVALID if the conclusion does not follow necessarily from the premises.
+A syllogism is CORRECT if the conclusion follows from the premises.
+A syllogism is INCORRECT if the conclusion does not follow from the premises.
 
 Think through the problem step by step, then provide your final answer."""
 
@@ -27,13 +25,13 @@ Think through the problem step by step, then provide your final answer."""
 # USER PROMPT TEMPLATE
 # =============================================================================
 
-USER_PROMPT_TEMPLATE = """Determine whether the following syllogism is valid or invalid.
+USER_PROMPT_TEMPLATE = """Determine whether the following syllogism is correct or incorrect.
 
 Premise 1: {statement_1}
 Premise 2: {statement_2}
 Conclusion: {conclusion}
 
-Is this syllogism valid or invalid? Let's think step by step."""
+Is this syllogism correct or incorrect? Let's think step by step."""
 
 
 # =============================================================================
@@ -95,11 +93,11 @@ STRATEGY_DESCRIPTION = "Zero-shot Chain-of-Thought prompting - step-by-step reas
 
 
 if __name__ == "__main__":
-    # Test the prompt generation
+    # Test the prompt generation with example from master dataset
     test_syllogism = {
-        "statement_1": "All men are mortal",
-        "statement_2": "Socrates is a man",
-        "conclusion": "Socrates is mortal"
+        "statement_1": "All things that are smoked are bad for your health.",
+        "statement_2": "Cigarettes are smoked.",
+        "conclusion": "Therefore, cigarettes are bad for your health."
     }
     
     print("=" * 60)

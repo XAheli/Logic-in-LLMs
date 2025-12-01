@@ -47,6 +47,13 @@ class APIKeys:
         """Load from environment variables if available (takes precedence)."""
         self.google_api_key = os.getenv("GOOGLE_API_KEY", self.google_api_key)
         self.hf_token = os.getenv("HF_TOKEN", self.hf_token)
+        
+        # IMPORTANT: Set HF_TOKEN as environment variable for downstream libraries
+        # This ensures huggingface_hub and other HF libraries have access to the token
+        # and prevents rate limiting issues
+        if self.hf_token:
+            os.environ["HF_TOKEN"] = self.hf_token
+            os.environ["HUGGINGFACE_TOKEN"] = self.hf_token  # Some libs use this variant
     
     def validate(self) -> dict:
         """Check which API keys are configured."""

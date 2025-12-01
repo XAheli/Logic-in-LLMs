@@ -37,7 +37,15 @@ from src.analysis.visualization import (
     plot_accuracy_vs_arena,
     plot_consistency_by_model,
     plot_content_effects,
-    plot_temperature_effect
+    plot_temperature_effect,
+    # Confusion Matrix
+    plot_confusion_matrix_heatmap,
+    plot_multi_model_confusion_matrices,
+    # Belief Bias
+    plot_belief_bias_heatmap,
+    plot_belief_bias_comparison,
+    # Model Similarity
+    plot_model_similarity_heatmap
 )
 
 from src.analysis.statistical_tests import (
@@ -86,6 +94,14 @@ __all__ = [
     "plot_consistency_by_model",
     "plot_content_effects",
     "plot_temperature_effect",
+    # Confusion Matrix
+    "plot_confusion_matrix_heatmap",
+    "plot_multi_model_confusion_matrices",
+    # Belief Bias Visualization
+    "plot_belief_bias_heatmap",
+    "plot_belief_bias_comparison",
+    # Model Similarity
+    "plot_model_similarity_heatmap",
     # Statistical Tests
     "TTestResult",
     "MultipleComparisonResult",

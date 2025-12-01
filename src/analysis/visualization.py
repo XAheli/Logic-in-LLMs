@@ -424,6 +424,385 @@ def plot_content_effects(
 
 
 # =============================================================================
+# CONFUSION MATRIX VISUALIZATION
+# =============================================================================
+
+def plot_confusion_matrix_heatmap(
+    confusion_matrix: Dict[str, Dict[str, int]],
+    output_path: Optional[Path] = None,
+    title: str = "Confusion Matrix",
+    normalize: bool = True,
+    cmap: str = "Blues"
+) -> plt.Figure:
+    """
+    Create a heatmap visualization of a confusion matrix.
+    
+    Args:
+        confusion_matrix: Dict with structure {actual: {predicted: count}}
+        output_path: Path to save figure
+        title: Figure title
+        normalize: If True, show proportions instead of counts
+        cmap: Colormap name
+        
+    Returns:
+        matplotlib Figure
+    """
+    set_publication_style()
+    
+    # Convert to DataFrame
+    labels = list(confusion_matrix.keys())
+    matrix_data = [[confusion_matrix[actual][pred] for pred in labels] for actual in labels]
+    
+    df = pd.DataFrame(matrix_data, index=labels, columns=labels)
+    
+    if normalize:
+        # Normalize by row (actual class)
+        row_sums = df.sum(axis=1)
+        df = df.div(row_sums, axis=0).fillna(0)
+    
+    fig, ax = plt.subplots(figsize=(6, 5))
+    
+    fmt = '.2%' if normalize else 'd'
+    sns.heatmap(
+        df,
+        annot=True,
+        fmt=fmt,
+        cmap=cmap,
+        ax=ax,
+        vmin=0,
+        vmax=1 if normalize else None,
+        cbar_kws={'label': 'Proportion' if normalize else 'Count'},
+        linewidths=0.5
+    )
+    
+    ax.set_xlabel('Predicted')
+    ax.set_ylabel('Actual')
+    ax.set_title(title)
+    
+    plt.tight_layout()
+    
+    if output_path:
+        fig.savefig(output_path, format=FIGURE_FORMAT, dpi=FIGURE_DPI)
+    
+    return fig
+
+
+def plot_multi_model_confusion_matrices(
+    confusion_matrices: Dict[str, Dict[str, Dict[str, int]]],
+    output_path: Optional[Path] = None,
+    cols: int = 4,
+    normalize: bool = True
+) -> plt.Figure:
+    """
+    Create a grid of confusion matrix heatmaps for multiple models.
+    
+    Args:
+        confusion_matrices: Dict mapping model_name -> confusion_matrix
+        output_path: Path to save figure
+        cols: Number of columns in the grid
+        normalize: If True, show proportions instead of counts
+        
+    Returns:
+        matplotlib Figure
+    """
+    set_publication_style()
+    
+    n_models = len(confusion_matrices)
+    rows = (n_models + cols - 1) // cols
+    
+    fig, axes = plt.subplots(rows, cols, figsize=(4 * cols, 4 * rows))
+    axes = np.array(axes).flatten() if n_models > 1 else [axes]
+    
+    for idx, (model_name, cm) in enumerate(confusion_matrices.items()):
+        ax = axes[idx]
+        
+        labels = list(cm.keys())
+        matrix_data = [[cm[actual][pred] for pred in labels] for actual in labels]
+        df = pd.DataFrame(matrix_data, index=labels, columns=labels)
+        
+        if normalize:
+            row_sums = df.sum(axis=1)
+            df = df.div(row_sums, axis=0).fillna(0)
+        
+        fmt = '.0%' if normalize else 'd'
+        sns.heatmap(
+            df,
+            annot=True,
+            fmt=fmt,
+            cmap='Blues',
+            ax=ax,
+            vmin=0,
+            vmax=1 if normalize else None,
+            cbar=False,
+            linewidths=0.5
+        )
+        
+        ax.set_xlabel('Predicted')
+        ax.set_ylabel('Actual')
+        ax.set_title(model_name, fontsize=10)
+    
+    # Hide empty subplots
+    for idx in range(n_models, len(axes)):
+        axes[idx].set_visible(False)
+    
+    plt.suptitle('Confusion Matrices by Model', fontsize=14, y=1.02)
+    plt.tight_layout()
+    
+    if output_path:
+        fig.savefig(output_path, format=FIGURE_FORMAT, dpi=FIGURE_DPI)
+    
+    return fig
+
+
+# =============================================================================
+# BELIEF BIAS VISUALIZATION
+# =============================================================================
+
+def plot_belief_bias_heatmap(
+    belief_bias_df: pd.DataFrame,
+    output_path: Optional[Path] = None,
+    metric: str = "accuracy"
+) -> plt.Figure:
+    """
+    Create a heatmap showing model accuracy across ground truth combinations.
+    
+    This reveals belief bias: whether models are influenced by semantic
+    plausibility (NLU) when judging logical validity (syntax).
+    
+    Args:
+        belief_bias_df: DataFrame with columns:
+            - model
+            - syntax_gt (valid/invalid)
+            - nlu_gt (believable/unbelievable)
+            - accuracy (or other metric)
+        output_path: Path to save figure
+        metric: Column name for the metric to display
+        
+    Returns:
+        matplotlib Figure
+        
+    Note:
+        The 4 ground truth combinations are:
+        - Valid + Believable: Logic and intuition align (correct=valid)
+        - Valid + Unbelievable: Logic correct but counter-intuitive
+        - Invalid + Believable: Logically wrong but sounds right (belief bias trap)
+        - Invalid + Unbelievable: Logic and intuition both say wrong
+    """
+    set_publication_style()
+    
+    # Create combo column
+    df = belief_bias_df.copy()
+    df['gt_combo'] = df['syntax_gt'].str.capitalize() + ' + ' + df['nlu_gt'].str.capitalize()
+    
+    # Pivot for heatmap
+    pivot = df.pivot_table(
+        values=metric,
+        index='model',
+        columns='gt_combo',
+        aggfunc='mean'
+    )
+    
+    # Reorder columns for intuitive reading
+    column_order = [
+        'Valid + Believable',
+        'Valid + Unbelievable', 
+        'Invalid + Believable',
+        'Invalid + Unbelievable'
+    ]
+    pivot = pivot[[c for c in column_order if c in pivot.columns]]
+    
+    fig, ax = plt.subplots(figsize=(10, len(pivot) * 0.4 + 2))
+    
+    # Custom colormap: red (low) -> white -> green (high)
+    cmap = sns.diverging_palette(10, 130, as_cmap=True)
+    
+    sns.heatmap(
+        pivot,
+        annot=True,
+        fmt='.2%',
+        cmap=cmap,
+        center=0.5,
+        vmin=0,
+        vmax=1,
+        ax=ax,
+        cbar_kws={'label': 'Accuracy'},
+        linewidths=0.5
+    )
+    
+    ax.set_xlabel('Ground Truth Combination (Syntax + NLU)')
+    ax.set_ylabel('Model')
+    ax.set_title('Belief Bias Analysis: Accuracy by Ground Truth Combination\n'
+                 '(Low accuracy on "Invalid + Believable" indicates belief bias)')
+    
+    plt.tight_layout()
+    
+    if output_path:
+        fig.savefig(output_path, format=FIGURE_FORMAT, dpi=FIGURE_DPI)
+    
+    return fig
+
+
+def plot_belief_bias_comparison(
+    belief_bias_df: pd.DataFrame,
+    output_path: Optional[Path] = None
+) -> plt.Figure:
+    """
+    Create a grouped bar chart comparing accuracy across belief bias conditions.
+    
+    Shows the "belief bias effect" - the difference in accuracy between
+    congruent cases (logic & intuition align) vs incongruent cases.
+    
+    Args:
+        belief_bias_df: DataFrame with columns [model, syntax_gt, nlu_gt, accuracy]
+        output_path: Path to save figure
+        
+    Returns:
+        matplotlib Figure
+    """
+    set_publication_style()
+    
+    df = belief_bias_df.copy()
+    
+    # Classify as congruent or incongruent
+    # Congruent: Valid+Believable or Invalid+Unbelievable (logic matches intuition)
+    # Incongruent: Valid+Unbelievable or Invalid+Believable (logic vs intuition)
+    df['congruence'] = 'Incongruent'
+    df.loc[(df['syntax_gt'] == 'valid') & (df['nlu_gt'] == 'believable'), 'congruence'] = 'Congruent'
+    df.loc[(df['syntax_gt'] == 'invalid') & (df['nlu_gt'] == 'unbelievable'), 'congruence'] = 'Congruent'
+    
+    # Aggregate by model and congruence
+    agg = df.groupby(['model', 'congruence'])['accuracy'].mean().reset_index()
+    pivot = agg.pivot(index='model', columns='congruence', values='accuracy')
+    
+    # Sort by belief bias effect (difference between congruent and incongruent)
+    pivot['bias_effect'] = pivot.get('Congruent', 0) - pivot.get('Incongruent', 0)
+    pivot = pivot.sort_values('bias_effect', ascending=False)
+    
+    fig, ax = plt.subplots(figsize=(12, 6))
+    
+    x = np.arange(len(pivot))
+    width = 0.35
+    
+    bars1 = ax.bar(x - width/2, pivot.get('Congruent', 0), width, 
+                   label='Congruent (logic = intuition)', color='#2E86AB')
+    bars2 = ax.bar(x + width/2, pivot.get('Incongruent', 0), width,
+                   label='Incongruent (logic ≠ intuition)', color='#C73E1D')
+    
+    ax.set_ylabel('Accuracy')
+    ax.set_xlabel('Model')
+    ax.set_title('Belief Bias Effect: Congruent vs Incongruent Cases')
+    ax.set_xticks(x)
+    ax.set_xticklabels(pivot.index, rotation=45, ha='right')
+    ax.legend()
+    ax.set_ylim(0, 1)
+    ax.axhline(y=0.5, color='gray', linestyle='--', alpha=0.5, label='Chance')
+    
+    plt.tight_layout()
+    
+    if output_path:
+        fig.savefig(output_path, format=FIGURE_FORMAT, dpi=FIGURE_DPI)
+    
+    return fig
+
+
+# =============================================================================
+# MODEL SIMILARITY VISUALIZATION
+# =============================================================================
+
+def plot_model_similarity_heatmap(
+    predictions_df: pd.DataFrame,
+    output_path: Optional[Path] = None,
+    method: str = "agreement"
+) -> plt.Figure:
+    """
+    Create a heatmap showing similarity between model predictions.
+    
+    This helps identify model clusters and find which models behave similarly.
+    
+    Args:
+        predictions_df: DataFrame with columns [syllogism_id, model, prediction]
+        output_path: Path to save figure
+        method: 'agreement' (% matching predictions) or 'correlation' (Pearson r)
+        
+    Returns:
+        matplotlib Figure
+    """
+    set_publication_style()
+    
+    # Pivot to get predictions per model
+    pivot = predictions_df.pivot(
+        index='syllogism_id',
+        columns='model',
+        values='prediction'
+    )
+    
+    models = pivot.columns.tolist()
+    n_models = len(models)
+    
+    # Calculate similarity matrix
+    similarity = np.zeros((n_models, n_models))
+    
+    for i, m1 in enumerate(models):
+        for j, m2 in enumerate(models):
+            if method == "agreement":
+                # Percentage of matching predictions
+                matches = (pivot[m1] == pivot[m2]).sum()
+                total = len(pivot)
+                similarity[i, j] = matches / total if total > 0 else 0
+            else:  # correlation
+                # Convert to numeric: correct=1, incorrect=0
+                p1 = (pivot[m1] == 'correct').astype(int)
+                p2 = (pivot[m2] == 'correct').astype(int)
+                if p1.std() > 0 and p2.std() > 0:
+                    similarity[i, j] = np.corrcoef(p1, p2)[0, 1]
+                else:
+                    similarity[i, j] = 1.0 if i == j else 0.0
+    
+    sim_df = pd.DataFrame(similarity, index=models, columns=models)
+    
+    fig, ax = plt.subplots(figsize=(12, 10))
+    
+    # Cluster for better visualization
+    from scipy.cluster import hierarchy
+    from scipy.spatial.distance import squareform
+    
+    # Convert similarity to distance
+    distance = 1 - sim_df.values
+    np.fill_diagonal(distance, 0)
+    
+    try:
+        linkage = hierarchy.linkage(squareform(distance), method='average')
+        dendro = hierarchy.dendrogram(linkage, no_plot=True)
+        order = dendro['leaves']
+        sim_df = sim_df.iloc[order, order]
+    except Exception:
+        pass  # Skip clustering if it fails
+    
+    sns.heatmap(
+        sim_df,
+        annot=True,
+        fmt='.2f',
+        cmap='RdYlGn',
+        center=0.5 if method == "agreement" else 0,
+        vmin=0 if method == "agreement" else -1,
+        vmax=1,
+        ax=ax,
+        cbar_kws={'label': 'Agreement Rate' if method == "agreement" else 'Correlation'},
+        linewidths=0.5
+    )
+    
+    ax.set_title(f'Model Similarity ({method.capitalize()})\n'
+                 'High values = similar prediction patterns')
+    
+    plt.tight_layout()
+    
+    if output_path:
+        fig.savefig(output_path, format=FIGURE_FORMAT, dpi=FIGURE_DPI)
+    
+    return fig
+
+
+# =============================================================================
 # TEMPERATURE EFFECT VISUALIZATION
 # =============================================================================
 

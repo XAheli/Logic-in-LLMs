@@ -25,7 +25,13 @@ from src.evaluation.calculate_metrics import (
     calculate_precision_recall_f1,
     calculate_all_metrics,
     calculate_metrics_from_file,
-    create_summary_table
+    create_summary_table,
+    # Belief Bias Analysis
+    BeliefBiasResult,
+    calculate_belief_bias,
+    calculate_belief_bias_from_file,
+    create_belief_bias_summary,
+    create_belief_bias_heatmap_data
 )
 
 from src.evaluation.consistency_analysis import (
@@ -65,6 +71,12 @@ __all__ = [
     "calculate_all_metrics",
     "calculate_metrics_from_file",
     "create_summary_table",
+    # Belief Bias Analysis
+    "BeliefBiasResult",
+    "calculate_belief_bias",
+    "calculate_belief_bias_from_file",
+    "create_belief_bias_summary",
+    "create_belief_bias_heatmap_data",
     # Consistency Analysis
     "ConsistencyResult",
     "ModelConsistencyReport",

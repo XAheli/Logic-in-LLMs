@@ -52,23 +52,23 @@ def custom_strategy():
 class TestParseResponse:
     """Tests for parse_response function."""
     
-    def test_parse_valid(self):
-        """Test parsing 'valid' responses."""
-        assert parse_response("valid") == VoteResult.VALID
-        assert parse_response("Valid") == VoteResult.VALID
-        assert parse_response("VALID") == VoteResult.VALID
-        assert parse_response("The answer is valid.") == VoteResult.VALID
+    def test_parse_correct(self):
+        """Test parsing 'correct' responses."""
+        assert parse_response("correct") == VoteResult.CORRECT
+        assert parse_response("Correct") == VoteResult.CORRECT
+        assert parse_response("CORRECT") == VoteResult.CORRECT
+        assert parse_response("The answer is correct.") == VoteResult.CORRECT
     
-    def test_parse_invalid(self):
-        """Test parsing 'invalid' responses."""
-        assert parse_response("invalid") == VoteResult.INVALID
-        assert parse_response("Invalid") == VoteResult.INVALID
-        assert parse_response("The argument is invalid.") == VoteResult.INVALID
+    def test_parse_incorrect(self):
+        """Test parsing 'incorrect' responses."""
+        assert parse_response("incorrect") == VoteResult.INCORRECT
+        assert parse_response("Incorrect") == VoteResult.INCORRECT
+        assert parse_response("The argument is incorrect.") == VoteResult.INCORRECT
     
-    def test_parse_invalid_takes_precedence(self):
-        """Test that 'invalid' is detected even when 'valid' is substring."""
-        # "invalid" contains "valid" as substring
-        assert parse_response("invalid") == VoteResult.INVALID
+    def test_parse_incorrect_takes_precedence(self):
+        """Test that 'incorrect' is detected even when 'correct' is substring."""
+        # "incorrect" contains "correct" as substring
+        assert parse_response("incorrect") == VoteResult.INCORRECT
     
     def test_parse_empty(self):
         """Test parsing empty responses."""
@@ -125,23 +125,23 @@ class TestDeterministicBehavior:
         def mock_query(temp):
             nonlocal call_count
             call_count += 1
-            return "valid"
+            return "correct"
         
         result = global_strategy.run(mock_query, temperature=0.0)
         
         assert call_count == 1
-        assert result.final_answer == "valid"
+        assert result.final_answer == "correct"
         assert result.total_iterations == 1
         assert result.confidence == 1.0
     
-    def test_deterministic_invalid(self, global_strategy):
-        """Test deterministic response for invalid."""
+    def test_deterministic_incorrect(self, global_strategy):
+        """Test deterministic response for incorrect."""
         def mock_query(temp):
-            return "The argument is invalid."
+            return "The argument is incorrect."
         
         result = global_strategy.run(mock_query, temperature=0.0)
         
-        assert result.final_answer == "invalid"
+        assert result.final_answer == "incorrect"
         assert result.total_iterations == 1
 
 
@@ -152,39 +152,39 @@ class TestDeterministicBehavior:
 class TestAdaptiveStopping:
     """Tests for adaptive stopping at temperature > 0."""
     
-    def test_early_stop_on_threshold_valid(self, global_strategy):
-        """Test early stopping when first 5 iterations are ALL valid."""
+    def test_early_stop_on_threshold_correct(self, global_strategy):
+        """Test early stopping when first 5 iterations are ALL correct."""
         call_count = 0
         
         def mock_query(temp):
             nonlocal call_count
             call_count += 1
-            return "valid"  # Always return valid
+            return "correct"  # Always return correct
         
         result = global_strategy.run(mock_query, temperature=0.5)
         
-        # Should stop after 5 queries (first 5 all valid)
+        # Should stop after 5 queries (first 5 all correct)
         assert call_count == 5
-        assert result.final_answer == "valid"
+        assert result.final_answer == "correct"
         assert result.stopped_early is True
-        assert result.valid_count == 5
+        assert result.correct_count == 5
     
-    def test_early_stop_on_threshold_invalid(self, global_strategy):
-        """Test early stopping when first 5 iterations are ALL invalid."""
+    def test_early_stop_on_threshold_incorrect(self, global_strategy):
+        """Test early stopping when first 5 iterations are ALL incorrect."""
         call_count = 0
         
         def mock_query(temp):
             nonlocal call_count
             call_count += 1
-            return "invalid"
+            return "incorrect"
         
         result = global_strategy.run(mock_query, temperature=0.5)
         
-        # Should stop after 5 queries (first 5 all invalid)
+        # Should stop after 5 queries (first 5 all incorrect)
         assert call_count == 5
-        assert result.final_answer == "invalid"
+        assert result.final_answer == "incorrect"
         assert result.stopped_early is True
-        assert result.invalid_count == 5
+        assert result.incorrect_count == 5
     
     def test_max_iterations_reached(self, global_strategy):
         """Test that mixed first 5 iterations continues to max iterations."""
@@ -193,12 +193,12 @@ class TestAdaptiveStopping:
         def mock_query(temp):
             nonlocal call_count
             call_count += 1
-            # First 5: V,I,V,I,V (mixed) -> continues
-            # Rest: V,V,V,V,V
+            # First 5: C,I,C,I,C (mixed) -> continues
+            # Rest: C,C,C,C,C
             if call_count <= 5:
-                return "valid" if call_count % 2 == 1 else "invalid"
+                return "correct" if call_count % 2 == 1 else "incorrect"
             else:
-                return "valid"
+                return "correct"
         
         result = global_strategy.run(mock_query, temperature=0.5)
         
@@ -206,9 +206,9 @@ class TestAdaptiveStopping:
         assert call_count == 10
         assert result.total_iterations == 10
         assert result.stopped_early is False
-        # 3 valid in first 5 + 5 valid after = 8 valid, 2 invalid
-        assert result.valid_count == 8
-        assert result.invalid_count == 2
+        # 3 correct in first 5 + 5 correct after = 8 correct, 2 incorrect
+        assert result.correct_count == 8
+        assert result.incorrect_count == 2
     
     def test_majority_vote(self, global_strategy):
         """Test majority vote when max iterations reached."""
@@ -217,44 +217,44 @@ class TestAdaptiveStopping:
         def mock_query(temp):
             nonlocal call_count
             call_count += 1
-            # First 5: V,I,V,I,V (mixed) -> continues
-            # After 5: I,V,I,V,I -> 6 valid total, 4 invalid
-            # Wait, let's do: first 5 mixed, then more valid
-            # V,I,V,I,V (3V,2I), then V,V,V,V,V = 8V, 2I
+            # First 5: C,I,C,I,C (mixed) -> continues
+            # After 5: I,C,I,C,I -> 6 correct total, 4 incorrect
+            # Wait, let's do: first 5 mixed, then more correct
+            # C,I,C,I,C (3C,2I), then C,C,C,C,C = 8C, 2I
             if call_count <= 5:
-                return "valid" if call_count % 2 == 1 else "invalid"
+                return "correct" if call_count % 2 == 1 else "incorrect"
             else:
-                return "valid"
+                return "correct"
         
         result = global_strategy.run(mock_query, temperature=0.5)
         
         # Should run all 10 iterations
         assert result.total_iterations == 10
-        # Majority is valid (8 > 2)
-        assert result.final_answer == "valid"
-        assert result.valid_count == 8
-        assert result.invalid_count == 2
+        # Majority is correct (8 > 2)
+        assert result.final_answer == "correct"
+        assert result.correct_count == 8
+        assert result.incorrect_count == 2
     
-    def test_tie_defaults_to_invalid(self, global_strategy):
-        """Test that tie (equal valid/invalid) defaults to invalid (conservative)."""
+    def test_tie_defaults_to_incorrect(self, global_strategy):
+        """Test that tie (equal correct/incorrect) defaults to incorrect (conservative)."""
         call_count = 0
         
         def mock_query(temp):
             nonlocal call_count
             call_count += 1
-            # First 5: V,I,V,I,V (mixed) -> continues
-            # After 5: I,I,I,I,I -> 3V, 7I? No...
-            # Let's do: V,I,V,I,V,I,V,I,V,I = 5V, 5I (tie)
-            return "valid" if call_count % 2 == 1 else "invalid"
+            # First 5: C,I,C,I,C (mixed) -> continues
+            # After 5: I,I,I,I,I -> 3C, 7I? No...
+            # Let's do: C,I,C,I,C,I,C,I,C,I = 5C, 5I (tie)
+            return "correct" if call_count % 2 == 1 else "incorrect"
         
         result = global_strategy.run(mock_query, temperature=0.5)
         
         # Should run all 10 iterations
         assert result.total_iterations == 10
-        # Tie (5 == 5) -> defaults to invalid
-        assert result.final_answer == "invalid"
-        assert result.valid_count == 5
-        assert result.invalid_count == 5
+        # Tie (5 == 5) -> defaults to incorrect
+        assert result.final_answer == "incorrect"
+        assert result.correct_count == 5
+        assert result.incorrect_count == 5
         assert result.confidence == 0.5
 
 
@@ -291,18 +291,18 @@ class TestStoppingResult:
     def test_to_dict(self):
         """Test conversion to dictionary."""
         result = StoppingResult(
-            final_answer="valid",
+            final_answer="correct",
             confidence=0.8,
             total_iterations=5,
-            valid_count=4,
-            invalid_count=1,
+            correct_count=4,
+            incorrect_count=1,
             error_count=0,
             stopped_early=True,
             all_responses=[]
         )
         
         d = result.to_dict()
-        assert d['final_answer'] == "valid"
+        assert d['final_answer'] == "correct"
         assert d['confidence'] == 0.8
         assert d['total_iterations'] == 5
         assert d['stopped_early'] is True
@@ -310,16 +310,16 @@ class TestStoppingResult:
     def test_unclear_count(self):
         """Test unclear_count property."""
         result = StoppingResult(
-            final_answer="valid",
+            final_answer="correct",
             confidence=0.5,
             total_iterations=10,
-            valid_count=4,
-            invalid_count=3,
+            correct_count=4,
+            incorrect_count=3,
             error_count=1,
             stopped_early=False
         )
         
-        # unclear = total - valid - invalid - error = 10 - 4 - 3 - 1 = 2
+        # unclear = total - correct - incorrect - error = 10 - 4 - 3 - 1 = 2
         assert result.unclear_count == 2
 
 
@@ -333,21 +333,21 @@ class TestConvenienceFunctions:
     def test_get_adaptive_vote(self):
         """Test get_adaptive_vote function."""
         def mock_query(temp):
-            return "valid"
+            return "correct"
         
         answer, confidence = get_adaptive_vote(mock_query, temperature=0.0)
         
-        assert answer == "valid"
+        assert answer == "correct"
         assert confidence == 1.0
     
     def test_run_with_stopping(self):
         """Test run_with_stopping function."""
         def mock_query(temp):
-            return "invalid"
+            return "incorrect"
         
         result = run_with_stopping(mock_query, temperature=0.0)
         
-        assert result.final_answer == "invalid"
+        assert result.final_answer == "incorrect"
         assert result.total_iterations == 1
 
 

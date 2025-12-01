@@ -1,8 +1,8 @@
 """
 Few-Shot Prompting Strategy for Syllogistic Reasoning
 
-The model is given MULTIPLE examples (both valid and invalid) before being asked
-to determine the validity of the target syllogism.
+The model is given MULTIPLE examples (both correct and incorrect) before being asked
+to determine the correctness of the target syllogism.
 """
 
 from typing import Dict
@@ -12,46 +12,44 @@ from typing import Dict
 # SYSTEM PROMPT
 # =============================================================================
 
-SYSTEM_PROMPT = """You are a logic expert specializing in syllogistic reasoning. 
-Your task is to determine whether a given syllogism is logically valid or invalid.
+SYSTEM_PROMPT = """You are an expert in syllogistic reasoning. 
+Your task is to determine whether the conclusion of a given syllogism follows from the premises.
 
-A syllogism is VALID if and only if the conclusion follows necessarily from the premises,
-regardless of whether the premises or conclusion are true in the real world.
+A syllogism is CORRECT if the conclusion follows from the premises.
+A syllogism is INCORRECT if the conclusion does not follow from the premises.
 
-A syllogism is INVALID if the conclusion does not follow necessarily from the premises.
-
-You must respond with exactly one word: either "valid" or "invalid"."""
+You must respond with exactly one word: either "correct" or "incorrect"."""
 
 
 # =============================================================================
-# FEW-SHOT EXAMPLES (2 valid, 2 invalid)
+# FEW-SHOT EXAMPLES (2 correct, 2 incorrect - using "correct"/"incorrect" format)
 # =============================================================================
 
 FEW_SHOT_EXAMPLES = """Here are some examples:
 
 Example 1:
-Premise 1: All mammals are warm-blooded
-Premise 2: All whales are mammals
-Conclusion: All whales are warm-blooded
-Answer: valid
+Premise 1: All things that are smoked are bad for your health.
+Premise 2: Cigarettes are smoked.
+Conclusion: Therefore, cigarettes are bad for your health.
+Answer: correct
 
 Example 2:
-Premise 1: All birds have feathers
-Premise 2: Some animals are birds
-Conclusion: Some animals have feathers
-Answer: valid
+Premise 1: No pieces of furniture are attractive things.
+Premise 2: Some tables are attractive things.
+Conclusion: Therefore, some tables are not pieces of furniture.
+Answer: correct
 
 Example 3:
-Premise 1: All cats are animals
-Premise 2: All dogs are animals
-Conclusion: All cats are dogs
-Answer: invalid
+Premise 1: All calculators are machines.
+Premise 2: All computers are calculators.
+Conclusion: Therefore, some machines are not computers.
+Answer: incorrect
 
 Example 4:
-Premise 1: Some flowers are red
-Premise 2: Some red things are roses
-Conclusion: Some flowers are roses
-Answer: invalid"""
+Premise 1: No screwdrivers are heavy.
+Premise 2: Some tools are heavy.
+Conclusion: Therefore, some screwdrivers are not tools.
+Answer: incorrect"""
 
 
 # =============================================================================
@@ -60,13 +58,13 @@ Answer: invalid"""
 
 USER_PROMPT_TEMPLATE = """{examples}
 
-Now determine whether the following syllogism is valid or invalid.
+Now determine whether the following syllogism is correct or incorrect.
 
 Premise 1: {statement_1}
 Premise 2: {statement_2}
 Conclusion: {conclusion}
 
-Is this syllogism valid or invalid? Respond with exactly one word: "valid" or "invalid"."""
+Is this syllogism correct or incorrect? Respond with exactly one word: "correct" or "incorrect"."""
 
 
 # =============================================================================
@@ -125,15 +123,15 @@ def get_prompt_only(syllogism: Dict) -> str:
 # =============================================================================
 
 STRATEGY_NAME = "few_shot"
-STRATEGY_DESCRIPTION = "Few-shot prompting - multiple examples (2 valid, 2 invalid) provided"
+STRATEGY_DESCRIPTION = "Few-shot prompting - multiple examples (2 correct, 2 incorrect) provided"
 
 
 if __name__ == "__main__":
-    # Test the prompt generation
+    # Test the prompt generation with example from master dataset
     test_syllogism = {
-        "statement_1": "All men are mortal",
-        "statement_2": "Socrates is a man",
-        "conclusion": "Socrates is mortal"
+        "statement_1": "No fruits are fungi.",
+        "statement_2": "All mushrooms are fungi.",
+        "conclusion": "Therefore, some mushrooms are fruits."
     }
     
     print("=" * 60)

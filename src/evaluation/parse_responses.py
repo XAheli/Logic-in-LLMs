@@ -2,7 +2,7 @@
 Response Parsing for Syllogistic Reasoning Benchmark
 
 Parses raw model responses to extract:
-- Valid/Invalid classification
+- Correct/Incorrect classification
 - Confidence scores
 - Reasoning (for CoT prompts)
 """
@@ -19,8 +19,8 @@ from dataclasses import dataclass
 
 class ParsedAnswer(Enum):
     """Possible parsed answers."""
-    VALID = "valid"
-    INVALID = "invalid"
+    CORRECT = "correct"
+    INCORRECT = "incorrect"
     UNCLEAR = "unclear"
     ERROR = "error"
 
@@ -34,16 +34,16 @@ class ParseResult:
     reasoning: Optional[str] = None
     
     @property
-    def is_valid(self) -> bool:
-        return self.answer == ParsedAnswer.VALID
+    def is_correct(self) -> bool:
+        return self.answer == ParsedAnswer.CORRECT
     
     @property
-    def is_invalid(self) -> bool:
-        return self.answer == ParsedAnswer.INVALID
+    def is_incorrect(self) -> bool:
+        return self.answer == ParsedAnswer.INCORRECT
     
     @property
     def is_clear(self) -> bool:
-        return self.answer in (ParsedAnswer.VALID, ParsedAnswer.INVALID)
+        return self.answer in (ParsedAnswer.CORRECT, ParsedAnswer.INCORRECT)
 
 
 # =============================================================================
@@ -56,8 +56,8 @@ def parse_response(response: str) -> ParseResult:
     
     Parsing logic (order matters):
     1. If response is empty/None → ERROR
-    2. If "invalid" appears → INVALID
-    3. If "valid" appears → VALID
+    2. If "incorrect" appears → INCORRECT
+    3. If "correct" appears → CORRECT
     4. Otherwise → UNCLEAR
     
     Args:
@@ -75,16 +75,16 @@ def parse_response(response: str) -> ParseResult:
     
     clean = response.lower().strip()
     
-    # Check for invalid first (since "invalid" contains "valid")
-    if "invalid" in clean:
+    # Check for incorrect first (since "incorrect" contains "correct")
+    if "incorrect" in clean:
         return ParseResult(
-            answer=ParsedAnswer.INVALID,
+            answer=ParsedAnswer.INCORRECT,
             raw_response=response,
             confidence=1.0
         )
-    elif "valid" in clean:
+    elif "correct" in clean:
         return ParseResult(
-            answer=ParsedAnswer.VALID,
+            answer=ParsedAnswer.CORRECT,
             raw_response=response,
             confidence=1.0
         )
@@ -101,7 +101,7 @@ def parse_cot_response(response: str) -> ParseResult:
     Parse a chain-of-thought response.
     
     Extracts:
-    - The final answer (valid/invalid)
+    - The final answer (correct/incorrect)
     - The reasoning leading to the answer
     
     Args:
@@ -133,16 +133,16 @@ def parse_cot_response(response: str) -> ParseResult:
         match = re.search(pattern, clean, re.IGNORECASE)
         if match:
             word = match.group(1).lower()
-            if "invalid" in word:
+            if "incorrect" in word:
                 return ParseResult(
-                    answer=ParsedAnswer.INVALID,
+                    answer=ParsedAnswer.INCORRECT,
                     raw_response=response,
                     confidence=1.0,
                     reasoning=reasoning
                 )
-            elif "valid" in word:
+            elif "correct" in word:
                 return ParseResult(
-                    answer=ParsedAnswer.VALID,
+                    answer=ParsedAnswer.CORRECT,
                     raw_response=response,
                     confidence=1.0,
                     reasoning=reasoning
@@ -163,7 +163,7 @@ def extract_answer_string(response: str) -> str:
     """
     Extract just the answer string from a response.
     
-    Returns "valid", "invalid", or "unclear".
+    Returns "correct", "incorrect", or "unclear".
     """
     result = parse_response(response)
     return result.answer.value
@@ -175,24 +175,79 @@ def extract_answer_string(response: str) -> str:
 
 def validate_against_ground_truth(
     parsed: ParseResult,
-    ground_truth: str
+    ground_truth: str,
+    ground_truth_type: str = "syntax"
 ) -> Dict:
     """
     Validate a parsed response against ground truth.
     
+    LLM predicts: "correct" or "incorrect"
+    
+    For syntax comparison (ground_truth_type="syntax"):
+        - correct ↔ valid
+        - incorrect ↔ invalid
+        
+    For NLU comparison (ground_truth_type="NLU"):
+        - correct ↔ believable
+        - incorrect ↔ unbelievable
+    
     Args:
         parsed: Parsed response
-        ground_truth: Expected answer ("valid" or "invalid")
+        ground_truth: Expected ground truth ("valid"/"invalid" or "believable"/"unbelievable")
+        ground_truth_type: "syntax" or "NLU"
         
     Returns:
         Dict with validation results
     """
-    is_correct = parsed.answer.value == ground_truth.lower()
+    prediction = parsed.answer.value  # "correct" or "incorrect"
+    
+    if ground_truth_type == "syntax":
+        # Map: correct↔valid, incorrect↔invalid
+        mapped_prediction = "valid" if prediction == "correct" else "invalid"
+        is_correct = mapped_prediction == ground_truth.lower()
+    elif ground_truth_type == "NLU":
+        # Map: correct↔believable, incorrect↔unbelievable
+        mapped_prediction = "believable" if prediction == "correct" else "unbelievable"
+        is_correct = mapped_prediction == ground_truth.lower()
+    else:
+        raise ValueError(f"Invalid ground_truth_type: {ground_truth_type}. Must be 'syntax' or 'NLU'.")
+    
+    return {
+        "predicted": prediction,
+        "mapped_prediction": mapped_prediction,
+        "ground_truth": ground_truth.lower(),
+        "ground_truth_type": ground_truth_type,
+        "is_correct": is_correct,
+        "is_clear": parsed.is_clear,
+        "confidence": parsed.confidence
+    }
+
+
+def validate_against_both_ground_truths(
+    parsed: ParseResult,
+    ground_truth_syntax: str,
+    ground_truth_NLU: str
+) -> Dict:
+    """
+    Validate a parsed response against both ground truths.
+    
+    Args:
+        parsed: Parsed response
+        ground_truth_syntax: Expected syntax validity ("valid"/"invalid")
+        ground_truth_NLU: Expected NLU believability ("believable"/"unbelievable")
+        
+    Returns:
+        Dict with validation results for both ground truths
+    """
+    syntax_result = validate_against_ground_truth(parsed, ground_truth_syntax, "syntax")
+    nlu_result = validate_against_ground_truth(parsed, ground_truth_NLU, "NLU")
     
     return {
         "predicted": parsed.answer.value,
-        "ground_truth": ground_truth.lower(),
-        "is_correct": is_correct,
+        "ground_truth_syntax": ground_truth_syntax.lower(),
+        "ground_truth_NLU": ground_truth_NLU.lower(),
+        "is_correct_syntax": syntax_result["is_correct"],
+        "is_correct_NLU": nlu_result["is_correct"],
         "is_clear": parsed.is_clear,
         "confidence": parsed.confidence
     }
@@ -212,20 +267,20 @@ def calculate_parsing_stats(results: List[ParseResult]) -> Dict:
     if total == 0:
         return {"total": 0}
     
-    valid_count = sum(1 for r in results if r.answer == ParsedAnswer.VALID)
-    invalid_count = sum(1 for r in results if r.answer == ParsedAnswer.INVALID)
+    correct_count = sum(1 for r in results if r.answer == ParsedAnswer.CORRECT)
+    incorrect_count = sum(1 for r in results if r.answer == ParsedAnswer.INCORRECT)
     unclear_count = sum(1 for r in results if r.answer == ParsedAnswer.UNCLEAR)
     error_count = sum(1 for r in results if r.answer == ParsedAnswer.ERROR)
     
     return {
         "total": total,
-        "valid": valid_count,
-        "invalid": invalid_count,
+        "correct": correct_count,
+        "incorrect": incorrect_count,
         "unclear": unclear_count,
         "error": error_count,
-        "clear_rate": (valid_count + invalid_count) / total,
-        "valid_rate": valid_count / total if total > 0 else 0,
-        "invalid_rate": invalid_count / total if total > 0 else 0,
+        "clear_rate": (correct_count + incorrect_count) / total,
+        "correct_rate": correct_count / total if total > 0 else 0,
+        "incorrect_rate": incorrect_count / total if total > 0 else 0,
     }
 
 
@@ -240,16 +295,16 @@ if __name__ == "__main__":
     
     # Test cases
     test_responses = [
-        "valid",
-        "invalid",
-        "The syllogism is valid.",
-        "This is invalid reasoning.",
-        "I think the answer is VALID",
-        "The conclusion is INVALID because...",
+        "correct",
+        "incorrect",
+        "The syllogism is correct.",
+        "This is incorrect reasoning.",
+        "I think the answer is CORRECT",
+        "The conclusion is INCORRECT because...",
         "I'm not sure about this one.",
         "",
         None,
-        "Let's think step by step. First... Therefore, the syllogism is valid.",
+        "Let's think step by step. First... Therefore, the syllogism is correct.",
     ]
     
     print("\n[Parsing Tests]")
@@ -265,15 +320,15 @@ if __name__ == "__main__":
     
     If all men are mortal, and Socrates is a man, then Socrates must be mortal.
     
-    Therefore, the syllogism is valid."""
+    Therefore, the syllogism is correct."""
     
     result = parse_cot_response(cot_response)
     print(f"  Answer: {result.answer.value}")
     print(f"  Has reasoning: {result.reasoning is not None}")
     
     print("\n[Validation Test]")
-    parsed = parse_response("valid")
-    validation = validate_against_ground_truth(parsed, "valid")
+    parsed = parse_response("correct")
+    validation = validate_against_ground_truth(parsed, "correct")
     print(f"  Predicted: {validation['predicted']}")
     print(f"  Ground truth: {validation['ground_truth']}")
     print(f"  Correct: {validation['is_correct']}")

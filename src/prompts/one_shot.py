@@ -1,8 +1,8 @@
 """
 One-Shot Prompting Strategy for Syllogistic Reasoning
 
-The model is given ONE example of a valid syllogism before being asked
-to determine the validity of the target syllogism.
+The model is given ONE example of a correct syllogism before being asked
+to determine the correctness of the target syllogism.
 """
 
 from typing import Dict
@@ -12,30 +12,28 @@ from typing import Dict
 # SYSTEM PROMPT
 # =============================================================================
 
-SYSTEM_PROMPT = """You are a logic expert specializing in syllogistic reasoning. 
-Your task is to determine whether a given syllogism is logically valid or invalid.
+SYSTEM_PROMPT = """You are an expert in syllogistic reasoning. 
+Your task is to determine whether the conclusion of a given syllogism follows from the premises.
 
-A syllogism is VALID if and only if the conclusion follows necessarily from the premises,
-regardless of whether the premises or conclusion are true in the real world.
+A syllogism is CORRECT if the conclusion follows from the premises.
+A syllogism is INCORRECT if the conclusion does not follow from the premises.
 
-A syllogism is INVALID if the conclusion does not follow necessarily from the premises.
-
-You must respond with exactly one word: either "valid" or "invalid"."""
+You must respond with exactly one word: either "correct" or "incorrect"."""
 
 
 # =============================================================================
-# ONE-SHOT EXAMPLE
+# ONE-SHOT EXAMPLE (shows a correct syllogism with "correct" answer format)
 # =============================================================================
 
 ONE_SHOT_EXAMPLE = """Here is an example:
 
-Premise 1: All mammals are warm-blooded
-Premise 2: All whales are mammals
-Conclusion: All whales are warm-blooded
+Premise 1: All things that are smoked are bad for your health.
+Premise 2: Cigarettes are smoked.
+Conclusion: Therefore, cigarettes are bad for your health.
 
-This syllogism is: valid
+Answer: correct
 
-The conclusion follows necessarily from the premises because if all mammals are warm-blooded, and all whales are mammals, then all whales must be warm-blooded."""
+The conclusion follows from the premises because if all things that are smoked are bad for your health, and cigarettes are smoked, then cigarettes must be bad for your health."""
 
 
 # =============================================================================
@@ -44,13 +42,13 @@ The conclusion follows necessarily from the premises because if all mammals are 
 
 USER_PROMPT_TEMPLATE = """{example}
 
-Now determine whether the following syllogism is valid or invalid.
+Now determine whether the following syllogism is correct or incorrect.
 
 Premise 1: {statement_1}
 Premise 2: {statement_2}
 Conclusion: {conclusion}
 
-Is this syllogism valid or invalid? Respond with exactly one word: "valid" or "invalid"."""
+Is this syllogism correct or incorrect? Respond with exactly one word: "correct" or "incorrect"."""
 
 
 # =============================================================================
@@ -109,15 +107,15 @@ def get_prompt_only(syllogism: Dict) -> str:
 # =============================================================================
 
 STRATEGY_NAME = "one_shot"
-STRATEGY_DESCRIPTION = "One-shot prompting - one valid example provided"
+STRATEGY_DESCRIPTION = "One-shot prompting - one correct example provided"
 
 
 if __name__ == "__main__":
-    # Test the prompt generation
+    # Test the prompt generation with example from master dataset
     test_syllogism = {
-        "statement_1": "All men are mortal",
-        "statement_2": "Socrates is a man",
-        "conclusion": "Socrates is mortal"
+        "statement_1": "All calculators are machines.",
+        "statement_2": "All computers are calculators.",
+        "conclusion": "Therefore, some machines are not computers."
     }
     
     print("=" * 60)
