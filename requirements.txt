@@ -1,27 +1,23 @@
-# =============================================================================
-# Syllogistic Reasoning Benchmark - Requirements
-# =============================================================================
-
 # API Clients
-google-genai>=1.0.0           # Google AI Studio (Gemini models)
-huggingface-hub>=0.29.0       # HuggingFace Inference API (with provider routing support)
+google-genai>=1.0.0
+huggingface-hub>=0.29.0
 
 # Configuration
-tomli>=2.0.0                  # TOML parsing (Python < 3.11)
+tomli>=2.0.0
 
 # Data Processing
-pandas>=2.0.0                 # Data analysis
-numpy>=1.24.0                 # Numerical operations
+pandas>=2.0.0
+numpy>=1.24.0
 
 # Analysis & Visualization
-scipy>=1.10.0                 # Statistical analysis (Spearman correlation)
-matplotlib>=3.7.0             # Plotting
-seaborn>=0.12.0               # Statistical visualization
+scipy>=1.10.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
 
 # Utilities
-tqdm>=4.65.0                  # Progress bars
-python-dotenv>=1.0.0          # Environment variables (optional)
+tqdm>=4.65.0
+python-dotenv>=1.0.0
 
 # Testing
-pytest>=7.0.0                 # Testing framework
+pytest>=7.0.0
 tiktoken
