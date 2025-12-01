@@ -105,12 +105,12 @@ The 4 ground truth combinations reveal **belief bias** (when intuition overrides
 ┌─────────────────────────────────────────────────────────────────┐
 │                        SYSTEM PROMPT                            │
 ├─────────────────────────────────────────────────────────────────┤
-│ You are an expert in syllogistic reasoning.                    │
-│ Your task is to determine whether the conclusion of a given    │
-│ syllogism follows from the premises.                           │
+│ You are an expert in syllogistic reasoning.                     │
+│ Your task is to determine whether the conclusion of a given     │
+│ syllogism follows from the premises.                            │
 │                                                                 │
-│ A syllogism is CORRECT if the conclusion follows.              │
-│ A syllogism is INCORRECT if the conclusion does not follow.    │
+│ A syllogism is CORRECT if the conclusion follows.               │
+│ A syllogism is INCORRECT if the conclusion does not follow.     │
 │                                                                 │
 │ [Strategy-specific instruction]                                 │
 └─────────────────────────────────────────────────────────────────┘
@@ -120,13 +120,13 @@ The 4 ground truth combinations reveal **belief bias** (when intuition overrides
 ├─────────────────────────────────────────────────────────────────┤
 │ [Examples if one_shot/few_shot]                                 │
 │                                                                 │
-│ Determine whether the following syllogism is correct/incorrect │
+│ Determine whether the following syllogism is correct/incorrect  │
 │                                                                 │
 │ Premise 1: {statement_1}                                        │
 │ Premise 2: {statement_2}                                        │
 │ Conclusion: {conclusion}                                        │
 │                                                                 │
-│ [CoT: "Let's think step by step" / Direct: "Respond with one   │
+│ [CoT: "Let's think step by step" / Direct: "Respond with one    │
 │  word: correct or incorrect"]                                   │
 └─────────────────────────────────────────────────────────────────┘
                               ↓
@@ -301,4 +301,4 @@ Each file contains:
 1. [llm-logic](https://github.com/wesholliday/llm-logic) - Syllogistic reasoning benchmarks
 2. [SR-FoT](https://github.com/RodeWayne/SR-FoT) - Syllogistic reasoning with faithful CoT
 3. [AAAI 2026 LM Reasoning Workshop](https://sites.google.com/view/aaai-2026-lmreasoning)
-4. Evans, J. St. B. T. (1983). *Belief bias in syllogistic reasoning*
+4. Lambell, N. J., Evans, J. S. B. T., & Handley, S. J. (1999). Belief bias, logical reasoning and presentation order on the syllogistic evaluation task. In M. Hahn, & S. C. Stoness (Eds.), Proceedings of the 21st Annual Conference of the Cognitive Science Society (pp. 282-287). Lawrence Erlbaum. https://mindmodeling.org/cogscihistorical/
