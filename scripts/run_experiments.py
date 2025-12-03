@@ -266,14 +266,46 @@ def run_experiments(
                 completed_count += 1
                 print(f"\n[{completed_count}/{total_configs}] Running: {config_key}")
                 
+                # Prepare output path early for potential partial saves
+                temp_dir = results_dir / "raw_responses" / f"temperature_{temperature}"
+                temp_dir.mkdir(parents=True, exist_ok=True)
+                output_file = temp_dir / f"{model_key}_{strategy}.json"
+                partial_file = temp_dir / f"{model_key}_{strategy}.partial.json"
+                
+                # Check for existing partial results to resume from
+                results = []
+                completed_instances = set()
+                start_index = 0
+                
+                if partial_file.exists():
+                    try:
+                        with open(partial_file, 'r') as f:
+                            partial_data = json.load(f)
+                        results = partial_data.get('results', [])
+                        completed_instances = {
+                            (r['syllogism_id'], r['variant']) 
+                            for r in results
+                        }
+                        start_index = len(results)
+                        print(f"   📂 Resuming from partial: {start_index}/160 instances already done")
+                    except Exception as e:
+                        print(f"   ⚠️  Could not load partial file: {e}")
+                        results = []
+                        completed_instances = set()
+                        start_index = 0
+                
                 try:
                     # Get instances and run each
                     instances = processor._get_syllogism_instances()
-                    results = []
                     total_instances = len(instances)
                     
                     import sys
                     for i, instance in enumerate(instances, 1):
+                        # Skip already completed instances (for partial resume)
+                        instance_key = (instance['syllogism_id'], instance['variant'])
+                        if instance_key in completed_instances:
+                            continue
+                        
                         result = processor.run_single_experiment(
                             instance=instance,
                             model_key=model_key,
@@ -282,29 +314,28 @@ def run_experiments(
                         )
                         results.append(result.to_dict())
                         
-                        # Progress indicator (every instance)
-                        correct = sum(1 for r in results if r.get('is_correct', False))
-                        pct = (i / total_instances) * 100
+                        # Progress indicator (every instance) - check is_correct_syntax
+                        correct_syntax = sum(1 for r in results if r.get('is_correct_syntax', False))
+                        current_count = len(results)
+                        pct = (current_count / total_instances) * 100
                         bar_len = 20
-                        filled = int(bar_len * i / total_instances)
+                        filled = int(bar_len * current_count / total_instances)
                         bar = '█' * filled + '░' * (bar_len - filled)
-                        print(f"\r   [{bar}] {pct:5.1f}% ({i}/{total_instances}) | ✓ {correct}/{i} correct", end='', flush=True)
+                        print(f"\r   [{bar}] {pct:5.1f}% ({current_count}/{total_instances}) | ✓ {correct_syntax}/{current_count} syntax", end='', flush=True)
                     
                     # Final stats on new line
-                    final_correct = sum(1 for r in results if r.get('is_correct', False))
-                    print(f"\n   ✅ Done: {final_correct}/{total_instances} correct ({100*final_correct/total_instances:.1f}%)")
+                    final_correct_syntax = sum(1 for r in results if r.get('is_correct_syntax', False))
+                    final_correct_nlu = sum(1 for r in results if r.get('is_correct_NLU', False))
+                    print(f"\n   ✅ Done: {final_correct_syntax}/{total_instances} syntax ({100*final_correct_syntax/total_instances:.1f}%), {final_correct_nlu}/{total_instances} NLU ({100*final_correct_nlu/total_instances:.1f}%)")
                     
-                    # Save results
-                    temp_dir = results_dir / "raw_responses" / f"temperature_{temperature}"
-                    temp_dir.mkdir(parents=True, exist_ok=True)
-                    
-                    output_file = temp_dir / f"{model_key}_{strategy}.json"
+                    # Save final results
                     output_data = {
                         'metadata': {
                             'model': model_key,
                             'strategy': strategy,
                             'temperature': temperature,
-                            'timestamp': datetime.now().isoformat()
+                            'timestamp': datetime.now().isoformat(),
+                            'status': 'complete'
                         },
                         'results': results
                     }
@@ -313,17 +344,63 @@ def run_experiments(
                     
                     print(f"   ✅ Saved: {output_file}")
                     
+                    # Remove partial file if exists (completed successfully)
+                    if partial_file.exists():
+                        partial_file.unlink()
+                        print(f"   🗑️  Removed partial file")
+                    
                     # Update checkpoint
                     completed.add(config_key)
                     save_checkpoint(results_dir, {'completed': list(completed)})
                     
                 except KeyboardInterrupt:
-                    print("\n\n⚠️  Interrupted by user. Progress saved.")
+                    # Save partial results on interrupt
+                    print(f"\n\n⚠️  Interrupted! Saving partial progress ({len(results)}/{total_instances} instances)...")
+                    
+                    partial_data = {
+                        'metadata': {
+                            'model': model_key,
+                            'strategy': strategy,
+                            'temperature': temperature,
+                            'timestamp': datetime.now().isoformat(),
+                            'status': 'partial',
+                            'completed_instances': len(results),
+                            'total_instances': total_instances
+                        },
+                        'results': results
+                    }
+                    with open(partial_file, 'w') as f:
+                        json.dump(partial_data, f, indent=2)
+                    
+                    print(f"   💾 Partial results saved: {partial_file}")
+                    print(f"   ℹ️  Run with --resume to continue from {len(results)}/{total_instances}")
+                    
                     save_checkpoint(results_dir, {'completed': list(completed)})
                     sys.exit(0)
                     
                 except Exception as e:
-                    print(f"   ❌ Error: {e}")
+                    print(f"\n   ❌ Error: {e}")
+                    
+                    # Save partial results on error too
+                    if results:
+                        print(f"   💾 Saving partial progress ({len(results)} instances)...")
+                        partial_data = {
+                            'metadata': {
+                                'model': model_key,
+                                'strategy': strategy,
+                                'temperature': temperature,
+                                'timestamp': datetime.now().isoformat(),
+                                'status': 'error',
+                                'error': str(e),
+                                'completed_instances': len(results),
+                                'total_instances': total_instances
+                            },
+                            'results': results
+                        }
+                        with open(partial_file, 'w') as f:
+                            json.dump(partial_data, f, indent=2)
+                        print(f"   💾 Partial results saved: {partial_file}")
+                    
                     import traceback
                     traceback.print_exc()
                     # Continue with next configuration

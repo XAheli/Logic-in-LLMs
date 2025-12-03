@@ -1,0 +1,4011 @@
+{
+  "metadata": {
+    "model": "kimi-k2-instruct",
+    "strategy": "few_shot",
+    "temperature": 0.0,
+    "timestamp": "2025-12-03T06:23:40.433174",
+    "status": "complete"
+  },
+  "results": [
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:09:58.184649",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:09:59.445409",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:00.911396",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:02.683354",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:04.076549",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:05.640717",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:07.003768",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:08.435138",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:09.838474",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:11.409206",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:12.806770",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:14.392587",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:15.756457",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:17.574136",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:19.055556",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:20.410887",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:22.023575",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:28.722233",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n**Premise 1:** No people have feathers.  \nThis means the set of \"people\" and the set of \"things with feathers\" do not overlap at all.\n\n**Premise 2:** All flying birds have feathers.  \nThis means every flying bird is in the set of \"things with feathers.\"\n\n**Conclusion:** Therefore, some people are flying birds.  \nThis claims that there is an overlap between \"people\" and \"flying birds.\"\n\nFrom Premise 1, we know no people have feathers. From Premise 2, all flying birds have feathers. Therefore, no flying birds can be people (since people cannot have feathers). The conclusion claims the opposite\u2014that some people are flying birds\u2014which directly contradicts the premises. Thus, the syllogism is **incorrect**.\n\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:29.846121",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:31.425996",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:33.087305",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:34.870580",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:36.035434",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:37.770268",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:39.148115",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:40.599856",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:42.011100",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:43.582279",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:44.994719",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:46.479982",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:48.139398",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:49.806981",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:51.035187",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:52.867265",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:53.959064",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:00.155596",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n**Premise 1**: Some brambles are spondly things.  \nThis means there is at least one thing that is both a bramble and spondly.\n\n**Premise 2**: No trizzles are spondly things.  \nThis means nothing that is a trizzle is spondly. So, if something is spondly, it cannot be a trizzle.\n\n**Conclusion**: Therefore, some brambles are not trizzles.  \nWe know from Premise 1 that at least one bramble is spondly. From Premise 2, we know that this spondly bramble cannot be a trizzle. Therefore, this bramble is not a trizzle. Hence, there exists at least one bramble that is not a trizzle.\n\nThis matches the conclusion: \"some brambles are not trizzles.\"\n\n**Answer**: correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:01.520486",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:02.915559",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:17.096144",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism\nThe syllogism is:\n\n1. **Premise 1**: No flonkers are gripple.  \n   - This means that the set of flonkers and the set of gripple are entirely disjoint (no overlap).  \n   - Symbolically: All flonkers are not gripple, or equivalently, no member of flonkers is a member of gripple.\n\n2. **Premise 2**: Some wobbles are gripple.  \n   - This means that there is at least one wobble that is also gripple.  \n   - Symbolically: There exists at least one wobble that is a member of gripple.\n\n3. **Conclusion**: Therefore, some wobbles are not flonkers.  \n   - This claims that there is at least one wobble that is not a flonker.\n\n### Checking Validity\nWe need to determine if the conclusion logically follows from the premises.\n\n- From Premise 1, we know that nothing can be both a flonker and gripple.  \n- From Premise 2, we know that some wobbles are gripple.  \n- Since these gripple wobbles cannot be flonkers (from Premise 1), it must be that these wobbles are not flonkers.  \n\nThus, the conclusion \"some wobbles are not flonkers\" is directly supported by the premises.\n\n### Comparison with Examples\nThis is structurally similar to **Example 2**:\n- Premise 1: No pieces of furniture are attractive things.  \n- Premise 2: Some tables are attractive things.  \n- Conclusion: Therefore, some tables are not pieces of furniture.  \n\nThis was marked as **correct**, and the given syllogism follows the same valid logical form.\n\n### Final Answer\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:18.186068",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:19.776496",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:21.314652",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:34.062375",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n1. **Premise 1**: No plonkies are gribbled things.  \n   - This means the set of \"plonkies\" and the set of \"gribbled things\" do not overlap at all. In other words, if something is a plonky, it cannot be gribbled, and vice versa.\n\n2. **Premise 2**: Some thwacks are gribbled things.  \n   - This means there exists at least one thwack that is gribbled.\n\n3. **Conclusion**: Therefore, some thwacks are not plonkies.  \n   - This claims that there exists at least one thwack that is not a plonky.\n\n### Evaluating the Conclusion:\n- From Premise 1, we know that nothing can be both a plonky and gribbled.  \n- From Premise 2, we know that some thwacks are gribbled.  \n- Therefore, these gribbled thwacks cannot be plonkies (because no plonkies are gribbled).  \n- Thus, these thwacks are indeed not plonkies, which supports the conclusion that \"some thwacks are not plonkies.\"\n\n### Logical Structure:\nThis is a classic **valid syllogism** of the form:\n- No A are B.  \n- Some C are B.  \n- Therefore, some C are not A.  \n\nThis matches the structure of **Example 2** in the provided examples, which was also deemed correct.\n\n### Final Answer:\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:39.849871",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\nPremise 1: Some thwacks are gribbled things.  \nThis means there exists at least one thwack that is gribbled.\n\nPremise 2: No plonkies are gribbled things.  \nThis means that nothing that is gribbled is a plonky. In other words, if something is gribbled, it cannot be a plonky.\n\nNow, from Premise 1, we know that at least one thwack is gribbled. From Premise 2, we know that anything gribbled cannot be a plonky. Therefore, that gribbled thwack cannot be a plonky. This implies that at least one thwack is not a plonky.\n\nThus, the conclusion \"Some thwacks are not plonkies\" logically follows from the premises.\n\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:46.463768",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: No cigarettes are inexpensive.\nThis means that the set of cigarettes and the set of inexpensive things do not overlap at all. In other words, all cigarettes are **not** inexpensive.\n\n### Premise 2: Some addictive things are inexpensive.\nThis means that there is at least one addictive thing that is inexpensive. \n\n### Conclusion: Therefore, some addictive things are not cigarettes.\nFrom Premise 1, we know that no cigarettes are inexpensive. From Premise 2, we know that some addictive things are inexpensive. Since these inexpensive addictive things cannot be cigarettes (because no cigarettes are inexpensive), it follows that these addictive things are not cigarettes. Thus, the conclusion logically follows from the premises.\n\n### Answer: correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:47.713902",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:56.763527",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n1. **Premise 1**: No bloffles are snurly.  \n   - This means the set of bloffles and the set of snurly things are entirely disjoint (no overlap).\n\n2. **Premise 2**: Some gribbles are snurly.  \n   - This means there is at least one gribble that is snurly.\n\n3. **Conclusion**: Therefore, some gribbles are not bloffles.  \n   - We need to determine if this follows from the premises.\n\n### Logical Analysis:\n- From Premise 1, we know that nothing can be both a bloffle and snurly.  \n- From Premise 2, we know that at least one gribble is snurly.  \n- Since this snurly gribble cannot be a bloffle (because no bloffles are snurly), it must be a gribble that is not a bloffle.  \n\nThus, the conclusion \"some gribbles are not bloffles\" is logically valid based on the premises.\n\n### Final Answer:\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:09.666548",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n1. **Premise 1**: Some gribbles are snurly.  \n   - This means there is at least one gribble that is snurly.  \n   - In logical terms: \u2203x (Gribble(x) \u2227 Snurly(x)).\n\n2. **Premise 2**: No bloffles are snurly.  \n   - This means no bloffle is snurly; the sets \"bloffles\" and \"snurly things\" do not overlap.  \n   - In logical terms: \u2200x (Bloffle(x) \u2192 \u00acSnurly(x)).\n\n3. **Conclusion**: Some gribbles are not bloffles.  \n   - This claims that there exists at least one gribble that is not a bloffle.  \n   - In logical terms: \u2203x (Gribble(x) \u2227 \u00acBloffle(x)).\n\n### Checking Validity:\n- From Premise 1, we know there is at least one gribble that is snurly. Let\u2019s call this gribble \"G\".  \n- From Premise 2, we know that no bloffle is snurly. Therefore, G (which is snurly) cannot be a bloffle.  \n- Thus, G is a gribble that is not a bloffle, which directly supports the conclusion that some gribbles are not bloffles.\n\n### Why This is Correct:\nThe conclusion follows necessarily from the premises. The existence of a snurly gribble (Premise 1) combined with the fact that no bloffle is snurly (Premise 2) guarantees that this snurly gribble is not a bloffle. Therefore, the syllogism is logically valid.\n\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:16.450929",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: No police dogs are vicious.\nThis means that the set of police dogs and the set of vicious dogs are entirely separate (no overlap).\n\n### Premise 2: Some highly trained dogs are vicious.\nThis means that there is at least one highly trained dog that is vicious.\n\n### Conclusion: Therefore, some highly trained dogs are not police dogs.\nFrom Premise 1, we know that no police dogs are vicious. From Premise 2, we know that some highly trained dogs are vicious. Therefore, these vicious highly trained dogs cannot be police dogs (since no police dogs are vicious). Thus, these highly trained dogs are not police dogs, which means \"some highly trained dogs are not police dogs\" is a valid conclusion.\n\nThe syllogism is logically valid.\n\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:17.905039",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:27.204917",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: No quiblets are frobny.\nThis means that the set of quiblets and the set of frobny things are entirely disjoint. In other words, if something is a quiblet, it cannot be frobny, and vice versa.\n\n### Premise 2: Some zankle things are frobny.\nThis means that there is at least one thing that is both a zankle thing and frobny.\n\n### Conclusion: Therefore, some zankle things are not quiblets.\nFrom Premise 1, we know that nothing can be both a quiblet and frobny. From Premise 2, we know that some zankle things are frobny. Therefore, these frobny zankle things cannot be quiblets (because quiblets cannot be frobny). Thus, these zankle things are not quiblets, which means \"some zankle things are not quiblets\" is a valid conclusion.\n\n### Verification:\nThis is a classic syllogism of the form:\n- No A are B.\n- Some C are B.\n- Therefore, some C are not A.\n\nThis form is logically valid (similar to Example 2 in the given examples).\n\nAnswer: correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:40.456790",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n1. **Premise 1**: Some zankle things are frobny.  \n   - This means there is at least one zankle thing that is frobny.  \n   - In logical terms: \u2203x (Zankle(x) \u2227 Frobny(x)).\n\n2. **Premise 2**: No quiblets are frobny.  \n   - This means that nothing that is a quiblet is frobny.  \n   - In logical terms: \u2200x (Quiblet(x) \u2192 \u00acFrobny(x)).\n\n3. **Conclusion**: Some zankle things are not quiblets.  \n   - This means there is at least one zankle thing that is not a quiblet.  \n   - In logical terms: \u2203x (Zankle(x) \u2227 \u00acQuiblet(x)).\n\n### Checking Validity:\n- From Premise 1, we know there exists at least one zankle thing (let's call it 'a') such that Zankle(a) \u2227 Frobny(a).\n- From Premise 2, since no quiblets are frobny, and 'a' is frobny, it follows that 'a' cannot be a quiblet (\u00acQuiblet(a)).\n- Therefore, we have Zankle(a) \u2227 \u00acQuiblet(a), which directly supports the conclusion that some zankle things are not quiblets.\n\n### Why This is Correct:\nThe conclusion logically follows from the premises. The existence of a zankle thing that is frobny (Premise 1) and the fact that no quiblets are frobny (Premise 2) guarantees that this zankle thing is not a quiblet, satisfying the conclusion.\n\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:41.641190",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:43.186787",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:52.806808",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n1. **Premise 1**: No sprandles are clompy things.  \n   - This means the set of \"sprandles\" and the set of \"clompy things\" do not overlap at all. In other words, if something is a sprandle, it cannot be clompy, and vice versa.\n\n2. **Premise 2**: Some glurbles are clompy things.  \n   - This means there is at least one glurble that is clompy.\n\n3. **Conclusion**: Therefore, some glurbles are not sprandles.  \n   - The conclusion claims that at least one glurble is not a sprandle.\n\n### Logical Analysis:\n- From Premise 1, we know that nothing can be both a sprandle and clompy.  \n- From Premise 2, we know that some glurbles are clompy.  \n- Since these clompy glurbles cannot be sprandles (because nothing clompy is a sprandle), it follows that these glurbles are not sprandles.  \n\nThus, the conclusion logically follows from the premises. The syllogism is **correct**.\n\n### Final Answer:\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:54.049292",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:55.442114",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:57.132974",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:58.499860",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:00.062828",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:01.428239",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:03.019114",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:17.107469",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism\nThe syllogism is:\n\n1. **Premise 1**: No twonkles are blemmish.  \n   - This means that the set of \"twonkles\" and the set of \"blemmish\" things do not overlap at all. In other words, if something is a twonkles, it cannot be blemmish, and vice versa.\n\n2. **Premise 2**: Some plombers are blemmish.  \n   - This means that at least one member of the set \"plombers\" is also a member of the set \"blemmish\".\n\n3. **Conclusion**: Therefore, some plombers are not twonkles.  \n   - This claims that at least one member of the set \"plombers\" is not a member of the set \"twonkles\".\n\n### Evaluating the Conclusion\nFrom Premise 1, we know that nothing can be both a twonkles and blemmish. From Premise 2, we know that some plombers are blemmish. \n\n- Since these blemmish plombers cannot be twonkles (because no twonkles are blemmish), it must be true that these plombers are not twonkles. \n- Therefore, the conclusion \"some plombers are not twonkles\" logically follows from the premises.\n\n### Checking for Validity\nThis is a classic example of a valid syllogism known as **Ferio** in traditional logic (EIO-1 form):\n- No M are P. (No twonkles are blemmish.)\n- Some S are P. (Some plombers are blemmish.)\n- Therefore, some S are not M. (Some plombers are not twonkles.)\n\nThe structure is valid, and the conclusion correctly follows from the premises.\n\n### Final Answer\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:29.885262",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism\nThe syllogism is:\n\n1. **Premise 1**: Some plombers are blemmish.  \n   - This means that there is at least one plomer that is blemmish. In logical terms: \u2203x (Plomer(x) \u2227 Blemmish(x)).\n\n2. **Premise 2**: No twonkles are blemmish.  \n   - This means that there is no twonkles that is blemmish. In logical terms: \u2200x (Twonkles(x) \u2192 \u00acBlemmish(x)).\n\n3. **Conclusion**: Therefore, some plombers are not twonkles.  \n   - This means that there is at least one plomer that is not a twonkles. In logical terms: \u2203x (Plomer(x) \u2227 \u00acTwonkles(x)).\n\n### Checking Validity\nWe need to determine if the conclusion logically follows from the premises.\n\n- From **Premise 1**, we know that at least one plomer is blemmish. Let's call this plomer \"P\". So, P is a plomer and P is blemmish.\n- From **Premise 2**, we know that no twonkles are blemmish. This means that if something is a twonkles, it cannot be blemmish. Therefore, P (which is blemmish) cannot be a twonkles.\n- Since P is a plomer and P is not a twonkles, it follows that some plombers (at least P) are not twonkles. This matches the conclusion.\n\n### Logical Form\nThis is a classic syllogism of the form:\n- Some A are B.\n- No C are B.\n- Therefore, some A are not C.\n\nThis form is logically valid because the premises guarantee the truth of the conclusion.\n\n### Final Answer\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:30.993601",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:37.835918",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: Some tables are attractive things.\nThis means that at least one table is an attractive thing.\n\n### Premise 2: No pieces of furniture are attractive things.\nThis means that no furniture is attractive. In other words, if something is furniture, it is not attractive.\n\n### Conclusion: Therefore, some tables are not pieces of furniture.\nFrom Premise 1, we know some tables are attractive. From Premise 2, we know that no furniture is attractive. Therefore, the attractive tables cannot be furniture (since furniture cannot be attractive). This implies that those attractive tables are not pieces of furniture. Thus, it is correct to conclude that some tables are not pieces of furniture.\n\nThe syllogism is logically valid.\n\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:48.022918",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Structure:\nThis is a categorical syllogism with the following form:\n- Premise 1: No A are B. (No pieces of blemble are snorky things.)\n- Premise 2: Some C are B. (Some flables are snorky things.)\n- Conclusion: Some C are not A. (Some flables are not pieces of blemble.)\n\n### Logical Analysis:\n1. **Premise 1** states that the categories \"pieces of blemble\" (A) and \"snorky things\" (B) are entirely disjoint (no overlap).\n2. **Premise 2** states that some \"flables\" (C) are \"snorky things\" (B), meaning there is an overlap between C and B.\n3. Since A and B are disjoint (from Premise 1), and some C are B (from Premise 2), those C that are B cannot be A. Thus, some C are not A.\n\nThis is a valid syllogism (specifically, a **valid immediate inference** from the premises). The conclusion logically follows from the premises.\n\n### Comparison to Examples:\n- This is structurally identical to **Example 2**, which was marked as **correct**. The only difference is the use of nonsense words (\"blemble,\" \"snorky,\" \"flables\"), but the logical form is the same.\n\n### Final Answer:\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:49.192705",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:59.005284",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: No musical instruments are shiny.\nThis means that the set of musical instruments and the set of shiny things do not overlap at all. In other words, if something is a musical instrument, it cannot be shiny, and vice versa.\n\n### Premise 2: Some violins are shiny.\nThis tells us that there exists at least one violin that is shiny. From Premise 1, we know that this shiny violin cannot be a musical instrument (because no musical instruments are shiny).\n\n### Conclusion: Therefore, some violins are not musical instruments.\nSince we know that at least one violin is shiny (Premise 2), and no shiny things are musical instruments (Premise 1), it follows that this shiny violin is not a musical instrument. Thus, at least one violin (the shiny one) is not a musical instrument. This aligns perfectly with the conclusion.\n\n### Verification:\nThis is logically equivalent to Example 2, which was marked as \"correct\". The structure is:\n- Premise 1: No A are B.\n- Premise 2: Some C are B.\n- Conclusion: Therefore, some C are not A.\n\nThis is a valid syllogism (known as a \"valid immediate inference\" or \"subalternation\" in traditional logic).\n\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:00.155675",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:01.710026",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:09.486824",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n**Premise 1**: Some wuzzlers are glimble.  \nThis means there is at least one wuzzler that is also glimble.\n\n**Premise 2**: No plinkles are glimble.  \nThis means that nothing that is a plinkle is also glimble. In other words, glimble and plinkle are mutually exclusive categories.\n\n**Conclusion**: Therefore, some wuzzlers are not plinkles.  \nWe need to determine whether this conclusion logically follows from the premises.\n\nFrom Premise 1, we know that at least one wuzzler is glimble. Let\u2019s call this wuzzler W.  \nFrom Premise 2, we know that no plinkle is glimble. Therefore, W (which is glimble) cannot be a plinkle.  \nThus, W is a wuzzler that is not a plinkle.  \nThis means that at least one wuzzler (namely W) is not a plinkle.  \nThis is exactly what the conclusion claims: \"some wuzzlers are not plinkles.\"\n\nTherefore, the conclusion logically follows from the premises.\n\n**correct**",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:16.090910",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: No well-educated people are impartial.\nThis can be rephrased as: All well-educated people are **not** impartial. In other words, the set of well-educated people and the set of impartial people do not overlap at all.\n\n### Premise 2: Some judges are impartial.\nThis means that at least one judge is in the set of impartial people.\n\n### Conclusion: Therefore, some judges are not well-educated people.\nFrom Premise 1, we know that no well-educated people are impartial. From Premise 2, we know that some judges are impartial. Therefore, these impartial judges cannot be well-educated (since no well-educated people are impartial). Thus, these judges must not be well-educated. \n\nThis is logically valid. The conclusion follows from the premises.\n\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:24.146211",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: Some judges are impartial.\nThis means that at least one judge is impartial. In logical terms: There exists at least one judge who is impartial.\n\n### Premise 2: No well-educated people are impartial.\nThis means that if someone is well-educated, they cannot be impartial. In logical terms: For all x, if x is well-educated, then x is not impartial.\n\n### Conclusion: Therefore, some judges are not well-educated people.\nThis means that at least one judge is not well-educated. In logical terms: There exists at least one judge who is not well-educated.\n\n### Checking the validity:\nFrom Premise 1, we know that some judges are impartial. From Premise 2, we know that no well-educated people are impartial. Therefore, the impartial judges mentioned in Premise 1 cannot be well-educated (because if they were, they wouldn't be impartial). This directly implies that these impartial judges are not well-educated. Thus, there exist some judges (the impartial ones) who are not well-educated. This matches the conclusion.\n\n### Final answer:\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:25.518198",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:38.644676",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n1. **Premise 1**: Some groblets are flimbert.  \n   - This means there is at least one groblet that is flimbert.  \n   - In logical terms: \u2203x (Groblet(x) \u2227 Flimbert(x)).\n\n2. **Premise 2**: No snobbly things are flimbert.  \n   - This means that if something is snobbly, it cannot be flimbert.  \n   - In logical terms: \u2200x (Snobbly(x) \u2192 \u00acFlimbert(x)).\n\n3. **Conclusion**: Some groblets are not snobbly things.  \n   - This means there is at least one groblet that is not snobbly.  \n   - In logical terms: \u2203x (Groblet(x) \u2227 \u00acSnobbly(x)).\n\n### Checking Validity:\n- From Premise 1, we know there exists at least one groblet that is flimbert. Let\u2019s call this groblet \"G\". So, G is a groblet and G is flimbert.\n- From Premise 2, since no snobbly things are flimbert, G cannot be snobbly (because G is flimbert).  \n- Therefore, G is a groblet and G is not snobbly. This directly supports the conclusion that some groblets are not snobbly things.\n\n### Why This is Correct:\nThe conclusion follows necessarily from the premises. The existence of a groblet that is flimbert (Premise 1) and the fact that no snobbly things are flimbert (Premise 2) guarantees that this groblet is not snobbly. Thus, the syllogism is logically valid.\n\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:40.436046",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:41.571879",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:43.148698",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:51.956810",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: Some spindles are bliving things.\nThis means that there is at least one spindle that is a bliving thing. In logical terms: \u2203x (Spindle(x) \u2227 Bliving(x)).\n\n### Premise 2: No druffs are bliving things.\nThis means that there is no druff that is a bliving thing. In logical terms: \u2200x (Druff(x) \u2192 \u00acBliving(x)).\n\n### Conclusion: Therefore, some spindles are not druffs.\nThis means that there is at least one spindle that is not a druff. In logical terms: \u2203x (Spindle(x) \u2227 \u00acDruff(x)).\n\n### Analysis:\nFrom Premise 1, we know that some spindles are bliving things. From Premise 2, we know that no druffs are bliving things. This implies that any bliving thing (including the bliving spindles from Premise 1) cannot be a druff. Therefore, the bliving spindles must be spindles that are not druffs. This directly supports the conclusion that some spindles are not druffs.\n\nThus, the syllogism is logically valid.\n\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:53.193335",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:54.778614",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:07.749450",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Structure:\nThis is a categorical syllogism with the following structure:\n- Premise 1: No A are B. (No krimble things are snorbled.)\n- Premise 2: Some C are B. (Some thrumpets are snorbled.)\n- Conclusion: Some C are not A. (Some thrumpets are not krimble things.)\n\n### Logical Analysis:\n1. **Premise 1** states that the categories \"krimble things\" (A) and \"snorbled\" (B) are entirely disjoint. Nothing that is krimble is snorbled, and vice versa.\n2. **Premise 2** states that some members of the category \"thrumpets\" (C) are snorbled (B). This means there is an overlap between thrumpets and snorbled things.\n3. **Conclusion**: Since some thrumpets are snorbled (from Premise 2), and no snorbled things are krimble (from Premise 1), it follows that those thrumpets that are snorbled cannot be krimble. Thus, some thrumpets are not krimble things.\n\nThis is a valid application of the syllogistic rule known as **Ferio** (EIO-1 in traditional syllogistic logic), which has the form:\n- No M are P.\n- Some S are M.\n- Therefore, some S are not P.\n\nIn our case:\n- M = snorbled (B)\n- P = krimble things (A)\n- S = thrumpets (C)\n\nThe conclusion necessarily follows from the premises.\n\n### Final Answer:\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:09.690319",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:10.944912",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:12.358279",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:14.106550",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:20.258485",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down logically.\n\nPremise 1: **Some blonkers are fruggle.**  \nThis means there is at least one thing that is both a blonker and fruggle.\n\nPremise 2: **No plimby things are fruggle.**  \nThis means nothing that is plimby is also fruggle.\n\nConclusion: **Therefore, some blonkers are not plimby things.**\n\nFrom Premise 1, we know there's at least one blonker that is fruggle.  \nFrom Premise 2, we know that anything fruggle **cannot** be plimby.  \nSo that fruggle blonker **cannot** be plimby.\n\nTherefore, **some blonkers (at least that one) are not plimby things**.\n\nThis conclusion **logically follows** from the premises.\n\n**correct**",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:21.553692",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:22.939043",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:36.052149",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n1. **Premise 1**: No fribbles are glumpy.  \n   - This means the set of fribbles and the set of glumpy things are entirely disjoint (no overlap).  \n   - Symbolically: Fribbles \u2229 Glumpy = \u2205.\n\n2. **Premise 2**: Some twizzles are glumpy.  \n   - This means there exists at least one twizzle that is also glumpy.  \n   - Symbolically: Twizzles \u2229 Glumpy \u2260 \u2205.\n\n3. **Conclusion**: Some twizzles are not fribbles.  \n   - This claims that there exists at least one twizzle that is not a fribble.  \n   - Symbolically: Twizzles - Fribbles \u2260 \u2205.\n\n### Logical Reasoning:\n- From Premise 1, we know that nothing can be both a fribble and glumpy.  \n- From Premise 2, we know that at least one twizzle is glumpy.  \n- Since this glumpy twizzle cannot be a fribble (from Premise 1), it must be a twizzle that is not a fribble.  \n\nThus, the conclusion logically follows from the premises.\n\n### Verification with Venn Diagrams:\n- Draw three circles: one for fribbles, one for glumpy things, and one for twizzles.  \n- Premise 1: The fribbles circle does not overlap with the glumpy circle.  \n- Premise 2: The twizzles circle overlaps with the glumpy circle (some twizzles are in the glumpy region).  \n- The overlapping region (twizzles \u2229 glumpy) must lie outside the fribbles circle (from Premise 1), so these twizzles are not fribbles.  \n\nThis confirms the conclusion.\n\n### Final Answer:\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:46.302103",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n1. **Premise 1**: Some twizzles are glumpy.  \n   - This means there is at least one twizzle that is glumpy.  \n   - In set terms: The set of twizzles and the set of glumpy things overlap (they share at least one member).\n\n2. **Premise 2**: No fribbles are glumpy.  \n   - This means the set of fribbles and the set of glumpy things are disjoint (they share no members).  \n   - In other words, nothing that is a fribble is glumpy.\n\n3. **Conclusion**: Therefore, some twizzles are not fribbles.  \n   - This claims that there exists at least one twizzle that is not a fribble.\n\n### Evaluating the Conclusion:\n- From Premise 1, we know there is at least one twizzle that is glumpy.  \n- From Premise 2, we know that no fribble is glumpy.  \n- Therefore, the twizzle(s) that are glumpy cannot be fribbles (since fribbles cannot be glumpy).  \n- This directly implies that at least one twizzle (the glumpy one) is not a fribble.  \n\nThus, the conclusion logically follows from the premises.\n\n### Final Answer:\ncorrect",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:54.020483",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: No nutritional things are expensive.\nThis means that the set of \"nutritional things\" and the set of \"expensive things\" do not overlap at all. In other words, if something is nutritional, it cannot be expensive, and vice versa.\n\n### Premise 2: Some vitamin tablets are expensive.\nThis tells us that at least some vitamin tablets fall into the category of \"expensive things.\"\n\n### Conclusion: Therefore, some vitamin tablets are not nutritional things.\nFrom Premise 1, we know that nothing in the \"expensive\" category can be \"nutritional.\" Since some vitamin tablets are in the \"expensive\" category (Premise 2), those vitamin tablets cannot be nutritional. Thus, the conclusion logically follows from the premises.\n\n### Verification:\n- If no nutritional things are expensive (Premise 1), then anything that is expensive (like some vitamin tablets from Premise 2) cannot be nutritional. Therefore, those vitamin tablets must not be nutritional, which matches the conclusion.\n\nThe syllogism is **correct**.",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:55.436683",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:56.752313",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:58.239650",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:59.774834",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:16:10.438554",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: Some video recorders are metal things.\nThis means that there is at least one video recorder that is a metal thing. In logical terms, there is an overlap between \"video recorders\" and \"metal things.\"\n\n### Premise 2: No electric appliances are metal things.\nThis means that the set of \"electric appliances\" and the set of \"metal things\" do not overlap at all. In other words, nothing that is an electric appliance is a metal thing.\n\n### Conclusion: Therefore, some electric appliances are not video recorders.\nThe conclusion claims that there is at least one electric appliance that is not a video recorder.\n\n### Analysis:\nFrom Premise 2, we know that no electric appliance is a metal thing. From Premise 1, we know that some video recorders are metal things. This implies that the video recorders that are metal things cannot be electric appliances (because no electric appliance is a metal thing). \n\nHowever, the conclusion is \"some electric appliances are not video recorders.\" This does not necessarily follow from the premises. The premises only tell us that some video recorders (the metal ones) are not electric appliances, but they do not provide any information about whether some electric appliances are not video recorders. \n\nIn fact, the premises are consistent with a scenario where all electric appliances are video recorders (as long as none of those video recorders are metal things). Thus, the conclusion does not logically follow from the premises.\n\n### Final Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:16:23.854199",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n**Premise 1**: No sparkle things are crunchy things.  \nThis means:  \n- Sparkle things and crunchy things are **mutually exclusive**.  \n- If something is sparkly, it **cannot** be crunchy.  \n- Equivalently: All sparkle things are **not** crunchy things.\n\n**Premise 2**: Some whizzlers are crunchy things.  \nThis means:  \n- There exists **at least one** whizzler that is crunchy.  \n- So, **some** whizzlers are in the category of crunchy things.\n\n**Conclusion**: Therefore, some sparkle things are not whizzlers.  \nWe are to determine whether this **follows necessarily** from the premises.\n\n---\n\nLet\u2019s test this with a **Venn diagram** or **logical reasoning**.\n\nFrom Premise 1:  \nSparkle \u2229 Crunchy = \u2205  \nSo, **no overlap** between sparkle and crunchy.\n\nFrom Premise 2:  \nWhizzlers \u2229 Crunchy \u2260 \u2205  \nSo, **some** whizzlers are crunchy.\n\nNow, can we conclude: **Some sparkle things are not whizzlers**?\n\nLet\u2019s suppose **all sparkle things are whizzlers**.  \nIs that **compatible** with the premises?\n\nIf all sparkle things are whizzlers, and **no sparkle things are crunchy**, then **those sparkle-whizzlers are not crunchy**.\n\nBut Premise 2 says **some whizzlers are crunchy** \u2014 that\u2019s fine, because **those** crunchy whizzlers could be **different** from the sparkle ones.\n\nSo, **all sparkle things could be whizzlers**, and **some other** whizzlers could be crunchy.\n\nThus, **it is possible** that **all sparkle things are whizzlers**, and **none** of them are crunchy, while **some other** whizzlers **are** crunchy.\n\nIn that case, **no sparkle things are excluded** from being whizzlers \u2014 so the conclusion **\"some sparkle things are not whizzlers\"** would be **false**.\n\nBut the premises **allow** this scenario.\n\nTherefore, the conclusion **does not necessarily follow** from the premises.\n\nHence, the syllogism is **invalid**.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:16:31.113434",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\nPremise 1: Some whizzlers are crunchy things.  \nThis means there is at least one thing that is both a whizzler and crunchy.\n\nPremise 2: No sparkle things are crunchy things.  \nThis means nothing that is a sparkle thing is also a crunchy thing.\n\nConclusion: Therefore, some sparkle things are not whizzlers.  \nThis is trying to say that there exists at least one sparkle thing that is not a whizzler.\n\nBut here's the issue:  \nFrom the premises, we know that anything crunchy cannot be a sparkle thing.  \nWe also know that some whizzlers are crunchy \u2014 so those whizzlers cannot be sparkle things.  \nBut this tells us nothing about whether any sparkle things are or are not whizzlers.  \nThe conclusion is trying to assert something about sparkle things not being whizzlers, but we have no information about whether any sparkle things are whizzlers or not.  \nThe premises do not guarantee that any sparkle things exist at all, let alone that some are not whizzlers.\n\nSo the conclusion does **not** logically follow from the premises.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:16:32.287084",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:16:42.604822",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: Some astronauts are athletic.\nThis means that there is at least one astronaut who is athletic. In logical terms: There exists an x such that x is an astronaut and x is athletic.\n\n### Premise 2: No healthy people are athletic.\nThis means that there is no overlap between healthy people and athletic people. In logical terms: For all x, if x is healthy, then x is not athletic.\n\n### Conclusion: Therefore, some healthy people are not astronauts.\nThis claims that there exists at least one healthy person who is not an astronaut.\n\n### Analysis:\nFrom Premise 2, we know that no healthy people are athletic. From Premise 1, we know that some astronauts are athletic. This implies that the astronauts who are athletic cannot be healthy (because no healthy people are athletic). However, this does not tell us anything about healthy people who are not astronauts. \n\nThe conclusion claims that some healthy people are not astronauts, but the premises do not provide any information about whether healthy people exist at all, or whether any healthy people are astronauts. The premises only establish that athletic astronauts are not healthy, but this does not imply that some healthy people are not astronauts. \n\nFor example, it is possible that all healthy people are astronauts (and none are athletic), which would make the conclusion false. Thus, the conclusion does not necessarily follow from the premises.\n\n### Final Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:16:50.744597",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down logically.\n\nPremise 1: **No flumpy things are grible.**  \nThis means:  \n- If something is flumpy, then it is **not** grible.  \n- Equivalently: **All flumpy things are non-grible.**\n\nPremise 2: **Some plonkers are grible.**  \nThis means:  \n- There exists at least one plonker that **is** grible.\n\nConclusion: **Therefore, some flumpy things are not plonkers.**\n\nNow, does this conclusion follow?\n\nFrom Premise 2, we know that **some plonkers are grible**, so those plonkers **cannot** be flumpy (because flumpy things are **not** grible).  \nSo, **some plonkers are not flumpy**.\n\nBut the conclusion says: **some flumpy things are not plonkers** \u2014 which is **not** the same as saying **some plonkers are not flumpy**.\n\nThis is a **converse error** \u2014 we cannot validly infer from \"some plonkers are not flumpy\" that \"some flumpy things are not plonkers\".\n\nSo the syllogism is **invalid**.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:16:57.334340",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\nPremise 1: Some plonkers are grible.  \nThis means there exists at least one thing that is both a plonker and grible.\n\nPremise 2: No flumpy things are grible.  \nThis means nothing that is flumpy is also grible \u2014 the sets \"flumpy things\" and \"grible things\" are disjoint.\n\nConclusion: Therefore, some flumpy things are not plonkers.  \nThis claims that there exists at least one flumpy thing that is not a plonker.\n\nBut from the premises, we only know:\n- Some plonkers are grible (so grible things overlap with plonkers).\n- No flumpy things are grible (so flumpy things are entirely outside the grible set).\n\nThis tells us nothing about whether any flumpy things are or are not plonkers. The conclusion introduces new information not supported by the premises.\n\nThus, the syllogism is **incorrect**.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:16:58.888563",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:17:00.538329",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:17:11.991845",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n1. **Premise 1**: No thribbles are clompen things.  \n   - This means the set of thribbles and the set of clompen things are entirely disjoint (no overlap).\n\n2. **Premise 2**: Some blorpers are clompen things.  \n   - This means there is at least one blooper that is also a clompen thing.\n\n3. **Conclusion**: Therefore, some thribbles are not blorpers.  \n   - This claims that there exists at least one thribble that is not a blooper.\n\n### Evaluating the Conclusion:\n- From Premise 1, we know that no thribble is a clompen thing.  \n- From Premise 2, we know that some blorpers are clompen things. This implies that these clompen blorpers cannot be thribbles (since no thribble is clompen).  \n\nHowever, the conclusion claims that *some thribbles are not blorpers*. This does not necessarily follow from the premises. The premises only tell us that some blorpers are clompen (and thus not thribbles), but they do not provide any information about whether thribbles are or are not blorpers. It is possible that all thribbles are blorpers (and none are clompen), or that some thribbles are not blorpers. The premises do not establish the latter.\n\nThus, the conclusion does not logically follow from the premises.\n\n### Final Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:17:25.435282",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n- **Premise 1**: Some blorpers are clompen things.  \n  This means there is an overlap between blorpers and clompen things. In other words, at least one blooper is a clompen thing.\n\n- **Premise 2**: No thribbles are clompen things.  \n  This means thribbles and clompen things are entirely separate; nothing can be both a thribble and a clompen thing.\n\n- **Conclusion**: Therefore, some thribbles are not blorpers.  \n  This claims that there exists at least one thribble that is not a blooper.\n\n### Evaluating the Conclusion:\nFrom Premise 1, we know some blorpers are clompen things. From Premise 2, we know no thribbles are clompen things. This implies that the clompen things that are blorpers cannot be thribbles (since thribbles cannot be clompen things). However, this does **not** necessarily imply that some thribbles are not blorpers. \n\nThe conclusion is trying to assert that there exists a thribble that is not a blooper, but the premises do not provide any information about whether thribbles and blorpers overlap or not. It is possible that:\n- All thribbles are blorpers (in which case no thribble is not a blooper), or\n- Some thribbles are blorpers and some are not, or\n- No thribbles are blorpers.\n\nThe premises do not rule out the possibility that all thribbles are blorpers (since the premises only restrict thribbles from being clompen things, not from being blorpers). Thus, the conclusion does not necessarily follow from the premises.\n\n### Final Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:17:26.756160",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:17:34.413929",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n**Premise 1**: Some cigarettes are inexpensive.  \nThis means there exists at least one cigarette that is inexpensive.\n\n**Premise 2**: No addictive things are inexpensive.  \nThis means that *nothing* that is addictive is inexpensive. So, if something is inexpensive, it *cannot* be addictive.\n\n**Conclusion**: Therefore, some addictive things are not cigarettes.  \nThis is trying to say that there are addictive things that are *not* cigarettes.\n\nBut let\u2019s test the logic:\n\nFrom Premise 1, we know:  \nSome cigarettes are inexpensive.  \nLet\u2019s call this group \"inexpensive cigarettes.\"\n\nFrom Premise 2, we know:  \nNo addictive things are inexpensive.  \nSo, **inexpensive cigarettes are not addictive**.\n\nBut the conclusion is:  \n\"Some addictive things are not cigarettes.\"\n\nThis **does not follow** from the premises.  \nThe premises only tell us that inexpensive cigarettes are not addictive.  \nThey **do not** tell us anything about whether **some addictive things are not cigarettes**.\n\nSo, the conclusion **does not logically follow** from the premises.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:17:44.521320",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down logically, using the structure of the syllogism.\n\nPremise 1: No snibble things are cheaply.  \nThis means: **No S are C** \u2014 snibble things and cheaply things are mutually exclusive.\n\nPremise 2: Some puffles are cheaply.  \nThis means: **Some P are C** \u2014 at least some puffles fall into the cheaply category.\n\nConclusion: Therefore, some snibble things are not puffles.  \nThis means: **Some S are not P** \u2014 there exist snibble things that are not puffles.\n\nNow, does the conclusion logically follow from the premises?\n\nFrom Premise 1: No S are C \u2192 All S are **not** C  \nFrom Premise 2: Some P **are** C\n\nSo, anything that **is** C (cheaply) **cannot** be S (snibble), because no S are C.\n\nTherefore, the things that **are** C and **are** P (some puffles are cheaply) \u2014 those **cannot** be S.\n\nBut the conclusion is claiming: **Some S are not P** \u2014 i.e., there exist snibble things that are not puffles.\n\nHowever, we **do not know** whether any snibble things exist at all. The premises only tell us that **if** something is snibble, it\u2019s not cheaply \u2014 and that **some** puffles **are** cheaply. But this **does not guarantee** that any snibble things exist, let alone that some are not puffles.\n\nSo, the conclusion **does not necessarily follow** from the premises.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:17:51.682501",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down logically.\n\nPremise 1: **Some puffles are cheaply.**  \nThis means: There exists at least one puffle that is cheaply.\n\nPremise 2: **No snibble things are cheaply.**  \nThis means: Nothing that is snibble is cheaply.\n\nConclusion: **Therefore, some snibble things are not puffles.**\n\nNow, let's test the logic:\n\nFrom Premise 1, we know that **some puffles are cheaply**, but **no snibble things are cheaply**.  \nSo, **no snibble thing can be among those cheaply puffles**.\n\nBut the conclusion says **some snibble things are not puffles**, which **does not necessarily follow**.  \nWe **do not know** whether **any snibble things are puffles** or not \u2014 we only know that **if** a snibble thing were a puffle, it **could not** be cheaply. But we have **no information** about whether **any snibble things are puffles**.\n\nSo the conclusion **does not logically follow** from the premises.\n\n**Answer: incorrect**.",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:05.363911",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: No highly trained dogs are vicious.\nThis means that the set of \"highly trained dogs\" and the set of \"vicious\" things do not overlap at all. In other words, if something is a highly trained dog, it cannot be vicious.\n\n### Premise 2: Some police dogs are vicious.\nThis means that there is at least one police dog that is vicious. So, the set of \"police dogs\" and the set of \"vicious\" things overlap.\n\n### Conclusion: Therefore, some highly trained dogs are not police dogs.\nWe need to determine if this conclusion logically follows from the premises.\n\n### Analysis:\n1. From Premise 1, we know that no highly trained dogs are vicious. This implies that any vicious thing (including vicious police dogs from Premise 2) cannot be a highly trained dog.\n2. From Premise 2, we know that some police dogs are vicious. These vicious police dogs cannot be highly trained dogs (from Premise 1).\n3. Therefore, these vicious police dogs are examples of police dogs that are not highly trained dogs. This implies that not all police dogs are highly trained dogs (since at least these vicious ones aren't).\n4. The conclusion states \"some highly trained dogs are not police dogs.\" However, this is not the same as saying \"some police dogs are not highly trained dogs.\" The conclusion is making a claim about highly trained dogs (that some of them are not police dogs), but the premises only allow us to conclude that some police dogs are not highly trained. \n\nThe conclusion is actually the converse of what the premises support. The premises do not provide any information about whether some highly trained dogs are or are not police dogs. They only tell us that some police dogs (the vicious ones) are not highly trained. \n\nThus, the conclusion does not logically follow from the premises.\n\n### Final Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:06.582718",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:18.859447",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: No skrobble things are grumply.\nThis means that the set of \"skrobble things\" and the set of \"grumply things\" do not overlap at all. In other words, if something is skrobble, it cannot be grumply, and vice versa.\n\n### Premise 2: Some floffers are grumply.\nThis means that there is at least one floffer that is grumply. \n\n### Conclusion: Therefore, some skrobble things are not floffers.\nThe conclusion claims that there exists at least one skrobble thing that is not a floffer.\n\n### Analysis:\nFrom Premise 1, we know that no skrobble things are grumply. From Premise 2, we know that some floffers are grumply. This tells us that the grumply floffers cannot be skrobble (because no skrobble things are grumply). However, this does not imply that some skrobble things are not floffers. \n\nThe conclusion is attempting to draw a negative existential claim (\"some skrobble things are not floffers\") from the premises, but the premises do not provide enough information to support this. It is possible that all skrobble things are floffers (as long as none of them are grumply), or it is possible that some skrobble things are not floffers. The premises do not rule out either possibility, so the conclusion does not necessarily follow.\n\nThus, the syllogism is **incorrect**.\n\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:25.675783",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down logically.\n\nPremise 1: **Some floffers are grumply.**  \nThis means there is at least one thing that is both a floffer and grumply.\n\nPremise 2: **No skrobble things are grumply.**  \nThis means **nothing** that is skrobble is grumply.\n\nSo, anything that **is** grumply **cannot** be skrobble.\n\nFrom Premise 1, we know **some floffers are grumply**, and from Premise 2, **those grumply things cannot be skrobble**.\n\nTherefore, **those grumply floffers are not skrobble things**.\n\nThis implies that **some floffers are not skrobble things**, but the conclusion says:\n\n**\"Therefore, some skrobble things are not floffers.\"**\n\nThis is **not** the same. The conclusion is trying to invert the relationship in a way that doesn't follow from the premises.\n\nSo, the syllogism is:\n\n**incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:26.789456",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:28.338040",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:44.897453",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n1. **Premise 1**: No slurples are suggle things.  \n   - This means the set of \"slurples\" and the set of \"suggle things\" do not overlap at all. They are disjoint.\n\n2. **Premise 2**: Some brimbles are suggle things.  \n   - This means there is at least one brimble that is a suggle thing. The set of \"brimbles\" and \"suggle things\" overlap partially.\n\n3. **Conclusion**: Therefore, some slurples are not brimbles.  \n   - This claims that there exists at least one slurple that is not a brimble.\n\n### Evaluating the Conclusion:\n- From Premise 1, we know that no slurple is a suggle thing.  \n- From Premise 2, we know that some brimbles are suggle things. This implies that some brimbles are *not* suggle things (since \"some\" does not imply \"all\").  \n\nHowever, the conclusion claims that *some slurples are not brimbles*. This does not necessarily follow from the premises. Here's why:\n- The premises do not provide any information about whether slurples are brimbles or not. It is possible that:\n  - All slurples are brimbles (and none are suggle things, which is consistent with Premise 1). In this case, the conclusion \"some slurples are not brimbles\" would be false.\n  - Some slurples are brimbles and some are not. In this case, the conclusion would be true.\n- Since the premises do not rule out the possibility that all slurples are brimbles, the conclusion does not logically follow.\n\n### Comparison to Examples:\n- This is similar to **Example 4**, where the conclusion \"some screwdrivers are not tools\" was incorrect because the premises did not establish that screwdrivers could not be tools. Here, the conclusion \"some slurples are not brimbles\" is similarly unsupported.\n\n### Final Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:53.876557",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down logically.\n\nPremise 1: Some brimbles are suggle things.  \nThis means: There exists at least one thing that is both a brimble and a suggle thing.\n\nPremise 2: No slurples are suggle things.  \nThis means: Nothing that is a slurple is also a suggle thing.\n\nConclusion: Therefore, some slurples are not brimbles.\n\nBut here's the issue:  \nFrom Premise 1, we know that some brimbles are suggle things, but we **do not** know that **all** suggle things are brimbles.  \nFrom Premise 2, we know that **no** slurples are suggle things \u2014 so slurples and suggle things are completely separate.\n\nHowever, the conclusion claims that **some slurples are not brimbles**, which **does not follow** from the premises.  \nThe premises **do not** tell us anything about whether **any** slurples are brimbles \u2014 they only tell us that **no slurples are suggle things**, and **some brimbles are suggle things**.\n\nSo we **cannot** conclude that **some slurples are not brimbles** \u2014 it's possible that **all** slurples **are** brimbles, as long as none of them are suggle things.\n\nThus, the syllogism is **invalid**.\n\n**incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:55.507619",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:56.782384",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:19:02.964436",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down logically.\n\nPremise 1: No swimbles are brightle things.  \nThis means: **All swimbles are not brightle things.**\n\nPremise 2: Some speckles are brightle things.  \nThis means: **At least one speckle is a brightle thing.**\n\nConclusion: Therefore, some swimbles are not speckles.\n\nBut from the premises, we **cannot** conclude anything about the relationship between swimbles and speckles. The fact that some speckles are brightle things and no swimbles are brightle things **does not** imply that some swimbles are not speckles. The swimbles could still **all** be speckles \u2014 we just know they can't be the brightle ones.\n\nSo the conclusion **does not follow** from the premises.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:19:11.332791",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down logically.\n\nWe are given:\n\n- **Premise 1**: Some speckles are brightle things.  \n  This means: There exists at least one thing that is both a speckle and a brightle thing.\n\n- **Premise 2**: No swimbles are brightle things.  \n  This means: Nothing that is a swimble is also a brightle thing.\n\n- **Conclusion**: Therefore, some swimbles are not speckles.  \n  This claims: There exists at least one swimble that is not a speckle.\n\nBut here's the key: **we have no information about whether any swimbles are speckles or not**. The premises only tell us about the overlap (or lack thereof) with **brightle things**.\n\nFrom the premises:\n- Some speckles are brightle.\n- No swimbles are brightle.\n\nThis implies that **no swimble is among the brightle speckles**, but it **does not imply** that any swimble is **not** a speckle. It's possible that **all swimbles are speckles**, as long as **none of them are brightle**.\n\nSo the conclusion **\"some swimbles are not speckles\"** **does not follow** from the premises.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:19:13.070345",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:19:24.514956",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: Some millionaires are scientists.\nThis means that there is at least one millionaire who is a scientist. In other words, the set of millionaires and the set of scientists overlap.\n\n### Premise 2: No rich people are scientists.\nThis means that the set of rich people and the set of scientists do not overlap at all. There is no rich person who is a scientist.\n\n### Conclusion: Therefore, some rich people are not millionaires.\nThis claims that there exists at least one rich person who is not a millionaire.\n\n### Analysis:\nFrom Premise 2, we know that no rich people are scientists. From Premise 1, we know that some millionaires are scientists. This implies that the millionaires who are scientists cannot be rich people (since no rich people are scientists). \n\nHowever, the conclusion is about \"some rich people are not millionaires.\" The premises do not provide any information about whether rich people exist who are not millionaires. The premises only tell us about the relationship between millionaires, scientists, and rich people, but they do not establish that there are rich people who are not millionaires. \n\nFor example, it is possible that all rich people are millionaires (and none are scientists, per Premise 2). In this case, the conclusion \"some rich people are not millionaires\" would be false. Since the conclusion does not necessarily follow from the premises, the syllogism is **incorrect**.\n\n### Final Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:19:38.490267",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Terms:\n- **Wealthble**: A category (let's call it W)\n- **Studdles**: A category (let's call it S)\n- **Richlets**: A category (let's call it R)\n\n### Premises:\n1. **Premise 1**: No W are S. (No wealthble are studdles.)\n   - This means W and S are entirely separate; nothing in W is in S.\n2. **Premise 2**: Some R are S. (Some richlets are studdles.)\n   - This means there is an overlap between R and S; at least one R is in S.\n\n### Conclusion:\n- **Conclusion**: Some W are not R. (Some wealthble are not richlets.)\n\n### Analysis:\n- From Premise 1, W and S are disjoint (no overlap).\n- From Premise 2, some R are S. This implies that some R are not W (since no W are S, and some R are S, those R that are S cannot be W).\n- However, the conclusion claims that some W are not R. This does not necessarily follow from the premises. The premises only tell us about the relationship between R and S, and between W and S, but they do not provide any information about whether some W are not R. It is possible that all W are R (or none are, or some are), but this is not determined by the given premises.\n\n### Why the Conclusion is Incorrect:\nThe conclusion attempts to assert something about W not being R, but the premises do not support this. The premises only establish that some R are not W (because those R that are S cannot be W), but this does not imply that some W are not R. The conclusion is a non sequitur based on the given premises.\n\n### Final Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:19:46.654476",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down logically.\n\nPremise 1: **Some richlets are studdles.**  \nThis means there is at least one thing that is both a richlet and a studdle.\n\nPremise 2: **No wealthble are studdles.**  \nThis means **nothing** that is a wealthble is a studdle \u2014 so **no overlap** between wealthble and studdles.\n\nConclusion: **Therefore, some wealthble are not richlets.**\n\nBut here's the key:  \nFrom the premises, we know that **some studdles are richlets**, and **no wealthble are studdles**.  \nThat implies **no wealthble are among those studdles**, including the ones that are richlets.  \nBut **this does not imply** that **some wealthble are not richlets** \u2014 because we **do not know** whether **any wealthble are richlets** or not.\n\nThe conclusion **assumes** that **some wealthble exist**, and that **some of them are not richlets**, but **none of that is guaranteed** by the premises.\n\nSo the syllogism is **invalid**.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:19:57.280941",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: No tables are attractive things.\nThis means that the set of \"tables\" and the set of \"attractive things\" do not overlap at all. In other words, if something is a table, it is not attractive.\n\n### Premise 2: Some pieces of furniture are attractive things.\nThis means that there is at least one piece of furniture that is attractive. \n\n### Conclusion: Therefore, some tables are not pieces of furniture.\nThis conclusion claims that there exists at least one table that is not a piece of furniture. \n\n### Analysis:\n- From Premise 1, we know that no tables are attractive. \n- From Premise 2, we know that some pieces of furniture are attractive. This implies that the attractive pieces of furniture cannot be tables (since no tables are attractive). \n- However, the conclusion claims that some tables are not pieces of furniture. This does not logically follow from the premises. The premises only tell us that no tables are attractive and that some furniture is attractive. They do not provide any information about whether tables are or are not pieces of furniture. \n\nFor example, it is possible that all tables are pieces of furniture (and none are attractive), and some other pieces of furniture (not tables) are attractive. In this case, the premises would hold, but the conclusion (\"some tables are not pieces of furniture\") would be false. \n\nThus, the syllogism is **incorrect**.",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:19:58.771721",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:20:05.912479",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down logically.\n\nPremise 1: **No flatbles are prettles.**  \nThis means:  \n- If something is a flatble, it is **not** a pret.  \n- Equivalently: **No prettles are flatbles.**\n\nPremise 2: **Some pieces of furnbles are prettles.**  \nThis means:  \n- There exists at least one thing that is both a piece of furnble and a pret.\n\nConclusion: **Therefore, some flatbles are not pieces of furnbles.**\n\nBut from the premises, we know:\n- All prettles are **not** flatbles (from Premise 1).\n- Some pieces of furnbles **are** prettles (Premise 2).\n\nSo, those prettles that are pieces of furnbles are **not** flatbles.  \nBut this **does not** imply that **some flatbles are not pieces of furnbles**.  \nIt only tells us that **some pieces of furnbles are not flatbles**, which is the **converse** of the conclusion.\n\nSo the conclusion **does not follow** from the premises.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:20:23.530011",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Terms:\n- **furnbles**: This seems to be a placeholder for a category (like \"furniture\").\n- **prettles**: This seems to be a placeholder for a property (like \"pretty\" or \"attractive\").\n- **flatbles**: This seems to be another placeholder for a category (like \"flat things\" or \"tables\").\n\n### Rewriting the Syllogism with Clearer Terms:\nTo make it easier, let's map the terms to more familiar ones:\n- Let \"pieces of furnbles\" = \"A\".\n- Let \"prettles\" = \"B\".\n- Let \"flatbles\" = \"C\".\n\nNow the syllogism becomes:\n1. Some A are B. (Some pieces of furnbles are prettles.)\n2. No C are B. (No flatbles are prettles.)\nConclusion: Therefore, some C are not A. (Some flatbles are not pieces of furnbles.)\n\n### Logical Structure:\nThis is a classic syllogism of the form:\n- Some A are B.\n- No C are B.\n- Therefore, some C are not A.\n\n### Checking Validity:\nFrom Premise 2 (\"No C are B\"), we know that C and B are entirely separate categories (no overlap). From Premise 1 (\"Some A are B\"), we know that at least some A overlap with B. \n\nSince no C are B, and some A are B, this implies that the part of A that is B cannot overlap with C. However, this does not necessarily imply that some C are not A. It is possible that all C are A (i.e., all flatbles are pieces of furnbles), as long as the parts of A that are B do not overlap with C. \n\nFor example:\n- Suppose all flatbles are pieces of furnbles (i.e., C is entirely contained within A). Then the premises could still hold:\n  - Some pieces of furnbles (A) are prettles (B).\n  - No flatbles (C) are prettles (B).\n  - But in this case, it is not true that some flatbles are not pieces of furnbles (since all flatbles are pieces of furnbles). Thus, the conclusion does not necessarily follow.\n\n### Conclusion:\nThe syllogism is **incorrect** because the conclusion does not logically follow from the premises. The premises allow for the possibility that all flatbles are pieces of furnbles, which would make the conclusion false.\n\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:20:32.969975",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: No violins are shiny.\nThis means that the set of violins and the set of shiny things do not overlap at all. In other words, violins are entirely outside the shiny category.\n\n### Premise 2: Some musical instruments are shiny.\nThis tells us that there is at least some overlap between musical instruments and shiny things. However, it does not specify whether violins are included in musical instruments or not.\n\n### Conclusion: Therefore, some violins are not musical instruments.\nThis conclusion claims that there exist violins that are not musical instruments. \n\n### Analysis:\n- From Premise 1, we know violins are not shiny. \n- From Premise 2, we know some musical instruments are shiny. \n- However, the conclusion attempts to infer that some violins are not musical instruments, which does not logically follow from the premises. \n\nThe premises do not provide any information about whether violins are or are not musical instruments. The fact that no violins are shiny and some musical instruments are shiny does not imply that violins are excluded from being musical instruments. It is entirely possible that all violins are musical instruments (and none are shiny), which would make the conclusion false. \n\nThus, the syllogism is **incorrect**.\n\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:20:42.678508",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: Some musical instruments are shiny.\nThis means that there is at least one musical instrument that is shiny. It does not imply that all musical instruments are shiny, nor does it specify which ones.\n\n### Premise 2: No violins are shiny.\nThis means that violins are never shiny. In other words, the set of violins and the set of shiny things do not overlap at all.\n\n### Conclusion: Therefore, some violins are not musical instruments.\nThis conclusion claims that there exists at least one violin that is not a musical instrument.\n\n### Analysis:\n- From Premise 2, we know that no violins are shiny. \n- From Premise 1, we know that some musical instruments are shiny, but this does not tell us anything about violins being musical instruments or not. \n- The conclusion \"some violins are not musical instruments\" does not logically follow from the premises. The premises only tell us about the relationship between shininess and violins/musical instruments, not about whether violins are or are not musical instruments. \n\nIn fact, the premises are entirely consistent with all violins being musical instruments (and none of them being shiny). Thus, the conclusion does not necessarily follow from the premises.\n\n### Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:20:55.207057",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\nPremise 1: No stringles are sparkle.  \nThis means:  \n- If something is a stringle, it is **not** sparkle.  \n- Equivalently: stringles and sparkle are **disjoint** sets.\n\nPremise 2: Some soundles are sparkle.  \nThis means:  \n- There exists at least one soundle that **is** sparkle.\n\nConclusion: Therefore, some stringles are not soundles.  \nWe are to determine whether this **must** follow from the premises.\n\nLet\u2019s test with a Venn-style approach:\n\n- From Premise 1: stringles \u2229 sparkle = \u2205  \n- From Premise 2: soundles \u2229 sparkle \u2260 \u2205 \u2192 there is **at least one** soundle that **is** sparkle.\n\nBut the conclusion claims: **some stringles are not soundles**.\n\nDoes this **have** to be true?\n\nNot necessarily.\n\nConsider this possible model:\n\n- Let **all** stringles be **non-sparkle** (satisfies Premise 1).  \n- Let **some** soundles be sparkle (satisfies Premise 2).  \n- But **all** stringles **could still be soundles** \u2014 as long as those stringles are **not** sparkle, and the sparkle soundles are **different** from the stringles.\n\nFor example:\n- Imagine there are 3 groups:\n  - Group A: stringles that are **not** sparkle and **are** soundles.\n  - Group B: soundles that **are** sparkle and **not** stringles.\n  - Group C: stringles that are **not** soundles \u2014 but this group **could be empty**.\n\nThere is **no contradiction** if **all** stringles are soundles (but not sparkle), and **some** soundles are sparkle (but not stringles).\n\nIn that case, **no** stringle is a non-soundle \u2014 so the conclusion \"some stringles are not soundles\" is **false** in this model.\n\nBut the premises are **still true**.\n\nTherefore, the conclusion **does not necessarily follow**.\n\nAnswer: **incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:01.403808",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\nPremise 1: Some soundles are sparkle.  \nThis means there is at least one thing that is both a soundle and sparkle.\n\nPremise 2: No stringles are sparkle.  \nThis means nothing that is a stringle is also sparkle \u2014 stringles and sparkle are mutually exclusive.\n\nConclusion: Therefore, some stringles are not soundles.  \nThis would mean that at least one stringle is not a soundle.\n\nBut here's the issue:  \nFrom the premises, we know that some soundles are sparkle, and no stringles are sparkle.  \nThis tells us that the sparkle things (including some soundles) are entirely separate from stringles.  \nHowever, this does **not** guarantee that any stringles exist at all \u2014 and even if they do, we have no information about whether any stringles are soundles.\n\nSo, the conclusion **does not logically follow** from the premises.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:03.316811",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:04.545091",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:06.165949",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:07.904029",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:09.090893",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:10.524547",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:16.753644",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down logically.\n\nPremise 1: No greenles are alivbles.  \nThis means: Greenles and alivbles are mutually exclusive \u2014 nothing is both a greenle and an alivble.\n\nPremise 2: Some growbles are alivbles.  \nThis means: There exists at least one thing that is both a growble and an alivble.\n\nConclusion: Therefore, some greenles are not growbles.  \nThis does **not** follow. The premises give us no information about whether any greenles are or are not growbles. The fact that some growbles are alivbles, and no greenles are alivbles, only tells us that those particular growbles that are alivbles cannot be greenles. But it doesn't imply anything about greenles in relation to growbles **in general**.\n\nSo the conclusion is **not logically entailed** by the premises.\n\n**incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:24.762050",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\nPremise 1: Some growbles are alivbles.  \nThis means there is at least one thing that is both a growble and an alivble.\n\nPremise 2: No greenles are alivbles.  \nThis means nothing that is a greenle is also an alivble.\n\nConclusion: Therefore, some greenles are not growbles.  \nThis is trying to say that at least one greenle is not a growble.\n\nBut here's the issue:  \nFrom Premise 2, we know that greenles and alivbles are completely separate \u2014 no overlap.  \nFrom Premise 1, we know that some growbles *are* alivbles.  \nSo those growbles that are alivbles *cannot* be greenles (because nothing greenle is alivble).  \nBut this tells us nothing about whether any greenles *are* growbles.  \nIt\u2019s possible that *all* greenles are growbles, as long as those growbles are *not* alivbles.  \nThe conclusion claims that *some* greenles are *not* growbles \u2014 but we have no basis for that.  \nThe premises don\u2019t guarantee it.\n\nSo the conclusion does **not** follow.\n\n**incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:34.740269",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: No priests are married.\nThis means that the set of priests and the set of married people do not overlap at all. In other words, if someone is a priest, they are not married.\n\n### Premise 2: Some religious people are married.\nThis means that there is at least one religious person who is married. The set of religious people and the set of married people overlap to some extent.\n\n### Conclusion: Therefore, some priests are not religious people.\nThis conclusion claims that there exists at least one priest who is not a religious person.\n\n### Analysis:\n- From Premise 1, we know that no priests are married. \n- From Premise 2, we know that some religious people are married. This implies that the married religious people are not priests (since no priests are married). \n- However, the conclusion claims that some priests are not religious people. This does not follow from the premises. The premises only tell us that no priests are married and some religious people are married. They do not provide any information about whether priests are religious people or not. \n\nThe conclusion introduces a new claim (that some priests are not religious) that is not supported by the premises. The syllogism is invalid because the conclusion does not logically follow from the premises.\n\n### Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:44.381119",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Premise 1: Some religious people are married.\nThis means that there is at least one religious person who is married. In logical terms: \u2203x (Religious(x) \u2227 Married(x)).\n\n### Premise 2: No priests are married.\nThis means that for all priests, they are not married. In logical terms: \u2200x (Priest(x) \u2192 \u00acMarried(x)).\n\n### Conclusion: Therefore, some priests are not religious people.\nThis claims that there exists at least one priest who is not religious. In logical terms: \u2203x (Priest(x) \u2227 \u00acReligious(x)).\n\n### Analysis:\nFrom Premise 1, we know that some religious people are married. From Premise 2, we know that no priests are married. This implies that the married religious people (from Premise 1) cannot be priests (since priests cannot be married). However, this does **not** imply that some priests are not religious. \n\nThe premises only tell us that priests are not among the married religious people, but they do not provide any information about whether priests are religious or not. It is entirely possible that all priests are religious (and none are married), which would make the conclusion false. \n\nThus, the conclusion does not logically follow from the premises.\n\n### Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:57.844227",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism\nThe syllogism is:\n\n1. **Premise 1**: No holybles are weddle.  \n   - This means that the set of holybles and the set of weddle are entirely disjoint (no overlap).  \n   - Symbolically: Holybles \u2229 Weddle = \u2205.\n\n2. **Premise 2**: Some faithles are weddle.  \n   - This means that there is at least one faithle that is also a weddle.  \n   - Symbolically: Faithles \u2229 Weddle \u2260 \u2205.\n\n3. **Conclusion**: Therefore, some holybles are not faithles.  \n   - This claims that there exists at least one holyble that is not a faithle.  \n   - Symbolically: Holybles - Faithles \u2260 \u2205.\n\n### Evaluating the Conclusion\nWe need to determine if the conclusion logically follows from the premises.\n\n- From Premise 1, we know that no holyble is a weddle.  \n- From Premise 2, we know that some faithles are weddle. This implies that the set of weddle is not entirely outside the set of faithles.  \n\nHowever, the conclusion claims that some holybles are not faithles. This does not necessarily follow from the premises. Here's why:\n\n- The premises only tell us about the relationship between holybles and weddle, and between faithles and weddle. They do not provide any information about the relationship between holybles and faithles directly.  \n- It is possible that all holybles are faithles (i.e., Holybles \u2286 Faithles), and the premises would still hold. In this case, the conclusion \"some holybles are not faithles\" would be false.  \n- Since the conclusion does not necessarily follow from the premises, the syllogism is **incorrect**.\n\n### Final Answer\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:22:12.030642",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\nWe are given:\n\n- Premise 1: **Some faithles are weddle.**  \n  This means there is an overlap between faithles and weddle \u2014 at least one thing is both a faithle and a weddle.\n\n- Premise 2: **No holybles are weddle.**  \n  This means holybles and weddle are disjoint \u2014 nothing is both a holyble and a weddle.\n\n- Conclusion: **Therefore, some holybles are not faithles.**\n\nWe are to determine whether this conclusion **logically follows** from the premises.\n\n---\n\nLet\u2019s use a Venn diagram or logical reasoning:\n\nFrom Premise 1: Some faithles are weddle \u2192 There exists at least one thing that is both a faithle and a weddle.\n\nFrom Premise 2: No holybles are weddle \u2192 Nothing is both a holyble and a weddle.\n\nSo, anything that **is** a weddle **cannot** be a holyble.\n\nNow, consider the thing(s) that are both faithle and weddle (from Premise 1).  \nThese things are **weddle**, so by Premise 2, they **cannot** be holybles.\n\nSo, those particular faithles (the weddle ones) are **not** holybles.\n\nBut the conclusion is: **Some holybles are not faithles.**\n\nThis is a **different** claim.\n\nWe have **no information** about whether any holybles are or are not faithles \u2014 only that **no holybles are weddle**, and **some faithles are weddle**.\n\nBut that doesn\u2019t tell us anything about **holybles that may or may not be faithles** \u2014 unless we assume that **all faithles are weddle**, which we **do not** know.\n\nIn fact, **some** faithles are weddle \u2014 but **others may not be**.\n\nSo possibly, **all holybles are faithles** \u2014 as long as they are **not** weddle.\n\nAnd since **no holybles are weddle**, they could still **all** be faithles \u2014 just not the weddle kind.\n\nSo the conclusion **\"some holybles are not faithles\"** does **not** follow.\n\nIt **might** be true, but it is **not guaranteed** by the premises.\n\nHence, the syllogism is **invalid**.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:22:21.141697",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n**Premise 1**: No deep sea divers are vegetarians.  \nThis means:  \n- Deep sea divers and vegetarians are **mutually exclusive** groups.  \n- If someone is a deep sea diver, they **cannot** be a vegetarian.\n\n**Premise 2**: Some good swimmers are vegetarians.  \nThis means:  \n- There exists **at least one** good swimmer who is a vegetarian.\n\n**Conclusion**: Therefore, some deep sea divers are not good swimmers.  \nThis implies:  \n- There exists **at least one** deep sea diver who is **not** a good swimmer.\n\nNow, does the conclusion **logically follow** from the premises?\n\nFrom Premise 1 and Premise 2:  \n- Since **no deep sea divers are vegetarians**, and **some good swimmers are vegetarians**, we know that **those vegetarian good swimmers cannot be deep sea divers**.  \n- However, this **does not provide any information** about whether **deep sea divers** are good swimmers or not.  \n- The conclusion **assumes** that **some deep sea divers are not good swimmers**, but the premises **do not establish** this.  \n- It is **possible** that **all deep sea divers are good swimmers**, and the **vegetarian good swimmers** are just **other people** (not deep sea divers).  \n\nThus, the conclusion **does not logically follow** from the premises.\n\n**Answer**: incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:22:29.481139",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n**Premise 1**: Some good swimmers are vegetarians.  \nThis means there is an overlap between good swimmers and vegetarians \u2014 at least one good swimmer is a vegetarian.\n\n**Premise 2**: No deep sea divers are vegetarians.  \nThis means deep sea divers and vegetarians are mutually exclusive \u2014 no overlap at all.\n\n**Conclusion**: Therefore, some deep sea divers are not good swimmers.  \nWe are to determine if this logically follows.\n\nLet\u2019s analyze:\n\nFrom Premise 2, we know that **no deep sea diver is a vegetarian**.  \nFrom Premise 1, we know that **some good swimmers are vegetarians**.\n\nSo, the vegetarians who are good swimmers **cannot** be deep sea divers (because no deep sea diver is a vegetarian).\n\nBut the conclusion is about **deep sea divers not being good swimmers** \u2014 specifically, that **some** deep sea divers are **not** good swimmers.\n\nThis **does not necessarily follow**.  \nThe premises **do not** tell us anything about **all** good swimmers or **all** deep sea divers \u2014 only about **some** good swimmers and **all** deep sea divers in relation to vegetarians.\n\nSo, while it's **possible** that some deep sea divers are not good swimmers, the premises **do not guarantee** it.\n\nThus, the syllogism is:\n\n**incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:22:46.576593",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism\nThe syllogism is:\n\n1. **Premise 1**: No deeples are plantles.  \n   - This means the set of deeples and the set of plantles do not overlap at all. In other words, if something is a deeple, it cannot be a plantle, and vice versa.\n\n2. **Premise 2**: Some swimbles are plantles.  \n   - This means that at least one swimble is a plantle. The set of swimbles and the set of plantles overlap partially.\n\n3. **Conclusion**: Therefore, some deeples are not swimbles.  \n   - This claims that at least one deeple is not a swimble.\n\n### Evaluating the Conclusion\nWe need to determine if the conclusion logically follows from the premises.\n\n- From **Premise 1**, we know that no deeple is a plantle.  \n- From **Premise 2**, we know that some swimbles are plantles. This implies that these swimbles (the ones that are plantles) cannot be deeples (because no deeple is a plantle).  \n\nHowever, the conclusion is **\"some deeples are not swimbles\"**, which is not directly supported by the premises. The premises only tell us that some swimbles are plantles (and thus not deeples), but they do not provide any information about whether some deeples are not swimbles. \n\nIn fact, it is possible that all deeples are swimbles (since the premises do not rule this out), in which case the conclusion \"some deeples are not swimbles\" would be false. Therefore, the conclusion does not necessarily follow from the premises.\n\n### Why This is Incorrect\nThe syllogism is attempting to draw a conclusion about deeples not being swimbles, but the premises only establish a relationship between swimbles and plantles, and between deeples and plantles. There is no direct relationship established between deeples and swimbles that would allow us to conclude that some deeples are not swimbles. \n\nThis is similar to **Example 4** in the provided examples, where the conclusion was also incorrect because the premises did not support the claim about the relationship between the two categories in the conclusion.\n\n### Final Answer\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:00.470853",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n- **Premise 1**: Some swimbles are plantles. (This means there is an overlap between swimbles and plantles; at least one swimble is a plantle.)\n- **Premise 2**: No deeples are plantles. (This means deeples and plantles are entirely separate; nothing is both a deeple and a plantle.)\n- **Conclusion**: Therefore, some deeples are not swimbles. (This claims that at least one deeple is not a swimble.)\n\n### Analyzing the Conclusion:\nThe conclusion claims that some deeples are not swimbles. To evaluate this, we need to see if the premises guarantee this.\n\n1. From Premise 1, some swimbles are plantles. This implies that some plantles are swimbles (the overlap is bidirectional).\n2. From Premise 2, no deeples are plantles. This means deeples and plantles do not overlap at all.\n3. Since some plantles are swimbles (from Premise 1), and no deeples are plantles (from Premise 2), the swimbles that are plantles cannot be deeples. However, this does not directly tell us anything about deeples that are not swimbles.\n\n### Checking Validity:\nThe conclusion \"some deeples are not swimbles\" is not necessarily guaranteed by the premises. Here's why:\n- The premises only establish that some swimbles are plantles and that deeples are never plantles. This does not rule out the possibility that all deeples could be swimbles (as long as those swimbles are not plantles). \n- For example, it could be that all deeples are swimbles, and none of those swimbles are plantles. In this case, the conclusion \"some deeples are not swimbles\" would be false, even though the premises are true. Thus, the conclusion does not logically follow from the premises.\n\n### Final Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:01.851480",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:03.298191",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:15.584914",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\n### Understanding the Syllogism:\n1. **Premise 1**: No turnles are weightble.  \n   - This means: Turnles and weightble things are entirely separate categories. Nothing that is a turnle is weightble, and vice versa.\n\n2. **Premise 2**: Some fixbles are weightble.  \n   - This means: There exists at least one fixble that is weightble.\n\n3. **Conclusion**: Therefore, some turnles are not fixbles.  \n   - This claims that there exists at least one turnle that is not a fixble.\n\n### Logical Analysis:\n- From Premise 1, we know that no turnle is weightble.  \n- From Premise 2, we know that some fixbles are weightble. This implies that these weightble fixbles cannot be turnles (since no turnle is weightble).  \n- However, the conclusion claims that some turnles are not fixbles. This does **not** necessarily follow from the premises. The premises only tell us that some fixbles (the weightble ones) are not turnles, but they do not provide any information about whether some turnles are not fixbles. It is possible that all turnles are fixbles (as long as none of them are weightble), or that some are not. The conclusion is not guaranteed by the premises.\n\n### Comparison to Examples:\n- This is similar to **Example 4**, where the conclusion \"some screwdrivers are not tools\" was incorrect because the premises did not establish that some screwdrivers are excluded from being tools. Here, the conclusion \"some turnles are not fixbles\" is similarly unsupported.\n\n### Final Answer:\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:22.873722",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\nWe are given:\n\nPremise 1: Some fixbles are weightble.  \nThis means: There exists at least one thing that is both a fixble and weightble.\n\nPremise 2: No turnles are weightble.  \nThis means: Nothing that is a turnle is weightble.\n\nConclusion: Therefore, some turnles are not fixbles.\n\nBut wait \u2014 does this follow?\n\nFrom Premise 2, we know that **no turnle is weightble**.  \nFrom Premise 1, we know that **some fixbles are weightble**, so those fixbles are **not** turnles (since turnles can't be weightble).\n\nBut the conclusion is: **some turnles are not fixbles** \u2014 which is **not necessarily entailed**.  \nWe have **no information** about whether **any turnles are fixbles** or not.  \nIt\u2019s possible that **no turnles are fixbles**, or **some are**, or **all are** \u2014 we just don\u2019t know.\n\nSo the conclusion **does not logically follow** from the premises.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "N",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:24.218453",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "O",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:30.425096",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down logically.\n\n**Premise 1**: Some nutritional things are expensive.  \nThis means there is at least one thing that is both nutritional and expensive.\n\n**Premise 2**: No vitamin tablets are expensive.  \nThis means **all** vitamin tablets are **not** expensive.\n\n**Conclusion**: Therefore, some vitamin tablets are not nutritional things.\n\nBut here's the issue:  \nFrom Premise 2, we know **no** vitamin tablets are expensive.  \nFrom Premise 1, we know **some** nutritional things **are** expensive \u2014 but that doesn't tell us anything about **non-expensive** nutritional things.  \nSo we **cannot** conclude that **some vitamin tablets are not nutritional** \u2014 because **all** vitamin tablets are non-expensive, and we don't know whether **non-expensive** nutritional things exist or not.\n\nThus, the conclusion **does not follow** from the premises.\n\n**Answer: incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "X",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:31.668875",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "OX",
+      "model_key": "kimi-k2-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:40.433037",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break this down step by step.\n\nWe are given:\n\nPremise 1: Some healthles are costble.  \nThis means: There exists at least one thing that is both a *healthle* and *costble*.  \nIn logical terms: Some H are C.\n\nPremise 2: No vitables are costble.  \nThis means: Nothing that is a *vitable* is *costble*.  \nIn logical terms: No V are C \u2192 All V are not C.\n\nConclusion: Therefore, some vitables are not healthles.  \nThat is: Some V are not H.\n\nNow, does the conclusion follow from the premises?\n\nFrom Premise 2: All vitables are not costble.  \nFrom Premise 1: Some healthles are costble \u2192 So those healthles that are costble are **not** vitables (because vitables can't be costble).\n\nBut that only tells us that **some healthles** (the costble ones) are **not vitables**.  \nIt does **not** tell us anything about whether **some vitables** are **not healthles**.\n\nIn fact, it's possible that **all vitables are healthles**, as long as none of them are costble \u2014 and that would **not** contradict either premise.\n\nSo the conclusion **does not necessarily follow**.\n\nAnswer: **incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    }
+  ]
+}

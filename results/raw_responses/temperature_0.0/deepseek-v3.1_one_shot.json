@@ -1,0 +1,4011 @@
+{
+  "metadata": {
+    "model": "deepseek-v3.1",
+    "strategy": "one_shot",
+    "temperature": 0.0,
+    "timestamp": "2025-12-03T01:29:18.870748",
+    "status": "complete"
+  },
+  "results": [
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:18:55.163257",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:18:57.205870",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:03.254287",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.  \n\nPremise 1: All blargs are zimons.  \nPremise 2: All glorps are blargs.  \n\nFrom these:  \n- All glorps are blargs (Premise 2)  \n- All blargs are zimons (Premise 1)  \n- So, all glorps are zimons.  \n\nThe conclusion says: *Some zimons are not glorps.*  \n\nBut the premises don\u2019t guarantee that there are zimons that are not glorps.  \nIt\u2019s possible that glorps = blargs = zimons (all the same set), in which case no zimons would be outside the glorps set.  \nSo the conclusion does not necessarily follow.  \n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:04.511560",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:06.223697",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:07.273271",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:12.107643",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down:  \n\n- Premise 1: No wuggles are flibberts \u2192 Wuggles and flibberts have no overlap.  \n- Premise 2: All zorphs are flibberts \u2192 Zorphs are entirely inside flibberts.  \n- Conclusion: Some zorphs are wuggles.  \n\nSince zorphs are inside flibberts, and wuggles have no overlap with flibberts, zorphs cannot be wuggles at all.  \nSo the conclusion is false given the premises.  \n\n**incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:13.811405",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:15.648016",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:16.666738",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:18.308211",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:19.838679",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:21.659698",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:23.428014",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:29.930788",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break it down.\n\n- Premise 1: No grumbly substance is spackle.  \n  This means: If something is grumbly, it cannot be spackle.  \n  Or equivalently: If something is spackle, it cannot be grumbly.\n\n- Premise 2: All twidgets are spackle.  \n  So twidgets are a subset of spackle.\n\nFrom Premise 2, twidgets are spackle.  \nFrom Premise 1, anything that is spackle is not grumbly.  \nSo twidgets are not grumbly.  \n\nThat matches the conclusion: \"No twidgets are grumbly.\"\n\nThis is a valid syllogism (specifically, a Celarent syllogism: EAE-1 in Aristotelian logic).\n\n**correct**",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:31.090662",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:32.645056",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:34.179546",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:35.978284",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:37.564462",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:39.168847",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:40.528842",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:41.951839",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:43.524744",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:45.487721",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:46.725470",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:48.262974",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:49.917823",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:52.203042",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:53.642858",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:55.095646",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:19:56.401083",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:06.641135",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's check the logic step by step.  \n\n**Premise 1:** No video recorders are metal things.  \nThis means: If something is a video recorder, it is not a metal thing.  \nIn logical form: \\( \\forall x (V(x) \\rightarrow \\neg M(x)) \\) or equivalently \\( \\neg \\exists x (V(x) \\land M(x)) \\).  \n\n**Premise 2:** Some electric appliances are metal things.  \nThis means: There exists at least one electric appliance that is a metal thing.  \nIn logical form: \\( \\exists x (E(x) \\land M(x)) \\).  \n\n**Conclusion:** Some electric appliances are not video recorders.  \nThis means: There exists at least one electric appliance that is not a video recorder.  \n\nFrom Premise 2, we have some object \\( a \\) such that \\( E(a) \\) and \\( M(a) \\).  \nFrom Premise 1, if something is a metal thing, it cannot be a video recorder (since no video recorder is a metal thing).  \nSo \\( a \\) (which is \\( M(a) \\)) cannot be a video recorder.  \nThus \\( E(a) \\) and \\( \\neg V(a) \\).  \nThat means there exists an electric appliance that is not a video recorder.  \n\nThe conclusion follows necessarily.  \n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:08.294137",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:13.920630",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down:  \n\n- **Premise 1:** No trizzles are spondly things \u2192 Trizzles and spondly things have no overlap.  \n- **Premise 2:** Some brambles are spondly things \u2192 There exists at least one bramble that is a spondly thing.  \n\nFrom Premise 1, anything that is spondly cannot be a trizzle.  \nFrom Premise 2, some brambles are spondly, so those particular brambles cannot be trizzles.  \n\nThus, the conclusion \u201cSome brambles are not trizzles\u201d is valid \u2014 it follows necessarily from the premises.  \n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:25.406565",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.  \n\n- Premise 1: Some brambles are spondly things.  \nThis means there is an overlap between brambles and spondly things.  \n\n- Premise 2: No trizzles are spondly things.  \nThis means trizzles and spondly things have no overlap.  \n\nFrom Premise 2, trizzles are completely separate from spondly things.  \nThe brambles that are spondly (from Premise 1) cannot be trizzles, because trizzles share nothing with spondly things.  \n\nSo, at least those brambles that are spondly are not trizzles.  \nThat means \u201cSome brambles are not trizzles\u201d is valid.  \n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:26.912064",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:28.244210",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:29.494688",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:31.611813",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:32.856726",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:40.540108",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s check step by step.  \n\n**Premise 1:** Some buildings are wooden things.  \nThis means there exists at least one building that is wooden.  \n\n**Premise 2:** No skyscrapers are wooden things.  \nThis means the set of skyscrapers and the set of wooden things do not overlap at all.  \n\n**Conclusion:** Therefore, some buildings are not skyscrapers.  \n\nFrom Premise 1, we know there is at least one wooden building.  \nFrom Premise 2, anything wooden cannot be a skyscraper.  \nTherefore, that particular wooden building is not a skyscraper.  \nSo, there exists at least one building (the wooden one) that is not a skyscraper.  \n\nConclusion follows validly.  \n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:41.784475",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:43.336017",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:45.050121",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:49.639409",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s check the logic step by step.  \n\n**Premise 1:** Some addictive things are inexpensive.  \nThis means there exists at least one addictive thing that is inexpensive.  \n\n**Premise 2:** No cigarettes are inexpensive.  \nThis means cigarettes and inexpensive things have no overlap.  \n\n**Conclusion:** Some addictive things are not cigarettes.  \n\nFrom Premise 1, we know there is at least one inexpensive addictive thing.  \nFrom Premise 2, that inexpensive addictive thing cannot be a cigarette.  \nTherefore, there is at least one addictive thing (the inexpensive one) that is not a cigarette.  \n\nThe conclusion follows necessarily from the premises.  \n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:50.919938",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:20:58.436182",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break it down step by step.\n\n**Premise 1:** Some gribbles are snurly.  \nThis means there is an overlapping set of gribbles and snurly things. Let\u2019s call this overlapping group \\( G_s \\).\n\n**Premise 2:** No bloffles are snurly.  \nThis means the set of bloffles and the set of snurly things are completely separate \u2014 no overlap.\n\n**Conclusion:** Some gribbles are not bloffles.  \n\nFrom Premise 1, we know there exists at least one gribble that is snurly.  \nFrom Premise 2, anything that is snurly cannot be a bloffle.  \nSo that particular gribble (which is snurly) cannot be a bloffle.  \nTherefore, there exists at least one gribble that is not a bloffle.\n\nThe conclusion follows necessarily from the premises.\n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:05.063356",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s check the logic step by step.  \n\n**Premise 1:** No police dogs are vicious.  \nThis means: All police dogs are **not vicious** (or, equivalently, there is no overlap between police dogs and vicious dogs).  \n\n**Premise 2:** Some highly trained dogs are vicious.  \nThis means: There exists at least one dog that is both highly trained and vicious.  \n\n**Conclusion:** Therefore, some highly trained dogs are not police dogs.  \n\nFrom Premise 2, we have a highly trained dog that is vicious.  \nFrom Premise 1, vicious dogs cannot be police dogs.  \nSo that highly trained vicious dog must **not** be a police dog.  \nThus, there exists at least one highly trained dog that is not a police dog.  \n\nThe conclusion follows logically.  \n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:06.970280",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:08.741536",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:14.536754",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down:\n\n- Premise 1: Some zankle things are frobny.  \n  This means there exists at least one zankle thing that is also frobny.\n\n- Premise 2: No quiblets are frobny.  \n  This means the set of quiblets and the set of frobny things have no overlap.\n\nFrom Premise 1, there is at least one zankle thing that is frobny.  \nFrom Premise 2, anything that is frobny cannot be a quiblet.  \nSo that particular zankle thing (which is frobny) cannot be a quiblet.  \nTherefore, there exists at least one zankle thing that is not a quiblet.  \n\nThe conclusion \u201cSome zankle things are not quiblets\u201d follows logically.  \n\n**correct**",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:20.549222",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s check the logic step by step.  \n\n**Premise 1:** No liquors are sweet things.  \nThis means: Liquors and sweet things have no overlap.  \n\n**Premise 2:** Some drinks are sweet things.  \nThis means: There exists at least one drink that is sweet.  \n\n**Conclusion:** Therefore, some drinks are not liquors.  \n\nFrom Premise 2, we know there is at least one drink that is sweet.  \nFrom Premise 1, anything sweet cannot be a liquor.  \nSo that sweet drink must be a non-liquor.  \nTherefore, there exists at least one drink that is not a liquor.  \n\nThe conclusion follows necessarily from the premises.  \n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:27.128413",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s check the logic step by step.\n\n- **Premise 1:** Some drinks are sweet things.  \n  This means there is an overlap between the set of drinks and the set of sweet things.\n\n- **Premise 2:** No liquors are sweet things.  \n  This means the set of liquors and the set of sweet things are completely separate.\n\n- **Conclusion:** Some drinks are not liquors.  \n\nFrom Premise 1, we know there exists at least one drink that is sweet.  \nFrom Premise 2, that sweet drink cannot be a liquor (since no liquor is sweet).  \nTherefore, there is at least one drink (the sweet one) that is not a liquor.  \nSo the conclusion necessarily follows.\n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:28.193572",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:30.352228",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:31.518477",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:33.375928",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:38.757562",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down:\n\n- **Premise 1:** No brindles are splendid things.  \n  \u2192 Brindles and splendid things have no overlap.  \n  \u2192 All brindles are outside the set of splendid things.\n\n- **Premise 2:** Some flunks are splendid things.  \n  \u2192 There exists at least one flunk that is splendid.\n\nFrom Premise 2, some flunks are in the \u201csplendid\u201d set.  \nFrom Premise 1, the \u201csplendid\u201d set contains **no brindles** at all.  \nSo those flunks that are splendid cannot be brindles.  \n\nTherefore: **Some flunks are not brindles** is necessarily true.\n\nThe syllogism is **correct**.\n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:43.566343",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n- **Premise 1:** Some flunks are splendid things.  \n  This means there exists at least one flunk that is splendid.\n\n- **Premise 2:** No brindles are splendid things.  \n  This means the set of brindles and the set of splendid things have no overlap.\n\nFrom Premise 1: There is at least one flunk that is splendid.  \nFrom Premise 2: That splendid flunk cannot be a brindle (since no brindle is splendid).  \nSo, that particular flunk is not a brindle.  \n\nTherefore, **some flunks are not brindles** is valid.\n\nThe syllogism is **correct**.\n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:44.772758",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:46.696615",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:48.304866",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:50.209043",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:51.900977",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:21:56.067221",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s check the logic.\n\n- Premise 1: Some tables are attractive things.  \n  (There exists at least one table that is attractive.)\n\n- Premise 2: No pieces of furniture are attractive things.  \n  (If something is a piece of furniture, it is not attractive.)\n\nFrom Premise 2, attractive things cannot be pieces of furniture.  \nFrom Premise 1, some tables are attractive things.  \nSo those attractive tables cannot be pieces of furniture.  \nTherefore, some tables are not pieces of furniture.\n\nThe conclusion follows logically from the premises.\n\n**correct**",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:03.170110",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.  \n\n- **Premise 1:** No pieces of blemble are snorky things.  \n  \u2192 This means: Blemble and snorky things are disjoint sets (no overlap).  \n\n- **Premise 2:** Some flables are snorky things.  \n  \u2192 This means: There exists at least one flable that is snorky.  \n\n- **Conclusion:** Some flables are not pieces of blemble.  \n\nFrom Premise 2, some flables are snorky.  \nFrom Premise 1, anything that is snorky cannot be a piece of blemble.  \nSo those flables that are snorky are definitely not pieces of blemble.  \nTherefore, at least some flables are not pieces of blemble.  \n\nThe conclusion follows logically.  \n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:09.084461",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break this down.\n\n- Premise 1: Some flables are snorky things.  \nThis means there is an overlap between flables and snorky things.\n\n- Premise 2: No pieces of blemble are snorky things.  \nThis means blemble and snorky things are completely separate \u2014 no overlap.\n\nFrom Premise 2, snorky things are entirely outside the set of blemble.  \nFrom Premise 1, some flables are inside the snorky set.  \nTherefore, those particular flables (the ones that are snorky) cannot be blemble.  \n\nSo the conclusion \u201cSome flables are not pieces of blemble\u201d must be true.  \n\n**correct**",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:10.958121",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:12.289858",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:17.077074",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n- **Premise 1:** No plinkles are glimble \u2192 Plinkles and glimble are disjoint sets (no overlap).\n- **Premise 2:** Some wuzzlers are glimble \u2192 There exists at least one wuzzler that is also a glimble.\n\nFrom Premise 1: Anything that is glimble cannot be a plinkle.  \nFrom Premise 2: Some wuzzlers are glimble, so those particular wuzzlers cannot be plinkles.  \n\nThus, **some wuzzlers are not plinkles** must be true.\n\nThe conclusion follows logically from the premises.\n\n**correct**",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:18.125056",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:19.910759",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:21.192382",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:23.040856",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:24.522906",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:31.057663",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's analyze the syllogism step by step.\n\n**Premise 1:** No plants are living things.  \nThis means the set of \"plants\" and the set of \"living things\" have no overlap.  \nIn logical terms: If something is a plant, it is not a living thing.\n\n**Premise 2:** Some grasses are living things.  \nThis means there exists at least one grass that is a living thing.\n\n**Conclusion:** Therefore, some grasses are not plants.\n\nFrom Premise 1: If something is a living thing, it cannot be a plant.  \nFrom Premise 2: There are some grasses that are living things.  \nTherefore, those grasses (which are living things) cannot be plants.  \nSo, it is true that some grasses are not plants.\n\nThe reasoning is logically valid.\n\n**Answer:** correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:32.011802",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:33.542722",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:35.227692",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:36.506826",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:38.043951",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:39.699007",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:40.994798",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:42.733069",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:44.009406",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:45.537094",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:47.191359",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:48.907201",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:50.167843",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:51.526062",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:53.088513",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:54.579182",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:22:59.238230",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down:\n\n- Premise 1: Some vitamin tablets are expensive.  \n  (Means: There exists at least one vitamin tablet that is expensive.)\n\n- Premise 2: No nutritional things are expensive.  \n  (Means: If something is expensive, it cannot be nutritional.)\n\nFrom Premise 2, anything expensive is automatically not nutritional.  \nFrom Premise 1, there is at least one vitamin tablet that is expensive.  \nSo that expensive vitamin tablet must be not nutritional.  \n\nTherefore, the conclusion \u201cSome vitamin tablets are not nutritional things\u201d is valid.  \n\n**correct**",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:23:00.683043",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:23:02.208783",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:23:16.872578",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down:\n\n- **Premise 1:** No electric appliances are metal things.  \n  \u2192 This means electric appliances and metal things are disjoint sets (no overlap).\n\n- **Premise 2:** Some video recorders are metal things.  \n  \u2192 This means there exists at least one video recorder that is a metal thing.\n\nFrom Premise 1: If something is a metal thing, it cannot be an electric appliance.  \nFrom Premise 2: Some video recorders are metal things, so those particular video recorders are not electric appliances.\n\nThe conclusion says: **Some electric appliances are not video recorders.**\n\nBut wait \u2014 the premises tell us that electric appliances have **no** overlap with metal things, and some video recorders are metal things.  \nThat doesn\u2019t tell us whether electric appliances are or are not video recorders in general, except that any metal video recorder is not an electric appliance.  \nBut the conclusion is about *some electric appliances* \u2014 do we even know there are any electric appliances at all? No, the premises don\u2019t guarantee that electric appliances exist.  \nEven if they did exist, the conclusion is claiming something about their relationship to video recorders \u2014 but the premises don\u2019t give information about electric appliances that are not metal (except that all electric appliances are not metal, so they are outside the metal set).  \nVideo recorders that are metal are not electric appliances, but video recorders could still include all electric appliances if those electric appliances are non-metal video recorders \u2014 the premises don\u2019t forbid that.\n\nActually, let\u2019s check carefully:  \n\nLet:  \nE = electric appliances  \nM = metal things  \nV = video recorders  \n\nPremise 1: No E are M \u2192 E and M are disjoint.  \nPremise 2: Some V are M \u2192 \u2203x such that x \u2208 V and x \u2208 M.\n\nFrom Premise 2: Some V are M. Those V that are M cannot be E (from Premise 1).  \nBut does it follow that *some E are not V*?  \n\nWe don\u2019t know if there are any E at all. Even if there are E, maybe all E are V (as long as they are not M). That scenario is consistent with the premises:  \nExample: E = {e1}, V = {e1, m1}, M = {m1}.  \nPremise 1: e1 not in M \u2713  \nPremise 2: m1 in V and M \u2713  \nBut here, all E are V, so \u201cSome E are not V\u201d is false.  \n\nThus the conclusion does not necessarily follow.  \n\nSo the syllogism is **incorrect**.  \n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:23:24.961118",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down:\n\n- **Premise 1:** Some video recorders are metal things.  \n  This means: There exists at least one video recorder that is a metal thing.  \n  (V \u2229 M \u2260 \u2205)\n\n- **Premise 2:** No electric appliances are metal things.  \n  This means: Electric appliances and metal things are disjoint sets.  \n  (E \u2229 M = \u2205)\n\nFrom Premise 2, if electric appliances have **no** overlap with metal things, then anything that is a metal thing cannot be an electric appliance.\n\nFrom Premise 1, some video recorders are metal things \u2014 those particular video recorders (the ones that are metal) cannot be electric appliances.  \n\nBut the conclusion says: **Some electric appliances are not video recorders.**  \nThat\u2019s equivalent to saying: There exists at least one electric appliance that is not a video recorder.\n\nDo the premises guarantee that there is **any** electric appliance at all?  \nNo \u2014 it\u2019s possible that there are **no** electric appliances in the universe of discourse. If there are no electric appliances, then the statement \u201cSome electric appliances are not video recorders\u201d is false (because \u201csome\u201d implies existence).\n\nSince the premises don\u2019t ensure the existence of electric appliances, the conclusion does **not** necessarily follow.\n\nThus, the syllogism is **incorrect**.\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:23:32.116345",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n**Premise 1:** No sparkle things are crunchy things.  \nThis means: Sparkle things and crunchy things have no overlap.  \nIn logical form: All S are not C. (S = sparkle, C = crunchy)\n\n**Premise 2:** Some whizzlers are crunchy things.  \nThis means: There exists at least one whizzler that is crunchy.  \nIn logical form: Some W are C. (W = whizzlers)\n\n**Conclusion:** Some sparkle things are not whizzlers.  \nIn logical form: Some S are not W.\n\n---\n\n**Check validity:**  \nFrom Premise 1: S and C are disjoint.  \nFrom Premise 2: Some W are inside C.  \nSo those W that are C cannot be S (from Premise 1).  \n\nBut does that mean some S are not W?  \nNot necessarily \u2014 because it\u2019s possible that there are **no S at all**.  \nIf there are no S, then \u201cSome S are not W\u201d is false (since \u201csome\u201d implies existence).  \n\nThus, the conclusion does not necessarily follow from the premises.\n\n---\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:23:45.970158",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's analyze the syllogism step by step:\n\nPremise 1: Some whizzlers are crunchy things.  \nThis means there is an overlap between whizzlers and crunchy things. In logical terms: \u2203x (W(x) \u2227 C(x))\n\nPremise 2: No sparkle things are crunchy things.  \nThis means sparkle things and crunchy things are disjoint sets. In logical terms: \u2200x (S(x) \u2192 \u00acC(x))\n\nConclusion: Therefore, some sparkle things are not whizzlers.  \nThis means there exists at least one sparkle thing that is not a whizzler. In logical terms: \u2203x (S(x) \u2227 \u00acW(x))\n\nNow, is the conclusion necessarily true based on the premises?\n\nFrom Premise 2, we know that no sparkle thing is crunchy. From Premise 1, we know that some whizzlers are crunchy. This implies that there are crunchy things that are whizzlers but not sparkle things (since sparkle things cannot be crunchy). However, the conclusion claims that there exists some sparkle thing that is not a whizzler.\n\nThe premises do not guarantee that there are any sparkle things at all. If there are no sparkle things, then the conclusion \"some sparkle things are not whizzlers\" would be false (because \"some\" implies existence). Therefore, the conclusion does not necessarily follow from the premises.\n\nFor example:  \nSuppose the universe has only two objects:  \n- Object A: a whizzler that is crunchy (so Premise 1 is satisfied).  \n- There are no sparkle things (so Premise 2 is vacuously true: no sparkle thing is crunchy).  \n\nIn this case, the conclusion \"some sparkle things are not whizzlers\" is false because there are no sparkle things. Thus, the conclusion does not follow necessarily.\n\nTherefore, the syllogism is incorrect.\n\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:23:46.975526",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:23:48.469553",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:23:50.204243",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:24:03.954231",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's analyze the syllogism step by step:\n\nPremise 1: Some plonkers are grible.  \nThis means there is an overlap between the set of plonkers and the set of grible things. In logical terms: \u2203x (Plonker(x) \u2227 Grible(x))\n\nPremise 2: No flumpy things are grible.  \nThis means that the set of flumpy things and the set of grible things are disjoint. In logical terms: \u2200x (Flumpy(x) \u2192 \u00acGrible(x))\n\nConclusion: Therefore, some flumpy things are not plonkers.  \nThis means that there exists at least one flumpy thing that is not a plonker. In logical terms: \u2203x (Flumpy(x) \u2227 \u00acPlonker(x))\n\nNow, let's see if the conclusion follows from the premises.\n\nFrom Premise 1, we know there is at least one plonker that is grible. Let's call this object a. So, we have Plonker(a) and Grible(a).\n\nFrom Premise 2, we know that no flumpy thing is grible. So, if something is flumpy, it cannot be grible. Since a is grible, it cannot be flumpy. Therefore, a is not flumpy.\n\nHowever, the conclusion is about flumpy things: it claims that there exists a flumpy thing that is not a plonker. But the premises do not tell us whether there are any flumpy things at all. It is possible that there are no flumpy things. If there are no flumpy things, then the conclusion \"some flumpy things are not plonkers\" would be false (because \"some\" implies existence).\n\nFor example:\n- Suppose the universe has only one object: a, which is a plonker and grible, but not flumpy.\nThen Premise 1 is true (some plonkers are grible), Premise 2 is true (no flumpy things are grible, since there are no flumpy things), but the conclusion is false because there are no flumpy things at all, so it is not true that \"some flumpy things are not plonkers\".\n\nTherefore, the conclusion does not necessarily follow from the premises. The syllogism is invalid.\n\nAnswer: incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:24:04.888383",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:24:25.179806",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n**Premise 1:** Some skyscrapers are wooden things.  \nThis means there is an overlap between skyscrapers and wooden things.\n\n**Premise 2:** No buildings are wooden things.  \nThis means buildings and wooden things have no overlap.\n\nIf no buildings are wooden things, then anything that is a wooden thing cannot be a building.  \nBut Premise 1 says some skyscrapers are wooden things \u2014 so those wooden skyscrapers cannot be buildings.  \nBut wait \u2014 skyscrapers are buildings by definition. So if a skyscraper is a building, and no buildings are wooden things, then Premise 1 cannot be true if Premise 2 is true.  \n\nThe premises are contradictory in real-world terms, but in logic we test whether the conclusion *follows necessarily* from the premises, assuming the premises are true.\n\nIf we assume both premises are true, then:  \n- From Premise 2: No buildings are wooden things \u2192 All buildings are non-wooden things.  \n- From Premise 1: Some skyscrapers are wooden things.  \nBut if skyscrapers are buildings, then Premise 1 contradicts Premise 2 unless \u201cskyscrapers\u201d here are not buildings (but that\u2019s not how terms are used in syllogisms \u2014 we treat them as categories without redefinition).  \n\nActually, in categorical logic:  \nPremise 1: Some S are W.  \nPremise 2: No B are W.  \nConclusion: Some B are not S.  \n\nWe can test validity:  \nIf no B are W, and some S are W, then those S that are W cannot be B. But does that mean some B are not S? Not necessarily \u2014 it\u2019s possible that all B are S (except those S that are W are not B, so B must be a subset of S excluding W, but that\u2019s messy). Let\u2019s check with a diagram:\n\nLet:  \nB = buildings  \nS = skyscrapers  \nW = wooden things  \n\nPremise 2: No B are W \u2192 B and W circles do not overlap.  \nPremise 1: Some S are W \u2192 S and W circles must overlap.  \nBut if S are a type of B (usually true in real world, but not given in the syllogism), then we have a contradiction unless S is not wholly inside B. But the syllogism doesn\u2019t state \u201call skyscrapers are buildings,\u201d so we can\u2019t assume that.  \n\nSo treat S and B as possibly overlapping sets:  \nFrom Premise 2: B and W disjoint.  \nFrom Premise 1: Some S are in W.  \nThose S in W cannot be in B.  \nSo there exist S outside B (or at least some S not in B).  \n\nConclusion says: Some B are not S.  \nIs this necessarily true? Not necessarily \u2014 maybe B and S are disjoint except for the fact that some S are W (impossible if B includes S). Wait, if B and S are unrelated, maybe all B are S except those S that are W are not B\u2026 Let\u2019s test:  \n\nCase: All B are S. Then B \u2286 S.  \nBut Premise 1: Some S are W.  \nPremise 2: No B are W.  \nIf B \u2286 S, then those S that are W cannot be in B \u2014 fine. But then \u201cSome B are not S\u201d would be false (since all B are S). So the conclusion is not necessarily true.  \n\nThus the syllogism is **invalid**.\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:24:26.881242",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:24:37.094081",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n- **Premise 1:** Some blorpers are clompen things.  \n  This means: There exists at least one blorper that is also clompen.  \n  (Blorpers \u2229 Clompen \u2260 \u2205)\n\n- **Premise 2:** No thribbles are clompen things.  \n  This means: Thribbles and Clompen things are disjoint sets.  \n  (Thribbles \u2229 Clompen = \u2205)\n\n- **Conclusion:** Some thribbles are not blorpers.  \n  This means: There exists at least one thribble that is not a blorper.\n\n---\n\n**Check validity:**  \nFrom Premise 2, thribbles have no overlap with clompen things.  \nFrom Premise 1, some blorpers are in the clompen set.  \nBut we don\u2019t know if thribbles exist at all \u2014 Premise 2 could be true even if there are zero thribbles.  \nIf there are no thribbles, then \u201cSome thribbles are not blorpers\u201d is false (because \u201csome\u201d implies existence).  \n\nSince the conclusion\u2019s truth isn\u2019t guaranteed from the premises (it fails if thribbles is an empty set), the syllogism is **invalid**.\n\n---\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:24:38.093708",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:24:40.465822",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:24:53.777653",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's analyze the syllogism step by step:\n\nPremise 1: No snibble things are cheaply.  \nThis means that there is no overlap between \"snibble things\" and \"cheaply\" (i.e., no snibble thing is cheaply).\n\nPremise 2: Some puffles are cheaply.  \nThis means that there is at least one puffle that is cheaply.\n\nConclusion: Therefore, some snibble things are not puffles.\n\nWe need to determine if the conclusion logically follows from the premises.\n\nFrom Premise 1: No snibble things are cheaply. So, all snibble things are not cheaply (i.e., they are expensive or not in the category of cheaply).\n\nFrom Premise 2: Some puffles are cheaply. So, there exists at least one puffle that is cheaply.\n\nNow, consider the conclusion: \"Some snibble things are not puffles.\" This is equivalent to saying that there is at least one snibble thing that is not a puffle.\n\nIs this necessarily true? Not necessarily. It is possible that all snibble things are puffles, but since no snibble things are cheaply, and some puffles are cheaply, those cheap puffles cannot be snibble things. However, the snibble things (which are all not cheaply) could still all be puffles (just the expensive ones). For example:\n\n- Let S be snibble things, C be cheaply, P be puffles.\n- Premise 1: No S are C.\n- Premise 2: Some P are C.\n- It is possible that all S are P (but they are the non-cheap puffles). In this case, the conclusion \"some S are not P\" would be false (because all S are P).\n\nTherefore, the conclusion does not necessarily follow. The syllogism is incorrect.\n\nTo be more precise, the conclusion \"some snibble things are not puffles\" is not entailed by the premises. The premises allow for a scenario where all snibble things are puffles (but not cheap ones), so it is possible that there are no snibble things that are not puffles. Thus, the conclusion is not valid.\n\nAnswer: incorrect\n```",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:00.892280",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n**Premise 1:** Some puffles are cheaply.  \nThis means there is at least one puffle that is cheaply.\n\n**Premise 2:** No snibble things are cheaply.  \nThis means nothing that is snibble is cheaply. So the set of snibble things and the set of cheaply things do not overlap at all.\n\n**Conclusion:** Some snibble things are not puffles.  \n\nFrom the premises:  \n- Some puffles are cheaply.  \n- No snibble things are cheaply.  \nSo the puffles that are cheaply cannot be snibble things.  \n\nBut the conclusion says \u201csome snibble things are not puffles.\u201d  \nDo we know there are any snibble things at all? The premises don\u2019t say that snibble things exist. If there are no snibble things, then \u201csome snibble things are\u2026\u201d is false.  \n\nSo the conclusion doesn\u2019t necessarily follow because it assumes existence of snibble things, which is not guaranteed by the premises.  \n\nThus, the syllogism is **incorrect**.\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:11.492661",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n**Premise 1:** No highly trained dogs are vicious.  \nThis means: If a dog is highly trained, it is **not** vicious.  \nIn logical form:  \n\\[\n\\text{HighlyTrained} \\rightarrow \\text{Not Vicious}\n\\]\nEquivalently: **HighlyTrained** and **Vicious** have no overlap.\n\n**Premise 2:** Some police dogs are vicious.  \nThis means: There exists at least one police dog that is vicious.  \nSo the set of police dogs and the set of vicious dogs overlap.\n\nFrom Premise 1: All highly trained dogs are outside the vicious set.  \nFrom Premise 2: Some police dogs are inside the vicious set.  \n\nSo any vicious police dog cannot be highly trained (from Premise 1).  \nThat means: Some police dogs are not highly trained.  \n\nBut the conclusion says: **Some highly trained dogs are not police dogs.**  \n\nIs that necessarily true?  \nWe know vicious police dogs exist, and they are not highly trained. But we don\u2019t know anything about whether *all* highly trained dogs are police dogs or not.  \nIt\u2019s possible that all highly trained dogs are police dogs, except those that are vicious \u2014 but wait, there are no vicious highly trained dogs. So if all highly trained dogs were police dogs, then all highly trained dogs would be police dogs and non-vicious. That\u2019s consistent with the premises.  \n\nBut the conclusion claims there exist highly trained dogs that are not police dogs. The premises don\u2019t guarantee that \u2014 maybe there are no highly trained dogs at all, or maybe all highly trained dogs are police dogs.  \n\nSo the conclusion **does not necessarily follow** from the premises.  \n\nThus the syllogism is **incorrect**.\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:13.669885",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:23.169153",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n- **Premise 1:** No skrobble things are grumply.  \n  \u2192 This means: All skrobble things are **not grumply** (skrobble and grumply sets are disjoint).\n\n- **Premise 2:** Some floffers are grumply.  \n  \u2192 This means: There exists at least one floffer that is grumply.\n\n- **Conclusion:** Some skrobble things are not floffers.\n\nFrom Premise 2, we know there is at least one thing that is both a floffer and grumply.  \nFrom Premise 1, nothing that is grumply can be skrobble.  \nSo that grumply floffer is **not** skrobble.  \n\nBut does that tell us that **some skrobble things are not floffers**?  \nNot necessarily. It\u2019s possible that there are **no skrobble things at all**. If there are no skrobble things, then \u201csome skrobble things are not floffers\u201d is false (since \u201csome\u201d implies existence).  \n\nSo the conclusion does not necessarily follow from the premises.  \n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:33.348130",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n- Premise 1: Some floffers are grumply.  \n  This means there exists at least one floffer that is also grumply.\n\n- Premise 2: No skrobble things are grumply.  \n  This means the set of skrobble things and the set of grumply things have no overlap.\n\nFrom Premise 2, if something is grumply, it cannot be a skrobble thing.  \nFrom Premise 1, there exists at least one floffer that is grumply. That particular floffer is not a skrobble thing (because it\u2019s grumply).  \n\nBut the conclusion says: \u201cTherefore, some skrobble things are not floffers.\u201d  \nThat means there must exist at least one skrobble thing that is not a floffer.  \n\nDo we know that?  \nWe know there is at least one grumply floffer, and that no skrobble is grumply, but we don\u2019t know whether there are any skrobble things at all.  \nEven if there are skrobble things, we don\u2019t know if they are floffers or not \u2014 the premises don\u2019t force that some skrobble things are not floffers; they could all be floffers (except they can\u2019t be grumply floffers, but they could be non-grumply floffers).  \n\nSo the conclusion does not necessarily follow from the premises.  \n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:34.532659",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:35.820661",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:37.314730",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:38.993387",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:40.660723",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:42.447323",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:43.512148",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:57.368075",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's analyze the syllogism step by step:\n\nPremise 1: Some speckles are brightle things.  \nThis means there is an overlap between speckles and brightle things. In logical terms: \u2203x (Speckle(x) \u2227 Brightle(x))\n\nPremise 2: No swimbles are brightle things.  \nThis means that swimbles and brightle things are disjoint sets. In logical terms: \u2200x (Swimble(x) \u2192 \u00acBrightle(x))\n\nConclusion: Therefore, some swimbles are not speckles.  \nThis claims that there exists at least one swimble that is not a speckle. In logical terms: \u2203x (Swimble(x) \u2227 \u00acSpeckle(x))\n\nNow, we need to see if the conclusion necessarily follows from the premises.\n\nFrom Premise 1, we know that there is at least one speckle that is brightle. Let's call this individual \"a\". So, Speckle(a) and Brightle(a).\n\nFrom Premise 2, we know that no swimbles are brightle. So, if something is brightle, it cannot be a swimble. Therefore, since \"a\" is brightle, \"a\" is not a swimble. So, we have Speckle(a) and \u00acSwimble(a).\n\nHowever, the conclusion is about swimbles not being speckles. We have not established that there are any swimbles at all. The premises do not assert the existence of any swimbles. It is possible that there are no swimbles. If there are no swimbles, then the conclusion \"some swimbles are not speckles\" would be false because \"some\" implies existence.\n\nFor example:\n- Let the domain be {a}.\n- Let Speckle(a) be true, Brightle(a) be true.\n- Let Swimble(x) be false for all x (so no swimbles exist).\n\nThen both premises are true:\n- Some speckles are brightle: true (a is speckle and brightle).\n- No swimbles are brightle: true (since there are no swimbles).\n\nBut the conclusion \"some swimbles are not speckles\" is false because there are no swimbles at all.\n\nTherefore, the conclusion does not necessarily follow from the premises. The syllogism is incorrect.\n\nAnswer: incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:25:58.494779",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:26:06.755143",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s check the logic step by step.\n\n**Premise 1:** Some millionaires are scientists.  \nThis means there is an overlap between millionaires and scientists.\n\n**Premise 2:** No rich people are scientists.  \nThis means rich people and scientists have no overlap.\n\nIf no rich people are scientists, but some millionaires are scientists, then those scientist millionaires cannot be rich people.  \nSo, some millionaires are not rich people.  \n\nBut the conclusion says: *Some rich people are not millionaires*.  \nThat\u2019s not necessarily true \u2014 Premise 2 says rich people and scientists are disjoint, but it doesn\u2019t tell us whether rich people could all be millionaires or not. In fact, the premises could be true even if there are no rich people at all, or if all rich people are millionaires.  \n\nExample:  \n- Millionaires = {A (scientist), B (non-scientist)}  \n- Rich people = {B} (all rich people are millionaires)  \n- Scientists = {A}  \n\nPremise 1: Some millionaires (A) are scientists \u2014 true.  \nPremise 2: No rich people (B) are scientists \u2014 true (B is not a scientist).  \nConclusion: Some rich people are not millionaires \u2014 false here (B is a millionaire).  \n\nSo the conclusion does not follow necessarily from the premises.  \n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:26:15.801243",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n- **Premise 1:** No wealthble are studdles.  \n  \u2192 This means: All wealthble are *not* studdles (Wealthble and studdles are disjoint sets).\n\n- **Premise 2:** Some richlets are studdles.  \n  \u2192 This means: There exists at least one richlet that is a studdle.\n\n- **Conclusion:** Some wealthble are not richlets.\n\nFrom Premise 2, we know there is an overlap between richlets and studdles.  \nFrom Premise 1, wealthble have no overlap with studdles.  \nSo any studdle-richlet cannot be a wealthble.  \n\nBut does that mean *some wealthble are not richlets*?  \nWe don\u2019t know if there are any wealthble at all. If there are no wealthble, then \u201csome wealthble are not richlets\u201d is false (because \u201csome\u201d implies existence).  \n\nSince the conclusion asserts existence of wealthble, but the premises don\u2019t guarantee that any wealthble exist, the syllogism is **invalid**.\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:26:26.245645",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n- **Premise 1:** Some richlets are studdles.  \n  (Some R are S.)\n\n- **Premise 2:** No wealthble are studdles.  \n  (No W are S.)\n\nFrom Premise 2: If no W are S, then all W are not S (W and S are disjoint sets).\n\nFrom Premise 1: Some R are S means there exists at least one R that is also S.\n\nNow, conclusion: Some wealthble are not richlets.  \n(Some W are not R.)\n\n---\n\n**Check validity:**\n\nPremise 2 says W and S have no overlap.  \nPremise 1 says R and S have some overlap.\n\nSo the S things that are R cannot be W (since W has no S).  \nBut does that tell us anything about W\u2019s relationship to R?\n\nWe know: All W are not S.  \nSome R are S.  \nFrom this, we cannot deduce that some W are not R.  \n\nWhy? Because it\u2019s possible that W and R are completely disjoint (which would make the conclusion true), but it\u2019s also possible that all W are R (which would make the conclusion false) without contradicting the premises.\n\nExample:  \nLet S = {x}, R = {x, y}, W = {y}.  \nCheck:  \nPremise 1: Some R are S? Yes, x is in both R and S.  \nPremise 2: No W are S? W = {y} has no S, so yes.  \nConclusion: Some W are not R? W = {y}, R = {x, y} \u2192 all W are R (y is in R), so conclusion is false here.  \n\nSince the premises can be true while the conclusion is false, the syllogism is invalid.\n\n---\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:26:33.722020",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n- **Premise 1:** No tables are attractive things.  \n  This means: Tables and attractive things have no overlap.  \n  (All tables are **not** attractive things.)\n\n- **Premise 2:** Some pieces of furniture are attractive things.  \n  This means: There exists at least one piece of furniture that is attractive.\n\nFrom these premises:  \nWe know tables are never attractive.  \nWe know some furniture **is** attractive.  \nBut we cannot conclude anything about whether tables are furniture or not.  \nThe conclusion says: \u201cSome tables are not pieces of furniture.\u201d  \nBut from the premises, it\u2019s possible that **all** tables are pieces of furniture (just the unattractive ones) or that **no** tables are furniture. The premises don\u2019t tell us.  \n\nThe conclusion does **not** necessarily follow.\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:26:34.790627",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:26:36.237499",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:26:46.210897",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's analyze the syllogism step by step:\n\n- Premise 1: Some pieces of furnbles are prettles. (This means there is an overlap between the set of pieces of furnbles and the set of prettles.)\n- Premise 2: No flatbles are prettles. (This means the set of flatbles and the set of prettles are completely disjoint.)\n- Conclusion: Therefore, some flatbles are not pieces of furnbles.\n\nThe conclusion states that there exist flatbles that are not pieces of furnbles. Is this necessarily true?\n\nFrom Premise 2, we know that no flatbles are prettles. From Premise 1, we know that some pieces of furnbles are prettles. This implies that there are prettles that are pieces of furnbles, but it does not tell us anything about the relationship between flatbles and pieces of furnbles directly.\n\nHowever, since no flatbles are prettles, and some pieces of furnbles are prettles, it is possible that all flatbles are pieces of furnbles (as long as they are not prettles). For example, suppose the set of pieces of furnbles includes all prettles and also all flatbles. Then:\n- Some pieces of furnbles (the prettles) are prettles (true).\n- No flatbles are prettles (true, because flatbles are a different part of pieces of furnbles).\n- But in this case, all flatbles are pieces of furnbles, so the conclusion \"some flatbles are not pieces of furnbles\" would be false.\n\nTherefore, the conclusion does not necessarily follow from the premises. The syllogism is incorrect.\n\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:26:47.431281",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:26:49.038494",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:27:01.779851",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n**Premise 1:** No stringles are sparkle.  \nThis means: All stringles are not sparkle (Stringles and sparkle sets are disjoint).\n\n**Premise 2:** Some soundles are sparkle.  \nThis means: There exists at least one soundle that is sparkle.\n\nFrom Premise 2, some soundles are in the sparkle set.  \nFrom Premise 1, no stringles are in the sparkle set.  \nSo the sparkle set contains some soundles but no stringles.\n\nThe conclusion says: *Some stringles are not soundles.*  \n\nBut we don\u2019t know if there are any stringles at all.  \nIf there are no stringles, then \u201csome stringles are not soundles\u201d is false (because \u201csome\u201d implies existence).  \nAlso, even if stringles exist, the premises don\u2019t force any stringle to not be a soundle \u2014 they could all be soundles (but then they\u2019d have to avoid being sparkle, which is fine because soundles that are sparkle are only some soundles, not all).  \n\nActually, let\u2019s check:  \n- Could all stringles be soundles?  \nIf all stringles are soundles, then:  \nFrom Premise 1: no stringle is sparkle \u2192 so those stringles (which are soundles) are not sparkle.  \nPremise 2 says some soundles are sparkle \u2014 that\u2019s fine, those sparkle-soundles are not stringles.  \nSo it\u2019s possible that all stringles are soundles.  \nIf all stringles are soundles, then \u201csome stringles are not soundles\u201d is false.  \n\nSince the conclusion is not necessarily true given the premises, the syllogism is **invalid**.\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:27:03.567972",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:27:04.622018",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:27:06.797477",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:27:08.010040",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:27:09.693640",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:27:11.282262",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:27:12.736410",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:27:27.300389",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n**Premise 1:** No greenles are alivbles.  \nThis means: Greenles and alivbles are disjoint sets (no overlap).\n\n**Premise 2:** Some growbles are alivbles.  \nThis means: There exists at least one growble that is an alivble.\n\nFrom Premise 2, some growbles are in the set of alivbles.  \nFrom Premise 1, alivbles have no greenles in them.  \nSo the growbles that are alivbles cannot be greenles.  \n\nConclusion: Some greenles are not growbles.  \nBut wait \u2014 we don\u2019t know if there are any greenles at all.  \nIf there are no greenles, then \u201csome greenles are not growbles\u201d is false (because \u201csome\u201d implies existence).  \n\nHowever, in Aristotelian logic (traditional syllogisms), we assume each category has at least one member unless stated otherwise.  \nLet\u2019s check validity ignoring existential import issues for \u201cNo greenles are alivbles\u201d \u2014 actually, \u201cNo S are P\u201d doesn\u2019t assume S exists.  \n\nBut the conclusion says \u201cSome greenles\u2026\u201d which presupposes greenles exist.  \nFrom the premises, we cannot prove greenles exist. So the argument is invalid in modern logic.  \n\nBut maybe they intend traditional logic:  \nIn traditional logic, \u201cNo S are P\u201d implies S exists. If so:  \n- Greenles exist (traditional assumption).  \n- All greenles are outside alivbles.  \n- Some growbles are inside alivbles.  \n- Those growbles that are alivbles are not greenles.  \n- But does it follow that some greenles are not growbles?  \n  Not necessarily \u2014 maybe all greenles are growbles, just not the ones that are alivbles (but there are no greenles in alivbles anyway). Wait, if all greenles are growbles, then greenles are a subset of growbles. But then greenles would have to avoid alivbles entirely, while some growbles are alivbles \u2014 that\u2019s possible. So the conclusion doesn\u2019t follow necessarily.  \n\nExample:  \nGrowbles = {A, B}  \nAlivbles = {A}  \nGreenles = {B} (all greenles are growbles, but not alivbles)  \nThen: No greenles are alivbles (true), Some growbles are alivbles (true), but \u201cSome greenles are not growbles\u201d is false here because all greenles are growbles.  \n\nSo the conclusion is not necessarily true.  \n\nThus, syllogism is **invalid**.  \n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:27:58.162783",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break it down.  \n\nPremise 1: Some growbles are alivbles.  \nThis means there is an overlap between growbles and alivbles.  \n\nPremise 2: No greenles are alivbles.  \nThis means greenles and alivbles are completely separate \u2014 no overlap.  \n\nConclusion: Therefore, some greenles are not growbles.  \n\nFrom Premise 2, all greenles are outside the set of alivbles.  \nFrom Premise 1, some growbles are inside the set of alivbles.  \nBut that doesn\u2019t tell us anything about whether greenles are or are not growbles \u2014 except that if a greenle were a growble, it would have to be in the alivbles group (since some growbles are alivbles), but Premise 2 says greenles cannot be alivbles. So actually, **no greenle can be a growble** (because being a growble and being in the alivbles group is possible, but greenles can\u2019t be alivbles).  \n\nWait \u2014 if no greenle can be a growble, then **all greenles are not growbles**, which means \"some greenles are not growbles\" is necessarily true (assuming greenles exist).  \n\nDo we know greenles exist? The premises don\u2019t explicitly say greenles exist, but in Aristotelian logic (which these problems often use), \"some\" statements imply existence, but \"no\" statements don\u2019t imply existence for the subject term unless the conclusion is universal. However, \"some greenles are not growbles\" is a particular statement (O-type), and in traditional logic, it is considered valid if the premises guarantee that **if there are any greenles, then some of them are not growbles**. But if there are no greenles, the statement is false.  \n\nBut in modern logic, \"some\" implies existence, so if there might be no greenles, the conclusion could be false even if the premises are true. However, in this syllogism, the premises don\u2019t assert that greenles exist, so the argument is invalid in modern logic because the conclusion asserts existence of greenles.  \n\nBut let's check: The premises:  \n1. Some G are A.  \n2. No R are A. (Wait \u2014 in the given, \"greenles\" = R, \"growbles\" = G, \"alivbles\" = A)  \nSo:  \n1. Some G are A.  \n2. No R are A.  \nConclusion: Some R are not G.  \n\nThis is a standard syllogism:  \nSome G are A.  \nNo R are A.  \nTherefore, Some R are not G.  \n\nCheck validity:  \nFrom 2, R and A are disjoint. From 1, there exists a G that is an A. That G (which is A) cannot be any R (since no R are A). So that particular G is not an R. But does that give us \"Some R are not G\"? Not directly \u2014 we only know some G is not R. We don\u2019t know anything about R's relationship to G except that R and G can overlap in the non-A part, or not. Actually, R could be empty, or R could be entirely inside G except for the A-part (but R can\u2019t be in A, so if R is entirely inside G, then R is in G\u2019s non-A part \u2014 possible). Then \"Some R are not G\" would be false if all R are G.  \n\nExample:  \nA = {1}, G = {1,2}, R = {2}.  \nSome G are A (true: 1 is in A).  \nNo R are A (true: R has 2, not 1).  \nBut \"Some R are not G\" is false here because R = {2} and all R (just 2) are in G.  \n\nSo the conclusion does not follow necessarily.  \n\nThus, the syllogism is **invalid** in the traditional logic sense (not all models of premises make the conclusion true).  \n\nSo the answer is:  \n\n**incorrect**",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:27:59.205113",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:28:01.239046",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:28:11.375793",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n- **Premise 1:** No holybles are weddle.  \n  \u2192 This means: If something is a holyble, it cannot be a weddle.  \n  (H \u2229 W = \u2205)\n\n- **Premise 2:** Some faithles are weddle.  \n  \u2192 This means: There exists at least one faithe that is also a weddle.  \n  (F \u2229 W \u2260 \u2205)\n\n- **Conclusion:** Some holybles are not faithles.  \n  \u2192 This means: There exists at least one holyble that is not a faithe.  \n  (H - F \u2260 \u2205)\n\n---\n\n**Check validity:**  \nFrom Premise 1: Holybles and weddles are disjoint.  \nFrom Premise 2: Some faithles are weddles, so some faithles are in W.  \nBut that tells us nothing about the relationship between holybles and faithles.  \n\nWe don\u2019t know if holybles exist at all. Even if they do, they could all be faithles (just not weddles) or none could be faithles. The premises don\u2019t guarantee that there is a holyble that is not a faithe.  \n\nExample:  \nLet W = {a}, F = {a, b}, H = {b}.  \n- No H are W \u2192 H = {b}, W = {a} \u2714  \n- Some F are W \u2192 a is in F and W \u2714  \nBut here, H = {b} and F = {a, b}, so all holybles are faithles (b is a holyble and a faithe).  \nConclusion \u201cSome holybles are not faithles\u201d is false in this case.  \n\nSo the syllogism is **invalid**.\n\n---\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:28:12.487648",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:28:21.091384",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s check step by step.\n\n**Premise 1:** No deep sea divers are vegetarians.  \nThis means: Deep sea divers and vegetarians have no overlap.  \nIn logical form: All deep sea divers are **not** vegetarians.\n\n**Premise 2:** Some good swimmers are vegetarians.  \nThis means: There exists at least one good swimmer who is a vegetarian.\n\n**Conclusion:** Some deep sea divers are not good swimmers.\n\n---\n\nFrom Premise 1: Deep sea divers \u2229 vegetarians = \u2205.  \nFrom Premise 2: Good swimmers \u2229 vegetarians \u2260 \u2205.\n\nSo, any vegetarian good swimmer is automatically not a deep sea diver (from Premise 1).  \nBut does that tell us anything about deep sea divers and good swimmers?\n\nWe know: All deep sea divers are non-vegetarians.  \nWe know: Some vegetarians are good swimmers.  \nBut we don\u2019t know if any deep sea divers are good swimmers or not \u2014 maybe all deep sea divers are good swimmers (but still non-vegetarian), or maybe none are.\n\nThe conclusion says: Some deep sea divers are not good swimmers.  \nThat means: There exists at least one deep sea diver who is not a good swimmer.\n\nBut we don\u2019t have enough information to conclude that. It\u2019s possible that all deep sea divers are good swimmers (they\u2019d still be non-vegetarian, so no conflict with premises).  \nSo the conclusion does not necessarily follow.\n\n---\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:28:30.346635",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down:  \n\n- Premise 1: Some good swimmers are vegetarians.  \n  \u2192 This means there exists at least one good swimmer who is a vegetarian.  \n\n- Premise 2: No deep sea divers are vegetarians.  \n  \u2192 This means deep sea divers and vegetarians have no overlap.  \n\n- Conclusion: Some deep sea divers are not good swimmers.  \n\nFrom Premise 1, we know there is at least one vegetarian who is a good swimmer.  \nFrom Premise 2, deep sea divers cannot be vegetarians, so they cannot be among those good swimmers who are vegetarians.  \n\nBut does that mean some deep sea divers are not good swimmers?  \nNot necessarily \u2014 it could be that **no deep sea divers are good swimmers at all**, or that **all deep sea divers are good swimmers** (but not vegetarians).  \n\nThe conclusion says \u201csome deep sea divers are not good swimmers,\u201d which requires that there exists at least one deep sea diver who fails to be a good swimmer. But we don\u2019t know from the premises whether there are any deep sea divers at all. Even if there are, maybe all of them are good swimmers (just not vegetarians).  \n\nSo the conclusion does not follow necessarily from the premises.  \n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:28:31.362365",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:28:40.974229",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's analyze the syllogism step by step:\n\n- Premise 1: Some swimbles are plantles. (This means there is an overlap between swimbles and plantles.)\n- Premise 2: No deeples are plantles. (This means deeples and plantles are completely disjoint; no deeples are plantles.)\n- Conclusion: Therefore, some deeples are not swimbles.\n\nThe conclusion claims that there exist some deeples that are not swimbles. However, the premises do not guarantee this. \n\nConsider the possibility that there are no deeples at all. In that case, the conclusion \"some deeples are not swimbles\" would be false because \"some\" implies existence. Even if there are deeples, it is possible that all deeples are swimbles (as long as they are not plantles). For example:\n- Suppose all deeples are swimbles (so deeples are a subset of swimbles), and some swimbles are plantles (but those plantles are not deeples because no deeples are plantles). In this scenario, the premises are true, but the conclusion is false because there are no deeples that are not swimbles (since all deeples are swimbles).\n\nTherefore, the conclusion does not necessarily follow from the premises. The syllogism is invalid.\n\nincorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:28:42.009147",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:28:50.587302",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let's break it down.\n\n1. **Premise 1:** Some tools are heavy.  \n   This means there exists at least one tool that is heavy. It does not say all tools are heavy, nor that only tools are heavy.\n\n2. **Premise 2:** No screwdrivers are heavy.  \n   This means the set of screwdrivers and the set of heavy things do not overlap at all.\n\n3. **Conclusion:** Therefore, some screwdrivers are not tools.  \n   This conclusion does not follow logically from the premises.  \n   The premises tell us that screwdrivers are not heavy, but they do not tell us whether screwdrivers are tools or not.  \n   It's possible that all screwdrivers are tools (just not heavy ones) or that some screwdrivers are not tools.  \n   The conclusion assumes something about membership in the category \"tools\" that is not established by the premises.\n\nSince the conclusion is not necessarily true based on the premises, the syllogism is **invalid**.\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:28:58.416880",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n**Premise 1:** No turnles are weightble.  \nThis means: turnles and weightble sets are disjoint \u2014 there\u2019s no overlap.\n\n**Premise 2:** Some fixbles are weightble.  \nThis means: there exists at least one fixble that is weightble.\n\n**Conclusion:** Some turnles are not fixbles.\n\n---\n\nFrom Premise 1:  \nIf something is a turnle, it cannot be weightble.  \n\nFrom Premise 2:  \nSome fixbles are weightble, so those particular fixbles cannot be turnles (because turnles cannot be weightble).  \n\nBut the conclusion says: *Some turnles are not fixbles*.  \nWe don\u2019t know if there are any turnles at all from the premises.  \nIf there are no turnles, then \u201cSome turnles are not fixbles\u201d is false (because \u201csome X\u201d implies existence of X).  \n\nSince the premises don\u2019t guarantee that turnles exist, the conclusion doesn\u2019t necessarily follow.\n\n---\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:29:00.006449",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "N",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:29:01.609961",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "O",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:29:02.735668",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "X",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:29:10.192346",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n**Premise 1:** No vitables are costble.  \nThis means: If something is a vitable, it cannot be a costble.  \nIn set terms: Vitables and costbles have no overlap.\n\n**Premise 2:** Some healthles are costble.  \nThis means: There exists at least one healthle that is also a costble.\n\nFrom Premise 2: Some healthles are in the set of costbles.  \nFrom Premise 1: Costbles have no vitables.  \nSo the healthles that are costbles cannot be vitables.\n\nThe conclusion says: **Some vitables are not healthles.**\n\nBut we don\u2019t know if there are any vitables at all.  \nWe only know that if something is a vitable, it cannot be a costble, and some healthles are costbles, so those healthles are not vitables.  \nBut that doesn\u2019t tell us whether some vitables exist, or whether they are not healthles.  \nThe conclusion assumes existence of vitables and says something about their relation to healthles, which is not necessarily supported by the premises.\n\nThus, the syllogism is **invalid**.\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "OX",
+      "model_key": "deepseek-v3.1",
+      "temperature": 0.0,
+      "prompting_strategy": "one_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T01:29:18.870609",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "Let\u2019s break it down.\n\n**Premise 1:** Some healthles are costble.  \nThis means: There exists at least one healthle that is also costble.  \nIn logical form: \u2203x (Healthle(x) \u2227 Costble(x))\n\n**Premise 2:** No vitables are costble.  \nThis means: If something is a vitable, it cannot be costble.  \nIn logical form: \u2200x (Vitable(x) \u2192 \u00acCostble(x))\n\n**Conclusion:** Some vitables are not healthles.  \nThis means: There exists at least one vitable that is not a healthle.  \nIn logical form: \u2203x (Vitable(x) \u2227 \u00acHealthle(x))\n\n---\n\n**Check validity:**  \nFrom Premise 1, we know there is at least one thing that is both healthle and costble.  \nFrom Premise 2, anything that is costble cannot be a vitable.  \nSo the thing that is healthle and costble cannot be a vitable.  \n\nBut does that tell us there exists a vitable that is not a healthle?  \nNo \u2014 it\u2019s possible there are no vitables at all.  \nIf there are no vitables, then Premise 1 and Premise 2 can still be true, but the conclusion is false (since \u201csome vitables\u201d would be false).  \n\nThus, the conclusion does not necessarily follow from the premises.  \n\n---\n\n**Answer:** incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4011 @@
+{
+  "metadata": {
+    "model": "mixtral-8x22b-instruct",
+    "strategy": "few_shot",
+    "temperature": 0.0,
+    "timestamp": "2025-12-03T06:54:43.361556",
+    "status": "complete"
+  },
+  "results": [
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:04:49.678079",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f85a9-1dda1c386260da9574bfe43a;4c0396f4-3d5a-4874-8e58-a107391b31ee)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:05:05.665576",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f85b9-787cf77217dfb4a808ed0629;187593a9-65e8-4699-bc69-b1f27ec13b02)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:05:23.637192",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f85cb-0301cd4f1e0400c315e233a0;d342cda1-ce21-49df-b44f-b2055097dbff)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:05:39.614820",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f85db-089ed5e36831f618423a7ab8;1a360c0c-aa6e-4698-abb2-c20aec9303e5)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:05:57.642457",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f85ed-5de14acd28e8028a522485ca;c0ef29da-2d03-480d-8c04-77365479baa7)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:06:15.554578",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f85ff-34c62c3562e8fd1d00896211;8170ee06-575f-4244-b683-d0ca1d768544)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:06:42.527955",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f861a-4dc8a85c4223d6027b24a65d;6fee665a-97a0-46e8-ab26-81fffdf115cf)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:07:00.610432",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f862c-15db33fa229c6a055bde51de;45304572-1124-45a1-98b3-18a49201cd43)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:07:18.483221",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f863e-2cea03236c75cb8617d375be;10b8145c-1de3-453e-80dd-dc70a5100dc4)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:07:36.450276",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8650-748f138538ca804d7a411866;0dec1997-21a2-41f2-b562-71241f700e38)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:08:03.409784",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f866b-081e2c4047270c2052a4fd2f;a941534b-28ef-4150-b9ed-96ac4fccd43d)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:08:21.380854",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f867d-39c8484672cf8f3842b7a748;12531a9a-18d7-4cbe-9b08-2b8a25549ce6)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:08:39.344971",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f868f-7c8776055b5f1ef46d48694e;6aff5008-cab6-4560-9447-694ea737cb45)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:08:57.325830",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f86a1-34abaa3a33cdea5c4dd26b76;7d219399-4b32-4406-b96a-ed0dbad9d431)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:09:15.293309",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f86b3-6135b3323722248b65e24b4d;7394a74a-72a6-4aeb-90e0-a9ba1d0143c0)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:09:30.281539",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f86c2-13ab77806baca1553b420639;67285ef5-9473-40cb-baf1-d43c976844a5)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:09:48.245778",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f86d4-0cd2a0a51cf481f23748a265;4e691111-7b76-4cb0-acf6-797af49664e2)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:03.225450",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f86e3-408dfa006a57d69952c30153;13e30c38-013d-4565-ae62-e7a1252b61b9)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:10:53.150329",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8715-26f389c46982673c0affaa4f;14c32ae0-ef88-4c80-a498-e1a30ba735cd)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:11.116386",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8726-4071af4060e3fbf45a378876;c5edd349-0b9a-4743-83b8-c6560e51c06a)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:29.104411",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8738-242aeb2822c7f30d19e79408;7d54138e-0a75-4de6-b502-98ef7ee5d227)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:11:47.060296",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f874a-44867f317abd1d4725b7416a;0f19e675-81dc-4cfe-8c33-7afd1e5c1ca5)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:05.045821",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f875c-3777b57e57a82e8a3cbd971c;82dd34bb-b405-4266-8d67-72a3271acc2f)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:23.013986",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f876e-18f3a3f959f27b7d67e0eead;4a30cdc4-b75c-403e-b87f-92d165654d86)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:40.997682",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8780-46bad2237ef6795e598c3ca1;a15a94f2-bef4-4930-851f-39efe1506b2a)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:12:58.963365",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8792-05a16556181b52761276056b;536618a8-7e96-4d45-916f-2c273b3c0941)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:16.953070",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f87a4-59730f58547a2d621f2b0659;55c7a186-a575-4652-8256-663b94c5311c)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:34.907438",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f87b6-0c7c262d675c75f53e31bc3d;efa89eaa-807f-4a57-95a2-14f7849d3084)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:13:52.877016",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f87c8-04e627c043964a7c074c56c1;631f8404-81cc-4ec4-a880-f19fbba125bc)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:10.860351",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f87da-7b494af00f9b61f610e728cd;47773d4b-6853-401d-9259-da16f73221e0)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:28.827212",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f87ec-33553c23008812ef33452cb2;b294c064-ad9a-420e-9da9-c6fd6e2bd823)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:14:45.806479",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f87fd-1df1cae742d4fb025306aed8;2bf4ef52-7230-4b72-b0f3-459451e7796b)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:03.781800",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f880f-7802e11d5e71cafc36db9f8f;93dc2d56-8f49-43f1-865f-010ef4a6ce6f)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:21.761594",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8821-2cfdb549318d99225679dd70;2f319a86-d0c3-43d4-822a-183c8a3e8b4a)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:39.722082",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8833-367b136202924ac31afb372b;55532c25-c48a-4ef5-a90d-315a36d050ae)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:15:57.701272",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8845-2e624a681bfeb6653cc97291;2008f7c4-b709-4eee-83ee-e01fe6c8f1d8)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:16:15.671713",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8857-2dc318fd668f8e1b7495407e;c1a4d13f-f3d6-4ef1-b796-eb2d6b8ac061)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:16:46.662994",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8876-244ea2755ce27101034a4a6e;ae76958a-0f72-4ed9-b500-111b7be6c8aa)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:17:04.605334",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8888-0bc11af24cae7bb97d7f9e41;958c308c-3366-46d3-8c68-46b6fb099b79)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:17:22.645454",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f889a-6337757807af28ca34c63eb5;07ad628a-6de4-4514-84f3-5e7309564f38)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:10.541482",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f88ca-688d516d14a8da470d1f5709;74139c9d-fe0c-4675-a1a9-874ac74c3eb2)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:32.495921",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f88e0-08e743b647561a9f3c3cb7b5;9d4c38f1-8e65-478b-b918-84fe67aecde8)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:18:46.458188",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f88ee-4b81d74968e2b68d6d7da364;58875685-5dd5-4aa1-a96b-6fc9e22b5168)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:19:04.444447",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8900-5f159f0f6b94142372956a1e;99e5c505-aa8e-4ed8-a529-33f2f2bf84c4)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:19:31.429128",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f891b-7c017ee46092d38240a6cc86;7562ec5d-14c9-4647-9b91-20341d94f695)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:19:47.379047",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f892b-0ef34b6c728084eb1fd20fc2;dfdb0fc6-edbd-423d-a709-3b4f47f85383)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:20:05.341599",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f893d-092167887c5cbaa21530d6f7;41e737d4-14d5-4e4c-98ad-1db2055a723e)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:20:23.317605",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f894f-14fd934321f6ff9c60e5f48b;9f0707fa-4acc-4e10-b788-5f06b502a674)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:20:41.324490",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8961-4dac679b7eefbb4c1ca4691f;468f7dd5-826e-4caa-aff6-918bec3d8d0f)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:20:59.280893",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8973-6ece00d96ceada615621bfe4;bbbe9c75-7882-42a9-a19b-7e097280e0b0)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:16.258059",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8984-1c6df0fb07053b613630bf8a;4e714985-550e-4a41-9d4f-f77d4982360d)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:34.211933",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8996-2d05c4b331e656db6f0bb9d2;af1d2746-ec18-4327-b25f-f5c6d16ddbc8)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:21:52.191369",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f89a8-26279a8530e00c235a923f32;68fbbf7a-32df-4626-a0f6-ead648bbc3e2)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:22:09.152746",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f89b9-6e570d0f201e7dff60741f41;2b8d6817-bf17-4c9d-8343-e6c389e13063)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:22:27.160590",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f89cb-4b32a89a5c7c16ed67b13c88;496c2f5b-6356-4a96-853d-c99a08e29386)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:22:45.101761",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f89dc-65af612f1a76a2e63dd75bd4;0f962316-3ed0-42f1-9b61-7e0a1184521e)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:03.090683",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f89ee-644928e32f8eeee5010333fb;4edcdcd0-71e7-44c9-a976-49e2944e9d42)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:21.043583",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8a00-48af3e4138bbe3c471d0b2d1;4b5219a9-3374-40ec-96ea-854fb9d64d63)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:39.019512",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8a12-0d34aa971d3d183659e781e3;df7ca49f-e0bc-413e-8700-fb06709a8d23)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:23:56.013074",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8a23-3c8141726c76f3e674edb18a;10d39c43-a09f-475b-ba6d-7a3eb9ed60ff)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:24:14.064839",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8a35-36a152253b8a0f5d71751f74;8882762a-0a37-4d03-9ea0-6858080ad88d)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:24:31.957370",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8a47-479de5d116a5665a71f859a3;1ea6079b-8acb-4997-937a-b81d92c96730)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:24:47.029112",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8a56-133ef1833403d8cd062d214a;4d7de67a-096e-496b-85f5-8511062634b0)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:25:04.887155",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8a68-2d5caec9317d85a36195dd10;e6ddb31a-cc05-4f52-8b1b-f6643c93cada)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:25:22.955382",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8a7a-175aa2f84e9531620678d7f5;773058fe-c2a4-49dc-aa63-2a322fbd763e)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:25:40.829003",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8a8c-0bdfb6553e55809212382fa3;813e91c0-d5b2-4a5d-9e07-dd40bdad6d5e)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:25:58.820255",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8a9e-672648245750adba34d78e37;a7565028-e668-4d6a-a23c-63d711c14531)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:26:16.776176",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8ab0-5b1d1aea6172946108d6122e;ab18def4-241d-4c5e-b2c8-706de5d63895)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:26:34.759330",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8ac2-740d9c1f05e4734b4c5e0220;5a6c4c37-1e80-42dc-9d99-7cccfb9c468d)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:26:52.734199",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8ad4-4e31d3311087cd0550c272f2;43b3c3a8-4b75-4ed1-9561-32e1c4c592d1)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:27:10.713454",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8ae6-470adb5c30cd0d8a0d5ee0be;5c65dfca-dfb1-4462-a6c4-2f10e526c60b)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:27:32.718764",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8afc-3bc39a047162b2de47a52850;98be4716-70df-44dd-9f06-00b6eea8924f)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:27:50.658218",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8b0e-26bb8dfb20eec09b0b884d76;1feb7188-41cf-4f2e-9b7b-1424c8ae3227)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:28:07.623353",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8b1f-3d612afb56b22ca8461b73ce;76bad6e3-2a44-4725-b44b-17f103304872)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:28:25.603887",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8b31-34bf00af69d935695e66210e;482073e8-2eea-4d4d-967a-cabe59df19f7)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:28:43.597825",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8b43-7d5dcc375dafc56a3e5d5505;616b1ae8-10e5-46af-8c1c-1ed84a9752af)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:29:06.529804",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8b5a-30cd2a3d46bddc4960ee5fb5;978fe463-a548-4146-baaf-5ea1b05b3ad9)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:29:23.524019",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8b6b-19e2224d7651a10e4b6adf61;af484c0f-cba5-4efa-b4b3-7d8ce5c5b8c0)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:29:41.482475",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8b7d-2c19c54b54fcd6334511e8f2;5d69c3da-d912-441a-a3a2-026405bfe9ce)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:29:59.444956",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8b8f-757e0fe94635e660297073f8;6f799d1b-0bd2-4ed4-ae77-78cef8380e0e)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:30:17.428590",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8ba1-34f49c2a704324781ff98af6;2df74a23-02ba-4868-bec5-5603d1f2a521)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:30:35.490182",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8bb3-6b7cb3e7466d0cc23a28a74b;8d840079-f432-4b4a-ad11-1aeb8f96309e)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:30:53.364274",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8bc5-2e7bb4ab0836b04728fd156d;f3684fb2-f3a1-41e3-bded-e0b0204eca95)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:31:11.336064",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8bd7-71ece93a0f41a6f20469b491;b4280451-620b-4826-8882-aae3ca8520f6)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:31:34.327926",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8bee-148307d1001193a171765b96;a96ed4d8-c4c7-466c-bd4f-4aba26d4e547)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:31:52.286804",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8c00-55c58ddd3cb9d7fb1afaa001;86460e6b-e186-42bb-af48-fd2220604d7d)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:32:10.267767",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8c12-4e31d43b49a8b55b367d65c2;50e62dbf-978b-4630-bc48-3b6e7d0ed3a1)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:32:26.245927",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8c22-685735826653d3c64dbc610f;274edc3b-dc58-42f6-919c-51c100da867c)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:32:44.230644",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8c34-4353037e027e919a204ed663;d56d4f5a-f595-4e56-835f-465d45313b73)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:33:02.196614",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8c46-741546d3535a0368215cfc2f;e038785b-3585-40fe-9ddb-a666529935a7)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:33:21.167173",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8c59-6e64f3d35736963046938810;97b09779-9270-44b7-8151-1fc574d896e3)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:33:39.135571",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8c6b-351655ab687b3585145ccf2a;ac3590cf-56dc-4f31-bae5-113c3837bd7e)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:33:57.108513",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8c7c-7cb1a9b93d36ca6e0a35ac09;ac071aeb-cd75-4e64-acb2-b5a23f65df99)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:34:46.044236",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8cad-650d61fe708e944e284c1d41;e355d456-8aca-4a36-b25d-121fbef41783)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:35:04.093089",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8cbf-6f310d0544359cc57e4a264e;61502c41-3eaf-424a-8566-44c4f3ea3e23)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:35:21.990203",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8cd1-026d3f00658852552b372d19;17acd132-e804-48a1-acc3-01e81a3c722b)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:35:40.032543",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8ce3-3cdb51db139276e469fd9ba4;9e93a97e-aeae-45f1-87b1-deb42a142b70)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:35:57.951496",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8cf5-669a54a3184c535f69d3b8ae;4a525cc3-87c8-40ae-a794-f7fd5b15e521)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:36:16.012981",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8d07-70f87162135cef4f13b14bb4;e5cefdcc-8225-411c-aad9-46ce61f9b7c7)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:36:32.889133",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8d18-78cb73bf042817b60dcb97c6;87a0b7f5-e9d1-44fa-bc8f-7259d363f0c3)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:36:50.857083",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8d2a-3b5fce5214dd9c1867af216f;b48d9cb3-31f3-4948-8fcd-7bae5286cd54)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:37:06.911209",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8d3a-38b1e19c03533550645a3751;2875cbd5-f909-4246-8a9d-8100d84ee688)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:37:24.821492",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8d4c-57f9dac74cf66bde2b94aea6;c7bce2b7-fad7-46d6-a845-2e148c2c14df)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:37:41.821374",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8d5d-252310264ea32c1c425b5d38;5c3b174b-09c7-4fa2-b3a8-f51023d1ccd4)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:37:59.763792",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8d6f-0883e592112a26752ab7b596;d655009a-db9b-49c9-99a0-112ebe3a0ff8)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:38:17.733770",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8d81-4f42054e3e3b1242364957c6;4776eac9-671b-4c80-9897-8052e7385c4f)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:38:32.718603",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8d90-209318cc16a0d8fb70620891;4b2740dd-d15a-4c84-97d6-6740806c3ac8)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:38:50.687471",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8da2-6e07a8913d6f9fce4058b496;3741cff2-abf7-4f94-bb80-0eaf709ea8a7)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:39:08.666381",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8db4-66628a7303404a94063a681b;c79e33a9-f3b3-468c-9fd0-f5cdbe02471e)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:39:26.622200",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8dc6-67e353a35586fb1761b5ca87;21c28a05-2baa-4890-815d-a8e07b5b9bc0)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:39:44.591918",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8dd8-4128c7ae1b6132724dca16d1;b9ecf754-b876-42cd-8dc8-4b68750070ff)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:40:02.592938",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8dea-79520a0a7fd68ec54063be81;5e27e061-afa7-4d37-b155-f10c2aebd8a4)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:40:20.534648",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8dfc-5e9276667c8424f001ac1ca9;55f6c931-4305-4ded-92a9-94c948bb70d5)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:40:38.518456",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8e0e-5b9584b20a6c25833cd2949a;082abae4-3ed8-43ef-99a8-b9e2ccfc9af4)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:40:56.551938",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8e20-12c3d51a100f2cc764a30f2e;cc3115c4-a3f4-4b54-96a8-350a79ce94d0)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:41:14.467209",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8e32-2ed7d47e0ee06dbb626fa1c8;fb7701f8-d933-42cb-b3e1-1f8bd51baaf2)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:41:32.455116",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8e44-713f9003723594222095d9d3;473d8425-8793-4bc4-b47d-f146cb24ca8d)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:41:50.421573",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8e56-2def94a70bfa0c092ac08765;b0dee463-7034-415c-8fe3-bdba78808beb)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:42:07.385131",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8e67-2c45b7c66c67d26932e62b5c;4f48b41e-c87f-4f73-9688-2599c0146a81)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:42:25.369472",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8e79-26182239588754354a22d19b;2183fdbd-0b60-4e22-9056-486d5a28caed)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:42:43.342659",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8e8b-2ac9665956e770cd53bd4866;88019e1a-9c2b-43b7-953d-85a31a0b0a8b)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:43:01.305060",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8e9d-3938e0676b89c81f2728d849;6c3a87ed-951a-4663-a59f-122f043c64ca)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:43:19.286168",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8eaf-08d566603b7b56190fbbc8af;26e8587b-de4b-4f68-9bb8-49aeb01c9dd0)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:44:08.219859",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8ee0-3467ad841963604223ee3def;2a37339a-2004-4438-8835-7a42f7c1969d)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:44:26.176334",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8ef2-64fcc16240fc163d318bdbc1;ca0b5d1d-99bb-4a05-ab7d-e2c07c2decf0)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:44:44.160173",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8f04-01b294394bdd36f700f09755;566d1912-b2f5-4261-a3ad-56784a4602ae)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:45:02.133437",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8f16-12c3b07817584bbc4735529e;c3f063a8-35bc-434c-8565-c33c3999acf4)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:45:20.106858",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8f27-3041e35b670841750f89a25c;5cd43067-4ad0-4c60-a5d8-ea1bffa55f5f)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:45:38.089338",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8f39-5bbf9dbd5439417500e1ce64;cd3fceeb-300b-4e6d-8ff6-ca00e96564ab)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:45:56.091019",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8f4b-2eb570e527d39130321d9bdd;3abce9fe-3432-474d-8536-d0b71ea6456b)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:46:14.033994",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8f5d-11c616927b9986894f6bd9db;d28ea45e-cf17-43a8-992c-f4e9c21533d2)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:46:32.008349",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8f6f-55b293292517102a0f62a3de;fa9a438c-d885-4123-89c1-98c3df01b899)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:46:49.983458",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8f81-42cf74b9628837713dfbf11c;94383e70-eb89-4efd-aef7-18a35276cbf5)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:47:07.950753",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8f93-21f75fe40333e9034a3e14d6;41f280c8-9382-4e08-abab-66b87bf49267)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:47:25.924586",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8fa5-587638ed4d3caa20236d50b4;634cab46-75b7-490b-8d48-0651d117594a)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:47:43.889644",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8fb7-122f2be205d0426a02363534;902f9f1f-bf94-4767-89c5-8e6a5d36fcf9)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:48:01.884181",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8fc9-0375ffec267fbfb322c4d6f5;7bfa8773-afae-40a3-b94c-bc79ba52125d)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:48:19.865030",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8fdb-5451ec5a4f0b7d1837b410c7;a77a253c-ae87-4c72-83c8-4c9fbd4f069e)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:48:35.830656",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8feb-10a569b77a5fed6722041ae4;bf11fb69-df65-491c-8341-5d14dc24e0ce)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:48:53.815486",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f8ffd-53b6b2671a0b7aa1013d58f0;1d3025dd-c140-410c-9bc7-dbbbad1e4b28)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:49:11.772427",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f900f-2aaea49820a527bf097b2d47;46198fe9-1efb-47ce-b378-a6d718b6eef7)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:49:29.735080",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f9021-4b76ce9937fd2667432c76a6;287b3af8-8c38-46d7-9b9b-5854ffb9ad8f)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:49:47.724932",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f9033-1de214fd095071cf7c301a82;0d958f18-29c6-4d15-b646-016630262adb)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:50:05.683992",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f9045-43b7821e0fdc0a2426fe2f74;b723ac89-9d6c-4707-a96a-ac44e67860f2)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:50:23.659684",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f9057-2293abfb3b71cac05d629e38;947484b6-1484-404f-a5ca-b29a9f8a3714)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:50:41.640171",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f9069-4c7fdbf9167513d5344f621a;5f30cdd3-cd40-40f6-ba11-bb1c68f7cef3)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:50:54.746043",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f9076-153c54d76d70ed625c3476a2;9796b664-7e7c-4c83-a28b-13aae48c9658)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:51:13.598053",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f9089-0b80a4d771c19f80505fde61;a150c453-4ca5-4d7a-a09f-c7bbc3aa2cd8)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:51:31.564277",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f909b-65fb18ff1dfc9d2e09ef0303;9abcdd6b-1442-4a9e-a765-37e07ecfdbcf)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:51:49.549044",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f90ad-7c819e862232b80011e96472;24477e2d-b366-42de-9975-4b6ee58748ba)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:52:07.611699",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f90bf-2d8d7e0a4a0eb28c08789e07;ecef14e4-6716-4e73-9269-d5ad8239c1f9)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:52:25.490825",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f90d1-2d6ae2243c9964f17d747e8e;2daeb65f-461c-4790-b0ab-aac3df5e725e)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:52:43.464988",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f90e3-51540a4520eeb0994d24e7c7;7199ec70-a4fb-44bb-a031-ef956fe2f23b)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:52:58.457015",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f90f2-783858863ba7cf5075bad83a;ac882bec-da7c-47d1-8e77-f6093661021c)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:53:16.537179",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f9104-5724cd16612e9cf82b1e2d79;59ad9b42-0f32-4c8c-a7af-79ccb10f2aa5)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:53:31.389454",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f9113-0d8e293107a8b05356bfe803;caf24ffc-ffe4-4536-ab31-242b06487ac8)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "N",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:53:49.361527",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f9125-4ef077605d7f00b675d8aaf9;c7f72b67-cd63-4e0a-9446-4ed8658e95b2)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "O",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:54:07.430369",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f9137-1a810be3645fe7857a637d3e;e8e781cf-d77a-4f1f-8218-a7f228778b73)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "X",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:54:25.313824",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f9149-5c6e8ab30f741f8a4b7a2e82;fbe2fbcb-0514-4707-90dc-d0133bba4466)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "OX",
+      "model_key": "mixtral-8x22b-instruct",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "error",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T06:54:43.361245",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "ERROR: (Request ID: Root=1-692f915b-4d0ceca40c1cd4a1301e2547;86a15594-22e6-403b-9c83-187e3947d483)\n\nBad request:\n{'message': \"The requested model 'mistralai/Mixtral-8x22B-Instruct-v0.1' is not a chat model.\", 'type': 'invalid_request_error', 'param': 'model', 'code': 'model_not_supported'}",
+          "vote": "error"
+        }
+      ]
+    }
+  ]
+}
