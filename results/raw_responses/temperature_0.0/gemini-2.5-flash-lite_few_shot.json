@@ -1,0 +1,4011 @@
+{
+  "metadata": {
+    "model": "gemini-2.5-flash-lite",
+    "strategy": "few_shot",
+    "temperature": 0.0,
+    "timestamp": "2025-12-03T19:36:23.071778",
+    "status": "complete"
+  },
+  "results": [
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:12.420759",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:13.222105",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:14.199647",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_001",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:14.781135",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:15.745859",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:16.742665",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:17.793538",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_002",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:18.687260",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:19.257575",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:20.262235",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:20.787268",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_003",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:21.587158",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:22.678589",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:23.341967",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:24.088642",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_004",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:24.882763",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:25.390393",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:26.203875",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:26.947470",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_005",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:28.182431",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:28.893064",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:29.369129",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:30.382271",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_006",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:31.485262",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:32.141076",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:32.881882",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:33.759767",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_007",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:34.384428",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:35.081860",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:35.881960",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:36.370926",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_008",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:36.984809",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:37.641964",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:38.373246",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:39.198278",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_009",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:39.898380",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:40.505551",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:41.381628",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:42.354372",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_010",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:43.414385",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:44.023861",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:44.681615",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:45.584144",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_011",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:46.656485",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:48.862820",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:49.741688",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:50.841433",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_012",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:51.717666",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:52.226849",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:53.046332",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:54.046924",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_013",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:54.804664",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:55.320831",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:56.136136",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:56.785040",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_014",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:57.961075",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:34:58.984442",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:00.085729",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:00.962936",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_015",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:02.113989",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:02.860864",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:04.017452",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:05.007646",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_016",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:05.662604",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:06.979817",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:08.022985",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:08.787546",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_017",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:09.873205",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:10.867448",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:11.962052",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:12.888479",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_018",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:13.502065",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:14.165536",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:14.949693",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:15.775790",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_019",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:16.583171",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:17.497319",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:18.346796",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:19.003307",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_020",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:20.011148",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:20.806242",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:21.423994",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:22.522638",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_021",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:23.183966",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:23.856019",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:24.569443",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:25.198876",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_022",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:25.823092",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:26.486373",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:27.020954",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:27.865715",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_023",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:28.682266",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:29.571264",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:30.286521",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:30.755654",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_024",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "valid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:31.546966",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:32.644180",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:33.523319",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:34.402796",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_025",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:35.064897",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:35.722411",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:36.585467",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:37.130703",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_026",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:38.130800",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:38.803067",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:39.602866",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:40.440393",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_027",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:41.225691",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:41.947475",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:42.418881",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:43.206571",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_028",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:44.086408",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:44.839566",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:45.404046",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:46.142964",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_029",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:46.846803",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:47.605379",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:48.271020",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:49.013727",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_030",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:49.655385",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:50.194304",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:50.902564",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:51.782826",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_031",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:52.449574",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:53.543648",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "believable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:54.422512",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:54.932386",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_032",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:55.743843",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:56.559011",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:57.308455",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:57.945696",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_033",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:58.823090",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:35:59.529578",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:00.389850",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:01.244372",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_034",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:02.207405",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:03.487146",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:05.016545",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:05.876927",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_035",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:06.577765",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:07.398842",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:08.502870",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:09.466877",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_036",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:10.485302",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:11.061536",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:11.877664",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:12.753835",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_037",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:13.517460",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:15.102833",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:15.841255",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:16.728355",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_038",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:17.565244",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:18.002894",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:18.776317",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:19.560892",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_039",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:20.585728",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "N",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:21.337101",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "O",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:21.927198",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "X",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "incorrect",
+      "confidence": 1.0,
+      "is_correct_syntax": true,
+      "is_correct_NLU": true,
+      "total_iterations": 1,
+      "correct_count": 0,
+      "incorrect_count": 1,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:22.583809",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "incorrect",
+          "vote": "incorrect"
+        }
+      ]
+    },
+    {
+      "syllogism_id": "SYL_040",
+      "variant": "OX",
+      "model_key": "gemini-2.5-flash-lite",
+      "temperature": 0.0,
+      "prompting_strategy": "few_shot",
+      "ground_truth_syntax": "invalid",
+      "ground_truth_NLU": "unbelievable",
+      "predicted": "correct",
+      "confidence": 1.0,
+      "is_correct_syntax": false,
+      "is_correct_NLU": false,
+      "total_iterations": 1,
+      "correct_count": 1,
+      "incorrect_count": 0,
+      "stopped_early": false,
+      "timestamp": "2025-12-03T19:36:23.071608",
+      "raw_responses": [
+        {
+          "iteration": 1,
+          "response": "correct",
+          "vote": "correct"
+        }
+      ]
+    }
+  ]
+}
