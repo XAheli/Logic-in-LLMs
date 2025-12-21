@@ -1,4 +1,4 @@
-# Logic in LLMs: Syllogistic Reasoning Benchmark
+<!-- # Logic in LLMs: Syllogistic Reasoning Benchmark
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -1291,19 +1291,21 @@ Logic_in_LLMs/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
+--- -->
 
-## Citation
+# Citation
 
 If you use this benchmark in your research, please cite:
 
 ```bibtex
-@misc{logic_in_llms_2024,
-  author = {XAheli},
-  title = {Logic in LLMs: Syllogistic Reasoning Benchmark},
-  year = {2024},
-  publisher = {GitHub},
-  url = {https://github.com/XAheli/Logic_in_LLMs}
+@misc{poddar2025understandingsyllogisticreasoningllms,
+      title={Understanding Syllogistic Reasoning in LLMs from Formal and Natural Language Perspectives}, 
+      author={Aheli Poddar and Saptarshi Sahoo and Sujata Ghosh},
+      year={2025},
+      eprint={2512.12620},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2512.12620}, 
 }
 ```
 
