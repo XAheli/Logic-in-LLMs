@@ -1,0 +1,118 @@
+========================================================================================================================
+LOADING DATA FROM RAW RESPONSES
+========================================================================================================================
+✅ Loaded 180 configurations
+   Models: 15
+   Strategies: 4
+   Temperatures: 3
+
+========================================================================================================================
+TEST 1: PAIRED T-TESTS - Strategy Comparisons
+========================================================================================================================
+ Baseline    Comparison  N_pairs  Mean_Baseline  Mean_Comparison  Mean_Diff  t_statistic  p_value  Cohens_d Significant  p_value_holm Significant_holm  p_value_bonferroni Significant_bonferroni
+zero_shot      few_shot       45        77.1667          73.8333    -3.3333       2.4894   0.0166   -0.3753           *        0.0499                *              0.0499                      *
+zero_shot      one_shot       45        77.1667          76.7083    -0.4583       0.5078   0.6141   -0.0766          ns        1.0000               ns              1.0000                     ns
+zero_shot zero_shot_cot       45        77.1667          76.9583    -0.2083       0.1585   0.8748   -0.0239          ns        0.8748               ns              1.0000                     ns
+
+✅ Saved to: results/analysis/tables/stats_strategy_ttests.csv
+
+========================================================================================================================
+TEST 2: WILCOXON SIGNED-RANK TESTS - Strategy Comparisons (Non-parametric)
+========================================================================================================================
+ Baseline    Comparison  N_pairs  Median_Baseline  Median_Comparison  Median_Diff  W_statistic  p_value Significant  p_value_holm Significant_holm  p_value_bonferroni Significant_bonferroni
+zero_shot      few_shot       45          84.3750            75.6250      -8.7500     172.5000   0.0195           *        0.0584               ns              0.0584                     ns
+zero_shot      one_shot       45          84.3750            76.2500      -8.1250     281.5000   0.5825          ns        1.0000               ns              1.0000                     ns
+zero_shot zero_shot_cot       45          84.3750            91.8750       7.5000     373.5000   0.6233          ns        0.6233               ns              1.0000                     ns
+
+✅ Saved to: results/analysis/tables/stats_strategy_wilcoxon.csv
+
+========================================================================================================================
+TEST 3: McNEMAR'S TEST - Strategy Comparisons (Instance-Level)
+========================================================================================================================
+
+Comparing zero_shot vs one_shot at instance level...
+  Total instances: 7200
+  Both correct: 5239, Baseline only: 317, Comparison only: 284, Both incorrect: 1360
+
+Comparing zero_shot vs few_shot at instance level...
+  Total instances: 7200
+  Both correct: 4770, Baseline only: 786, Comparison only: 546, Both incorrect: 1098
+
+Comparing zero_shot vs zero_shot_cot at instance level...
+  Total instances: 7200
+  Both correct: 5167, Baseline only: 389, Comparison only: 374, Both incorrect: 1270
+ Baseline    Comparison  N_instances  Both_Correct  Baseline_Only  Comparison_Only  Both_Incorrect  Chi2_statistic  p_value Significant
+zero_shot      one_shot         7200          5239            317              284            1360          1.7038   0.1918          ns
+zero_shot      few_shot         7200          4770            786              546            1098         42.8836   0.0000         ***
+zero_shot zero_shot_cot         7200          5167            389              374            1270          0.2569   0.6123          ns
+
+✅ Saved to: results/analysis/tables/stats_strategy_mcnemar.csv
+
+========================================================================================================================
+TEST 4: FRIEDMAN TEST - Temperature Effects
+========================================================================================================================
+                  Test  N_observations  Chi2_statistic  df  p_value  Mean_temp_0.0  Mean_temp_0.5  Mean_temp_1.0 Significant
+Friedman (Temperature)              60          3.7669   2   0.1521        76.0312        76.2604        76.2083          ns
+
+✅ Saved to: results/analysis/tables/stats_temperature_friedman.csv
+
+========================================================================================================================
+TEST 5: PAIRED T-TEST - Belief Bias (Congruent vs Incongruent)
+========================================================================================================================
+                                  Test  N_models  Mean_Congruent  Mean_Incongruent  Mean_Bias_Effect  t_statistic  p_value  Cohens_d Significant
+Belief Bias (Congruent vs Incongruent)        15         86.3547           72.7493           13.6053       2.7661   0.0152    0.7142           *
+
+✅ Saved to: results/analysis/tables/stats_belief_bias_test.csv
+
+========================================================================================================================
+TEST 6: CORRELATION ANALYSIS
+========================================================================================================================
+ Variable_1  Variable_2  Pearson_r  Pearson_p  Spearman_r  Spearman_p Pearson_Sig Spearman_Sig
+ Syntax_Acc       C_all     0.6075     0.0163      0.5857      0.0218           *            *
+ Syntax_Acc     C_N<->X     0.5192     0.0473      0.5492      0.0340           *            *
+ Syntax_Acc    C_O<->OX     0.5386     0.0383      0.5429      0.0365           *            *
+Syntax_Prec  Syntax_Rec     0.7915     0.0004      0.8505      0.0001         ***          ***
+ Syntax_Acc     NLU_Acc    -0.6023     0.0175     -0.6113      0.0155           *            *
+ Syntax_Acc Bias_Effect    -0.6322     0.0114     -0.6321      0.0115           *            *
+
+✅ Saved to: results/analysis/tables/stats_correlations.csv
+
+========================================================================================================================
+STATISTICAL TESTS SUMMARY
+========================================================================================================================
+
+📊 Strategy Comparisons (Paired t-tests):
+   zero_shot vs few_shot: Δ=-3.33%, t=2.49, p=0.0166 *, p_bonf=0.0499 *, d=-0.38
+   zero_shot vs one_shot: Δ=-0.46%, t=0.51, p=0.6141 ns, p_bonf=1.0000 ns, d=-0.08
+   zero_shot vs zero_shot_cot: Δ=-0.21%, t=0.16, p=0.8748 ns, p_bonf=1.0000 ns, d=-0.02
+
+📊 Strategy Comparisons (Wilcoxon):
+   zero_shot vs few_shot: ΔMedian=-8.75%, W=172, p=0.0195 *, p_bonf=0.0584 ns
+   zero_shot vs one_shot: ΔMedian=-8.12%, W=282, p=0.5825 ns, p_bonf=1.0000 ns
+   zero_shot vs zero_shot_cot: ΔMedian=7.50%, W=374, p=0.6233 ns, p_bonf=1.0000 ns
+
+🌡️  Temperature Effects (Friedman):
+   χ²=3.77, df=2, p=0.1521 ns
+
+🧠 Belief Bias Significance:
+   Congruent (86.4%) vs Incongruent (72.7%): Δ=13.61pp, t=2.77, p=0.0152 *, d=0.71
+
+🔗 Key Correlations:
+   Syntax_Acc × C_all: r=0.607 *, ρ=0.586 *
+   Syntax_Acc × C_N<->X: r=0.519 *, ρ=0.549 *
+   Syntax_Acc × C_O<->OX: r=0.539 *, ρ=0.543 *
+   Syntax_Prec × Syntax_Rec: r=0.791 ***, ρ=0.850 ***
+   Syntax_Acc × NLU_Acc: r=-0.602 *, ρ=-0.611 *
+   Syntax_Acc × Bias_Effect: r=-0.632 *, ρ=-0.632 *
+
+========================================================================================================================
+✅ ALL STATISTICAL TESTS COMPLETE
+========================================================================================================================
+
+📁 Results saved to results/analysis/tables/stats_*.csv
+   • stats_strategy_ttests.csv
+   • stats_strategy_wilcoxon.csv
+   • stats_strategy_mcnemar.csv
+   • stats_temperature_friedman.csv
+   • stats_belief_bias_test.csv
+   • stats_correlations.csv

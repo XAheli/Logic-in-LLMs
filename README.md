@@ -1178,37 +1178,97 @@ python scripts/generate_revamped_figures.py
 
 ```
 Logic_in_LLMs/
-├── data/
-│   └── syllogisms_master_dataset.json    # 160 syllogism instances
-├── results/
-│   ├── raw_responses/
-│   │   ├── temperature_0.0/              # 60 JSON files (15 models × 4 strategies)
+├── data/                                 # Input datasets
+│   ├── syllogisms_master_dataset.json    # 160 syllogism instances
+│   ├── syllogisms_main_summary.json/.csv # Summary statistics
+│   ├── LMarena_benchmark.csv             # LMArena rankings
+│   └── MMLU_helm.csv                     # MMLU benchmark scores
+│
+├── results/                              # Experimental outputs
+│   ├── raw_responses/                    # Raw API responses (168 files: 14 models × 4 strategies × 3 temps)
+│   │   ├── temperature_0.0/
 │   │   ├── temperature_0.5/
 │   │   └── temperature_1.0/
 │   └── analysis/
-│       ├── tables/                       # CSV analysis files
-│       │   ├── belief_bias_analysis.csv
-│       │   ├── benchmark_correlation_data.csv
-│       │   ├── mcnemar_strategy_tests.csv
-│       │   ├── wilcoxon_strategy_pairs.csv
-│       │   └── ...
+│       ├── tables/                       # Generated analysis tables (CSV)
+│       │   ├── paper_table1_complete.csv
+│       │   ├── paper_table2_dual_eval.csv
+│       │   ├── paper_table3_belief_bias.csv
+│       │   └── stats_*.csv               # Statistical test results
 │       └── figures/                      # Generated visualizations
+│           ├── paper_figures_14_models/  # Publication-ready figures (14 models)
 │           ├── static/                   # PNG/PDF exports
-│           └── plotly/                   # Interactive HTML
-├── scripts/
-│   ├── run_experiments.py                # Main experiment runner
-│   ├── analyze_results.py                # Statistical analysis
-│   └── generate_revamped_figures.py      # Publication figures
-├── src/
+│           └── plotly/                   # Interactive HTML figures
+│
+├── scripts/                              # Executable scripts (organized by purpose)
+│   ├── experiments/
+│   │   ├── run_experiments.py            # Main experiment runner
+│   │   └── test_small_scale.py           # Small-scale testing utility
+│   ├── analysis/
+│   │   ├── generate_tables.py            # Generate paper tables from raw data
+│   │   ├── run_statistical_tests.py      # Comprehensive statistical analysis
+│   │   └── calculate_benchmark_correlations.py  # Benchmark correlation analysis
+│   ├── visualization/
+│   │   ├── generate_figures.py           # Main figure generation (12 figures)
+│   │   ├── generate_figures_14_models.py # Paper figures (4 specific figures)
+│   │   └── analyze_results.py            # Results analysis orchestrator
+│   └── utilities/
+│       ├── check_missing_runs.py         # Validate experimental completeness
+│       └── validate_results.py           # Statistical validation utilities
+│
+├── src/                                  # Core source code
 │   ├── config.py                         # Configuration management
-│   ├── inference/
+│   ├── inference/                        # Model interaction & API clients
 │   │   ├── model_registry.py             # Model definitions
-│   │   ├── api_clients.py                # API wrappers
-│   │   └── stopping_strategy.py          # Adaptive voting
-│   └── prompts/                          # Prompt templates
-├── config.toml                           # API keys (not in repo)
-├── requirements.txt
-└── README.md
+│   │   ├── api_clients.py                # API wrappers (Google, HuggingFace)
+│   │   ├── batch_processing.py           # Batch experiment orchestration
+│   │   └── stopping_strategy.py          # Response parsing & extraction
+│   ├── evaluation/                       # Metrics calculation
+│   │   ├── calculate_metrics.py          # Accuracy, precision, recall, F1
+│   │   ├── consistency_analysis.py       # Cross-variant consistency
+│   │   ├── parse_responses.py            # Response parsing utilities
+│   │   └── instance_sufficiency.py       # Dataset sufficiency analysis
+│   ├── analysis/                         # Statistical analysis & visualization
+│   │   ├── statistical_tests.py          # Statistical testing functions
+│   │   ├── correlation.py                # Correlation analysis
+│   │   ├── ranking.py                    # Model ranking
+│   │   ├── variant_correlation.py        # Variant-specific correlations
+│   │   └── visualization.py              # Figure generation
+│   └── prompts/                          # Prompting strategies
+│       ├── zero_shot.py
+│       ├── one_shot.py
+│       ├── few_shot.py
+│       └── zero_shot_COT.py
+│
+├── tests/                                # Unit tests
+│   ├── test_api_clients.py
+│   ├── test_parsing.py
+│   └── test_stopping_strategy.py
+│
+├── docs/                                 # Documentation
+│   ├── methodology/
+│   │   └── belief_bias_justification.md  # Methodological justification
+│   ├── analysis/
+│   │   └── 14_models_summary.md          # Analysis summary (14 models)
+│   ├── paper/
+│   │   └── corrected_statistical_table.tex  # LaTeX tables
+│   └── archived/                         # Historical validation reports
+│       ├── paper_corrections.md
+│       ├── verification_report.md
+│       └── validation_report.md
+│
+├── AuthorKit26/                          # AAAI 2026 conference submission materials
+│   ├── AnonymousSubmission/
+│   │   └── LaTeX/                        # Paper source (main.tex)
+│   ├── CameraReady/
+│   ├── ReproducibilityChecklist/
+│   └── Copyright/
+│
+├── config.toml                           # Main configuration (API keys, settings)
+├── config.toml.example                   # Configuration template
+├── requirements.txt                      # Python dependencies
+├── LICENSE                               # MIT License
+└── README.md                             # Project documentation
 ```
 
 ---
